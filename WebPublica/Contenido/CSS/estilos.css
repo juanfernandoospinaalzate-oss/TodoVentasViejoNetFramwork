@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background-color: #fffef7;
+}
+.ui.search .prompt {
+	border-radius : 2px !important;
+}
+.ui.input input:focus, .ui.input.focus input, .ui.input input {
+	background-color: #fffef7 !important;
+}
+
+/*-----------------------------------*/
+/*ESTILOS PROPIOS - JORGE HURTADO|--*/
+/*---------------------------------*/
+
+/*----|ESTILOS HEADER - JORGE HURTADO|----*/
+#a-header {
+
+}
+
+/*------|ESTILOS TOP MENU - JORGE HURTADO|------*/
+#a-topmenu {
+	background-color: #505A66;
+	padding: 0 auto;
+	text-align: center;
+}
+
+/*------|ESTILOS a-subheader - JORGE HURTADO|------*/
+#a-subheader {
+	margin: 5px auto !important;
+	max-width: 1200px;
+	width: 95% !important;
+}
+
+/*------|ESTILOS MENU - JORGE HURTADO|------*/
+#t-menu  {
+	margin-bottom: 3em !important;
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100% !important;
+}
+
+#t-menu.ui.segment, #t-menu.ui.secondary.inverted.pointing.menu {
+	border-radius: 0 !important;
+	border: 0 !important;
+}
+
+/*----|ESTILOS BANNER - JORGE HURTADO|----*/
+#banner {
+	margin: 0 auto 5em auto;
+	max-width: 1200px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#cont-banner, #cont-minibanner, #minibanner1, #minibanner2 {
+	padding: 0 !important;
+}
+
+
+/*----|ESTILOS CONTENIDO - JORGE HURTADO|----*/
+#t-contenido {
+	margin: 0 auto;
+	max-width: 1200px;
+	position: relative;
+	width: 90%;
+}
+#d-menufiltro {
+	padding-left: 2em;
+	margin-top: 2em;
+}
+.d-menufiltroesconder {
+	display: none;
+}
+#t-contenedornocarrusel, #t-contenedorcarrusel {
+	margin-bottom: 10em;
+}
+.precio {
+	color: red !important;
+}
+.lSSlideOuter .lSPager.lSpg>li a {
+	background-color: #cacbcd !important;
+}
+.lSSlideOuter .lSPager.lSpg>li.active a, .lSSlideOuter .lSPager.lSpg>li:hover a {
+	background-color: #222 !important;
+}
+
+
+/*------|ESTILOS CARRUSEL - JORGE HURTADO|------*/
+
+
+/*----|ESTILOS FOOTER - JORGE HURTADO|----*/
+#footer {
+	background-color: #505A66;
+	margin: 0 auto;
+	padding: 2em;
+	overflow: hidden;
+	width: 100% !important;
+}
+
+
+
+/*-----------------------------------*/
+/*--|MEDIA QUERIES - JORGE HURTADO|--*/
+/*-----------------------------------*/
+
+
+/*------------------------------------------*/
+/*--|MEDIA QUERIES <343px - JORGE HURTADO|--*/
+/*------------------------------------------*/
+@media all and (max-width:479px)  {
+	#a-header {
+		overflow-x: hidden;
+	}
+	/*#d-topmenu {
+		display: none;
+	}*/
+	/*#d-banner {
+		display: none;
+	}*/
+	#t-promociones {
+		display: none;
+	}
+	#d-contenedor {
+		display: none;
+	}
+	#d-menufiltro {
+		display: none;
+	}
+    	#WucResultadoCajaH2TituloArticulo
+    {
+        height:110px;
+    }
+    #WucResultadoCajaPDescripcionArticulo
+    {
+        height:150px;
+    }
+}
+
+
+/*-----------------------------------------------------*/
+/*--|MEDIA QUERIES > 344px Y < 768px - JORGE HURTADO|--*/
+/*-----------------------------------------------------*/
+@media all and (min-width:480px) and (max-width:768px)  {
+	/*#d-topmenu {
+		display: none;
+	}*/
+	/*#d-banner {
+		display: none;
+	}*/
+	#banner {
+		margin: 0 auto;
+		width: 100%;
+	}
+	#d-contenedor {
+		display: none;
+	}
+    #d-menufiltro {
+        display: none;
+    }
+	#WucResultadoCajaH2TituloArticulo
+    {
+        height:80px;
+    }
+    #WucResultadoCajaPDescripcionArticulo
+    {
+        height:100px;
+    }
+}
+
+
+/*-----------------------------------------------------*/
+/*--|MEDIA QUERIES > 769px Y < 992px - JORGE HURTADO|--*/
+/*-----------------------------------------------------*/
+@media all and (min-width:769px) and (max-width:992px)  {
+	/*#m-topmenu {
+		display: none;
+	}*/
+	/*#d-banner {
+		display: none;
+	}*/
+	#banner {
+		margin: 0 auto;
+		width: 100%;
+	}
+	#m-menu {
+		display: none;
+	}
+	#d-contenedor {
+		display: none;
+	}
+	#d-menufiltro {
+		display: none;
+	}
+    #WucResultadoCajaH2TituloArticulo
+    {
+        height:115px;
+    }
+    #WucResultadoCajaPDescripcionArticulo
+    {
+        height:140px;
+    }
+}
+
+
+/*------------------------------------------*/
+/*--|MEDIA QUERIE > 993px - JORGE HURTADO|--*/
+/*------------------------------------------*/
+@media all and (min-width:993px)  {
+	/*#m-topmenu {
+		display: none;
+	}*/
+	#m-banner {
+		display: none;
+	}
+	#m-menu {
+		display: none;
+	}
+	#m-contenedor {
+		display: none;
+	}
+    #WucResultadoCajaDivColumnaVistaPreviaProducto
+    {
+        height:580px;
+    }
+    #WucResultadoCajaH2TituloArticulo
+    {
+        height:115px;
+    }
+    #WucResultadoCajaPDescripcionArticulo
+    {
+        height:140px;
+    }
+}

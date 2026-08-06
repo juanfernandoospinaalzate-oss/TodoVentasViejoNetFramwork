@@ -1,0 +1,514 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PlantillaPublicaDetalleArticulo.master.cs" Inherits="WebPublica.PlantillaPublicaDetalleArticulo" %>
+
+<%@ Register Src="ControlesDeUsuario/WucCategoria.ascx" TagName="WucCategoria" TagPrefix="uc1" %>
+<%@ Register Src="ControlesDeUsuario/WucLoginStatus.ascx" TagName="WucLoginStatus" TagPrefix="uc2" %>
+<%@ Register Src="http://localhost:7235/ControlesDeUsuario/WucBotonTotal.ascx" TagPrefix="uc1" TagName="WucBotonTotal" %>
+<%@ Register Src="http://localhost:7235/ControlesDeUsuario/WucBotonTotal.ascx" TagPrefix="uc1" TagName="WucBotonTotal" %>
+<%@ Register Src="http://localhost:7235/ControlesDeUsuario/WucCategoria.ascx" TagPrefix="uc2" TagName="WucCategoria" %>
+<%@ Register Src="http://localhost:7235/ControlesDeUsuario/WucCategoria.ascx" TagPrefix="uc2" TagName="WucCategoria" %>
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+	<meta charset="utf-8">
+	<title id="TituloPagina" runat="server"></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="contenido/librerias/semantic/dist/semantic.min.css" id="LinkStyle1">
+	<link rel="stylesheet" href="contenido/librerias/lightslider.min.css" id="LinkStyle2">
+    <link rel="stylesheet" href="contenido/librerias/fotorama.css" id="LinkStyle3">
+    <link rel="stylesheet" href="contenido/librerias/pgwslider.min.css" id="LinkStyle4">
+	<link rel="stylesheet" href="contenido/css/estilos.css" id="LinkStyle5">
+
+    <script src="http://todoventascolombia.com/contenido/librerias/jquery.min.js"></script>
+	<script src="http://todoventascolombia.com/contenido/librerias/semantic/dist/semantic.min.js"></script>
+	<script src="http://todoventascolombia.com/contenido/librerias/lightslider.min.js"></script>
+	<script src="http://todoventascolombia.com/contenido/librerias/fotorama.js"></script>
+    <script src="http://todoventascolombia.com/contenido/librerias/jquery.zoom.min.js"></script>
+    <script src="http://todoventascolombia.com/contenido/librerias/pgwslider.min.js"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+	
+        <!--|DIV "a-header" - JORGE HURTADO|-->
+	<div id="a-header">
+
+		<!--|DIV "a-topmenu" - JORGE HURTADO|-->
+		<div id="a-topmenu">
+
+			<!--|DIV "d-topmenu" - JORGE HURTADO|-->
+			<div id="d-topmenu" class="ui fluid container">
+
+				<!--|DIV "d-contopmenu" - JORGE HURTADO|-->
+				<div id="d-contopmenu" class="ui grey inverted borderless menu">
+
+                    <!--|DIV "d-topmenuboton1" - JORGE HURTADO|-->
+					<div id="d-topmenuboton1" class="ui pointing inline dropdown item">
+						<i class="ui inverted circular red world icon"></i>
+						<div>Español</div>
+						<i class="dropdown icon"></i>
+						<div class="menu">
+							<div class="item" data-value="español"><b>Español</b></div>
+							<div class="item" data-value="english">English</div>
+							<div class="item" data-value="russian">Russian</div>
+						</div>
+					</div><!--|d-topmenuboton1|-->
+
+					<!--|DIV "d-topmenuboton2" - JORGE HURTADO|-->
+					<div id="d-topmenuboton2" class="ui pointing inline dropdown item">
+						<i class="ui inverted circular red dollar icon"></i>
+						<div>$ COP</div>
+						<i class="dropdown icon"></i>
+						<div class="menu">
+							<div class="item" data-value="cop"><b>$ COP</b></div>
+							<div class="item" data-value="usd">$ USD</div>
+						</div>
+					</div><!--|d-topmenuboton2|-->
+
+
+					<div class="ui right grey inverted menu">
+
+						<!--|DIV "d-topmenuboton-1" - JORGE HURTADO|-->
+						<a class="ui active item">
+							<i class="ui red circular inverted heart icon"></i>
+							Lista de deseos
+						</a><!--|d-topmenuboton-1|-->
+
+						<!--|DIV "d-topmenuboton-2" - JORGE HURTADO|-->
+						<a class="ui item">
+							<i class="ui red circular inverted privacy icon"></i>
+							Ingresar
+						</a><!--|d-topmenuboton-2|-->
+
+						<!--|DIV "d-topmenuboton-3" - JORGE HURTADO|-->
+						<a class="ui item">
+							<i class="ui red circular inverted user icon"></i>
+							Registrarse
+						</a><!--|d-topmenuboton-3|-->
+					</div>
+
+				</div><!--|d-contopmenu|-->
+
+			</div><!--|d-topmenu|-->
+
+
+			<!--|DIV "m-topmenu" - JORGE HURTADO|-->
+			<div id="m-topmenu" class="ui fluid container">
+
+				<!--|DIV "m-contopmenu" - JORGE HURTADO|-->
+				<div id="m-contopmenu" class="ui inverted grey borderless menu">
+
+					<!--|DIV "m-topmenuboton1" - JORGE HURTADO|-->
+					<div class="ui inline dropdown item">
+						<i class="ui circular inverted red world icon"></i>
+						<i class="dropdown icon"></i>
+						<div class="menu">
+							<div class="item" data-value="espanol">Español</div>
+							<div class="item" data-value="english">English</div>
+							<div class="item" data-value="russian">Russian</div>
+						</div>
+					</div><!--|m-topmenuboton1|-->
+
+					<!--|DIV "d-topmenuboton2" - JORGE HURTADO|-->
+					<div class="ui inline dropdown item">
+						<i class="ui circular inverted red dollar icon"></i>
+						<i class="dropdown icon"></i>
+						<div class="menu">
+							<div class="item" data-value="cop"><i class="co flag"></i>$COP</div>
+							<div class="item" data-value="usd"><i class="us flag"></i>$USD</div>
+						</div>
+					</div><!--|m-topmenuboton2|-->
+
+					<div class="ui right grey inverted menu">
+
+						<!--|DIV "d-topmenuboton-1" - JORGE HURTADO|-->
+						<a class="ui item">
+							<i class="ui circular inverted red heart icon"></i>
+						</a>
+
+						<!--|DIV "d-topmenuboton-2" - JORGE HURTADO|-->
+						<a class="ui item">
+							<i class="ui circular inverted red privacy icon"></i>
+						</a>
+
+						<!--|DIV "d-topmenuboton-3" - JORGE HURTADO|-->
+						<a class="ui item">
+							<i class="ui circular inverted red add user icon"></i>
+						</a>
+					</div>
+
+				</div><!--|"m-contopmenu"|-->
+
+			</div><!--|m-topmenu|-->
+
+		</div><!--|a-topmenu|-->
+
+
+		<!--|DIV "a-subheader" - JORGE HURTADO|-->
+		<div id="a-subheader">
+
+			<!--|DIV "d-subheader" - JORGE HURTADO|-->
+			<div id="d-subheader" class="ui three column center aligned grid">
+
+				<!--|DIV "d-buscar" - JORGE HURTADO|-->
+				<div id="d-buscar" class="middle aligned right aligned column">
+					<div class="ui action input">
+						<input type="text" placeholder="Buscar...">
+						<div class="ui red button">Buscar</div>
+					</div>
+				</div><!--|ui d-buscar|-->
+
+				<!--|DIV "d-logo" - JORGE HURTADO|-->
+				<div id="d-logo" class="middle aligned column">
+					<a href="" class="ui tiny circular image">
+						<img  class="ui circular image" src="files/images/square-image.png">
+					</a>
+				</div><!--|d-logo|-->
+
+				<!--|DIV "d-carritobotoncontenedor" - JORGE HURTADO|-->
+				<div class="middle aligned left aligned column">
+
+					<!--|DIV "d-carritobotonpreview" - JORGE HURTADO|-->
+<%--					<div class="ui floating dropdown labeled search icon red button">
+						<i class="large cart icon"></i>
+						<span>Total: $158.000 COP</span>
+						<div class="menu">
+							<div class="item">Producto 01</div>
+							<div class="item">Producto 02</div>
+							<div class="item">Producto 03</div>
+							<div class="item">Producto 04</div>
+							<div class="item">Producto 05</div>
+							<div class="item">Producto 06</div>
+							<div class="item">Producto 07</div>
+							<div class="item">Producto 08</div>
+							<div class="item">Producto 09</div>
+							<div class="item">Producto 10</div>
+							<div class="item">Producto 11</div>
+							<div class="item">Producto 12</div>
+							<div class="item">Producto 13</div>
+						</div>
+					</div>--%>
+                    <uc1:WucBotonTotal runat="server" id="WucBotonTotal" />
+				</div><!--|d-carrito|-->
+			</div><!--|d-subheader|-->
+
+			<!--|DIV "m-subheader" - JORGE HURTADO|-->
+			<div id="m-subheader" class="ui vertically one column grid">
+
+				<!--|DIV "m-logo" - JORGE HURTADO|-->
+				<div id="m-logo" class="row">
+					<div class="middle center aligned column">
+						<a href="" class="ui tiny circular image">
+							<img  class="ui circular image" src="files/images/square-image.png">
+						</a>
+					</div>
+				</div><!--|m-logo|-->
+
+				<!--|DIV "m-carritobotoncontenedor" - JORGE HURTADO|-->
+				<div class="row">
+					<div class="middle center aligned column">
+
+						<!--|DIV "m-carritobotonpreview" - JORGE HURTADO|-->
+<%--						<div class="ui floating dropdown labeled search icon red button">
+							<i class="large cart icon"></i>
+							<span>Total: $158.000 COP</span>
+							<div class="menu">
+								<div class="item">Producto 01</div>
+								<div class="item">Producto 02</div>
+								<div class="item">Producto 03</div>
+								<div class="item">Producto 04</div>
+								<div class="item">Producto 05</div>
+								<div class="item">Producto 06</div>
+								<div class="item">Producto 07</div>
+								<div class="item">Producto 08</div>
+								<div class="item">Producto 09</div>
+								<div class="item">Producto 10</div>
+								<div class="item">Producto 11</div>
+								<div class="item">Producto 12</div>
+								<div class="item">Producto 13</div>
+							</div>
+						</div>--%>
+                        <uc1:WucBotonTotal runat="server" id="WucBotonTotal1" />
+                        <!--|"m-carritobotonpreview"|-->
+					</div>
+				</div><!--|m-carritobotoncontenedor|-->
+				<div class="ui divider"></div>
+
+				<!--|DIV "m-buscar" - JORGE HURTADO|-->
+				<div class="row">
+					<div class="middle center aligned column">
+						<div class="ui action input">
+  						<input type="text" placeholder="Buscar...">
+  						<div class="ui red button">Buscar</div>
+						</div>
+					</div>
+				</div><!--|m-buscar|-->
+				<div class="ui divider"></div>
+
+			</div><!--|m-subheader|-->
+
+		</div><!--|subheader|-->
+
+
+		<!--|DIV "t-menu" - JORGE HURTADO|-->
+		<div id="t-menu">
+
+			<!--|DIV "d-menu" - JORGE HURTADO|-->
+			<div id="d-menu" class="ui basic segment">
+
+					<!--|DIV "d-menupointing" - JORGE HURTADO|-->
+					<div id="d-menupointing" class="ui inverted borderless menu">
+
+						<!--|DIV "d-boton1" - JORGE HURTADO|-->
+						<a id="d-boton1" class="ui active item"><h3><i class="inverted red circular home icon"></i> INICIO</h3></a>
+
+						<!--|DIV "d-menupopup" - JORGE HURTADO|-->
+						<div id="d-menupopup" class="ui fluid popup">
+
+							<div class="ui four column relaxed divided grid">
+
+								<div class="column">
+									<h4 class="ui header">Fabrics</h4>
+									<div class="ui link list">
+										<a class="item">Cashmere</a>
+										<a class="item">Linen</a>
+										<a class="item">Cotton</a>
+										<a class="item">Viscose</a>
+									</div>
+								</div>
+
+								<div class="column">
+									<h4 class="ui header">Size</h4>
+									<div class="ui link list">
+										<a class="item">Small</a>
+										<a class="item">Medium</a>
+										<a class="item">Large</a>
+										<a class="item">Plus Sizes</a>
+									</div>
+								</div>
+
+								<div class="column">
+									<h4 class="ui header">Colors</h4>
+									<div class="ui link list">
+										<a class="item">Neutrals</a>
+										<a class="item">Brights</a>
+										<a class="item">Pastels</a>
+									</div>
+								</div>
+
+								<div class="column">
+									<h4 class="ui header">Types</h4>
+									<div class="ui link list">
+										<a class="item">Knitwear</a>
+										<a class="item">Outerwear</a>
+										<a class="item">Pants</a>
+										<a class="item">Shoes</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div><!--|d-menupopup|-->
+
+						<!--|DIV "d-boton2" - JORGE HURTADO|-->
+                        <div id="d-boton2" class="ui pointing dropdown item">
+                            <span>HOMBRES</span>
+                            <uc2:WucCategoria runat="server" id="WucCategoria" />
+                        </div>
+
+						<!--|DIV "d-boton3" - JORGE HURTADO|-->
+						<%--<a class="item"><h3>MUJERES</h3></a>--%>
+
+						<!--|DIV "d-menuderecha" - JORGE HURTADO|-->
+						<div id="d-menuderecha" class="right menu">
+
+							<!--|DIV "d-boton-1" - JORGE HURTADO|-->
+							<a id="d-boton-1" class="ui item"><h5>CONTACTO</h5></a>
+
+							<!--|DIV "d-boton-2" - JORGE HURTADO|-->
+							<a id="d-boton-2" class="ui item"><h5>POLÍTICAS</h5></a>
+
+						</div>
+
+					</div><!--|d-menupointing|-->
+
+			</div><!--|d-menu|-->
+
+
+			<!--|DIV "m-menu" - JORGE HURTADO|-->
+			<div id="m-menu">
+
+				<!--|DIV "m-menucontenedor" - JORGE HURTADO|-->
+				<div class="ui aligned center basic segment">
+
+					<!--|DIV "m-menuborderless" - JORGE HURTADO|-->
+					<div class="ui inverted borderless menu">
+
+						<!--|DIV "m-botonmenu" - JORGE HURTADO|-->
+						<a id="m-botonmenu" class="item"><h3><i class="circular inverted red sidebar icon"></i> MENU</h3></a>
+
+						<div id="m-menupopup" class="ui grey inverted fluid popup">
+
+							<div class="ui four column relaxed divided grid">
+
+								<div class="column">
+									<h4 class="ui header">Fabrics</h4>
+									<div class="ui link list">
+										<a class="item">Cashmere</a>
+										<a class="item">Linen</a>
+										<a class="item">Cotton</a>
+										<a class="item">Viscose</a>
+									</div>
+								</div>
+
+								<div class="column">
+									<h4 class="ui header">Size</h4>
+									<div class="ui link list">
+										<a class="item">Small</a>
+										<a class="item">Medium</a>
+										<a class="item">Large</a>
+										<a class="item">Plus Sizes</a>
+									</div>
+								</div>
+
+								<div class="column">
+									<h4 class="ui header">Colors</h4>
+									<div class="ui link list">
+										<a class="item">Neutrals</a>
+										<a class="item">Brights</a>
+										<a class="item">Pastels</a>
+									</div>
+								</div>
+
+								<div class="column">
+									<h4 class="ui header">Types</h4>
+									<div class="ui link list">
+										<a class="item">Knitwear</a>
+										<a class="item">Outerwear</a>
+										<a class="item">Pants</a>
+										<a class="item">Shoes</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div><!--|m-menuborderless|-->
+
+				</div><!--|m-menucontenedor|-->
+
+			</div><!--|m-menu|-->
+
+		</div><!--|a-menu|-->
+
+	</div><!--|a-header|-->
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderBanner" runat="server"></asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+
+<!--|DIV FOOTER TODOS - JORGE HURTADO|-->
+	<div id="footer">
+
+		<div class="ui stackable grid">
+			<div class="grey five wide column" style="margin-bottom: 2em !important;">
+				<h3>
+	  			<i class="info circle icon"></i>
+	    		Servicio al cliente
+				</h3>
+				<div class="ui divider"></div>
+
+				<div class="ui fluid accordion">
+
+				  <h5 class="ui inverted title">
+						<p><i class="ui skype icon"></i>Atención Skype</p>
+				  </h5>
+				  <div class="content">
+				    <p>Buscar y agregar todoventascolombia en Skype</p>
+				  	<div class="ui divider"></div>
+					</div>
+
+
+					<h5 class="ui inverted title">
+						<p><i class="ui phone icon"></i>Línea telefónica</p>
+				  </h5>
+				  <div class="content">
+				    <p>Puede comunicarse con el teléfono 4342414314</p>
+				  	<div class="ui divider"></div>
+					</div>
+
+
+					<h5 class="ui inverted title">
+						<p><i class="ui mobile icon"></i>Línea celular</p>
+				  </h5>
+				  <div class="content">
+				    <p>Puede comunicarse con los numeros 300-422-22-23 y 300-422-22-24</p>
+				  	<div class="ui divider"></div>
+					</div>
+
+
+					<h5 class="ui inverted title">
+						<p><i class="ui mail icon"></i>Correo electrónico</p>
+				  </h5>
+				  <div class="content">
+				    <p>Escribir a informacion@todoventas.com</p>
+						<div class="ui divider"></div>
+				  </div>
+
+				</div>
+
+			</div>
+
+
+			<div class="grey five wide column" style="margin-bottom: 2em !important;">
+				<h3>
+	  			<i class="settings icon"></i>
+	    		Políticas del sitio
+				</h3>
+				<div class="ui divider"></div>
+				<h5>Devoluciones</h5>
+				<h5>Como pagar</h5>
+				<h5>Envíos</h5>
+			</div>
+
+
+			<div class="grey six wide column" style="margin-bottom: 2em !important;">
+				<h3>
+	  			<i class="mail icon"></i>
+	    		Suscribirse al catálogo
+				</h3>
+				<div class="ui divider"></div>
+				<div class="ui fluid action input">
+				  <input type="text" placeholder="Ingrese su correo...">
+				  <select class="ui inverted compact selection dropdown">
+				    <option value="all">A todo</option>
+				    <option value="articles">Catálogo</option>
+				    <option value="products">Correo semanal</option>
+				  </select>
+				  <div type="submit" class="ui inverted grey button">Suscribir</div>
+				</div>
+				<br>
+				<p>
+					<i class="warning circle icon"></i>
+					La información es confidencial y no será empleada en beneficio propio o de terceros. A no ser que haya una autorización para cualquier publicación relacionada a la misma.
+				</p>
+			</div>
+		</div>
+	</div><!--|footer|-->
+		<script src="http://todoventascolombia.com/contenido/js/javascript.js"></script>        
+    </form>
+ 
+</body>
+</html>

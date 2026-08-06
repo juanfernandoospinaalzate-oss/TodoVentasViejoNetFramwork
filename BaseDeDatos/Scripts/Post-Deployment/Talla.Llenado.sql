@@ -1,0 +1,30 @@
+﻿-- =============================================
+-- Script Template
+-- =============================================
+INSERT Talla(Nombre) Values('Sin Talla')
+INSERT Talla(Nombre) Values('XS')
+INSERT Talla(Nombre) Values('S')
+INSERT Talla(Nombre) Values('M')
+INSERT Talla(Nombre) Values('L')
+INSERT Talla(Nombre) Values('XL')
+INSERT Talla(Nombre) Values('XXL')
+INSERT Talla(Nombre) Values('XXXL')
+
+INSERT Talla(Nombre) Values('3 Meses')
+INSERT Talla(Nombre) Values('6 Meses')
+INSERT Talla(Nombre) Values('9 Meses')
+INSERT Talla(Nombre) Values('12 Meses')
+INSERT Talla(Nombre) Values('18 Meses')
+
+INSERT Talla(Nombre) Values('1 Año')
+INSERT Talla(Nombre) Values('2 Años')
+INSERT Talla(Nombre) Values('3 Años')
+INSERT Talla(Nombre) Values('4 Años')
+INSERT Talla(Nombre) Values('5 Años')
+INSERT Talla(Nombre) Values('6 Años')
+INSERT Talla(Nombre) Values('7 Años')
+INSERT Talla(Nombre) Values('8 Años')
+INSERT Talla(Nombre) Values('9 Años')
+INSERT Talla(Nombre) Values('10 Años')
+INSERT Talla(Nombre) Values('11 Años')
+INSERT Talla(Nombre) Values('12 Años')

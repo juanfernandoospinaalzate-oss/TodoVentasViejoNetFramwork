@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CasosDeUsoCatetegoria">
+  <useCaseModelRootMoniker Id="c5b975eb-3100-4c8f-9975-0ac17e08a1b4" />
+  <nestedChildShapes>
+    <actorShape Id="cbeb23d0-e739-45e0-beb1-396e53592e2c" absoluteBounds="0.75, 2.375, 0.625, 0.75" isReference="false" heightOffset="0">
+      <actorMoniker Id="5c2eae2b-b561-4b11-8700-4877de8d8da0" LastKnownName="Administrador del sistema" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="f4413b6a-f537-46e4-9a85-f4ff28c59a1a" absoluteBounds="2.5, 1.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="00b5de50-0bae-4120-9930-2965856df39b" LastKnownName="0002-Añadir Categoría" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.58893747817973); (2.5495935598166 : 1.98355187543441)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="ee5a3290-af65-4640-8c4f-0839032926b8" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="cbeb23d0-e739-45e0-beb1-396e53592e2c" />
+        <useCaseShapeMoniker Id="f4413b6a-f537-46e4-9a85-f4ff28c59a1a" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="8d235a08-b967-448d-8734-6b35379ccb6c" absoluteBounds="2.5, 2.375, 1.125, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="cbe9b0a3-6250-41ca-8c3f-5f276e57205c" LastKnownName="0003-Modificar Categoría" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.74668124755291); (2.50644365793691 : 2.73466530704565)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="8d41a4f5-2502-4668-b4a8-649063c42e29" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="cbeb23d0-e739-45e0-beb1-396e53592e2c" />
+        <useCaseShapeMoniker Id="8d235a08-b967-448d-8734-6b35379ccb6c" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="94781fe0-1a18-42d2-81c2-8e96c492964f" absoluteBounds="2.5, 3.25, 1.125, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f767e227-9ba6-4bf9-a642-cdd239b4dcb9" LastKnownName="0004-Eliminar Categoría" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.876953125); (2.608446506096 : 3.3780407681015)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="7b37c317-ba9a-425f-bbf0-08aed66178f7" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="cbeb23d0-e739-45e0-beb1-396e53592e2c" />
+        <useCaseShapeMoniker Id="94781fe0-1a18-42d2-81c2-8e96c492964f" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="ed8de2f0-0f24-4ba3-b587-8a14fb8f21bf" absoluteBounds="2.625, 4.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ec00b23a-dcee-4a62-9b51-a77d3c2127e5" LastKnownName="0005-Listar Categoría" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 3.07373541990556); (2.62515206993462 : 4.36883463688505)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="fe699149-31cd-43f9-a638-50a0cb002a79" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="cbeb23d0-e739-45e0-beb1-396e53592e2c" />
+        <useCaseShapeMoniker Id="ed8de2f0-0f24-4ba3-b587-8a14fb8f21bf" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="6147f073-4024-44c3-9eee-4a40dbef7a9a" absoluteBounds="2.5, 0.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="458375d0-5a08-4c73-8678-3e83df600864" LastKnownName="0001 -Buscar Categoría" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.39114746339026); (2.50356994536963 : 1.09517886295055)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="fc86fa0e-ab3f-4940-8ed1-82906703b773" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="cbeb23d0-e739-45e0-beb1-396e53592e2c" />
+        <useCaseShapeMoniker Id="6147f073-4024-44c3-9eee-4a40dbef7a9a" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <SubsystemShape Id="ff3d24c3-ee0f-4b74-a9b2-c68d5b655cc9" absoluteBounds="4.125, 0.875, 4.875, 1.5" customColor="White">
+      <subsystemMoniker Id="6554861d-2cdf-4837-886b-74e14c745e7d" LastKnownName="Presentación.TablasMaestras.Categorias" />
+      <nestedChildShapes>
+        <useCaseShape Id="2638bbe0-2642-478b-bd8b-6b578d8446af" absoluteBounds="4.25, 1.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="5dfb21e5-af89-4309-9777-7bf4959928b4" LastKnownName="0002-Añadir Categoría" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="c651a53c-7021-4abc-9ed4-f938bdd66f4e" absoluteBounds="5.375, 1.375, 1.125, 0.625" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="5c977274-d002-4cad-8558-e816329ce977" LastKnownName="0003-Modificar Categoría" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="45c5b4ce-7674-48b3-8d2b-43a096a2eaaf" absoluteBounds="6.625, 1.375, 1.125, 0.625" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="bd0e0afa-0b5e-4476-89a7-89a89f3346d5" LastKnownName="0004-Eliminar Categoría" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="8542f8c5-9478-4681-9b31-80d973e1aa93" absoluteBounds="7.875, 1.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="421f44f1-cd8e-4742-a081-ff16b76a7e08" LastKnownName="0005-Listar Categoría" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <SubsystemShape Id="1dd36854-e8d2-4933-a184-a934893c9694" absoluteBounds="4.125, 2.5, 2.25, 1.25" customColor="White">
+      <subsystemMoniker Id="07c0f6b8-5fbe-488a-a6cf-5e9e6a3b641b" LastKnownName="Presentación.Busquedas" />
+      <nestedChildShapes>
+        <useCaseShape Id="1ca38dd6-4076-43e6-a0fb-bba350184774" absoluteBounds="4.25, 3, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="49ce725c-6a2a-4b26-928d-ef8b487e6b1c" LastKnownName="0001 -Buscar Categoría" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,0 +1,6 @@
+﻿INSERT INTO [dbo].[UnidadLongitud] ([Nombre]) VALUES ('Sin Unidad de Longitud')
+INSERT INTO [dbo].[UnidadLongitud] ([Nombre]) VALUES ('Metro')
+INSERT INTO [dbo].[UnidadLongitud] ([Nombre]) VALUES ('Centímetro')
+INSERT INTO [dbo].[UnidadLongitud] ([Nombre]) VALUES ('Milímetro')
+INSERT INTO [dbo].[UnidadLongitud] ([Nombre]) VALUES ('Pie')
+INSERT INTO [dbo].[UnidadLongitud] ([Nombre]) VALUES ('Pulgada')

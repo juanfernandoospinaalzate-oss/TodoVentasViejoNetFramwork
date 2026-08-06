@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PlantillaPublicaDetalleArticulo.master.cs" Inherits="WebPublica.PlantillaPublicaDetalleArticulo" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Src="ControlesDeUsuario/WucMenuCategorias.ascx" TagName="WucMenuCategorias" TagPrefix="uc1" %>
+<%@ Register Src="ControlesDeUsuario/WucLoginStatus.ascx" TagName="WucLoginStatus" TagPrefix="uc2" %>
+<%@ Register Src="~/ControlesDeUsuario/WucBusqueda.ascx" TagPrefix="uc1" TagName="WucBusqueda" %>
+<%@ Register Src="~/ControlesDeUsuario/WucBotonTotal.ascx" TagPrefix="WucBtnTotal" TagName="WucBotonTotal" %>
+<%@ Register Src="~/ControlesDeUsuario/WucMenuCategorias.ascx" TagPrefix="uc2" TagName="WucMenuCategorias" %>
+<%@ Register Src="~/ControlesDeUsuario/WucInicio.ascx" TagPrefix="uc1" TagName="WucInicio" %>
+<%@ Register Src="~/ControlesDeUsuario/WucLogoSitioWebascx.ascx" TagPrefix="uc1" TagName="WucLogoSitioWebascx" %>
+<%@ Register Src="~/ControlesDeUsuario/WucFooter.ascx" TagPrefix="uc1" TagName="WucFooter" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta charset="utf-8">
+    <title id="TituloPagina" runat="server"></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" runat="server" id="linkSemanticMinCss" href="contenido/librerias/semantic/dist/semantic.min.css" />
+    <link rel="stylesheet" runat="server" id="linklightsliderMinCss" href="contenido/librerias/lightslider.min.css" />
+    <link rel="stylesheet" runat="server" id="linkFotoramaCss" href="contenido/librerias/fotorama.css" />
+    <link rel="stylesheet" runat="server" id="pgwsliderMinCss" href="contenido/librerias/pgwslider.min.css" />
+    <link rel="stylesheet" runat="server" id="estilosCss" href="contenido/css/estilos.css" />
+
+    <link rel="shortcut icon" runat="server" id="Favicon" href="/Icono_Favicon.ico" />
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-6901628-5']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '740630403062337');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=740630403062337&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 952453642 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-952453642"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-952453642');
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BZN59LT10"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4BZN59LT10');
+</script>
+
+<body>
+    <form id="form1" runat="server">
+        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></asp:ToolkitScriptManager>
+        <div id="a-header">
+            <div id="a-topmenu">
+                <div id="d-topmenu" class="ui fluid container">
+                    <div id="d-contopmenu" class="ui grey inverted borderless menu">
+                        <div id="d-topmenuboton1" class="ui pointing inline dropdown item">
+                            <i class="ui inverted circular red world icon"></i>
+                            <div>Español</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="español"><b>Español</b></div>
+                                <div class="item" data-value="english">English</div>
+                                <div class="item" data-value="russian">Russian</div>
+                            </div>
+                        </div>
+                        <div id="d-topmenuboton2" class="ui pointing inline dropdown item">
+                            <i class="ui inverted circular red dollar icon"></i>
+                            <div>$ COP</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="cop"><b>$ COP</b></div>
+                                <div class="item" data-value="usd">$ USD</div>
+                            </div>
+                        </div>
+                        <div class="ui right grey inverted menu">
+                            <a class="ui active item">
+                                <i class="ui red circular inverted heart icon"></i>
+                                Lista de deseos
+                            </a>
+                            <a class="ui item">
+                                <i class="ui red circular inverted privacy icon"></i>
+                                Ingresar
+                            </a>
+                            <a class="ui item">
+                                <i class="ui red circular inverted user icon"></i>
+                                Registrarse
+                            </a>
+                        </div>
+                    </div>
+                </div>
+ñ            </div>
+            <div id="a-subheader">
+                <div id="m-subheader" class="ui vertically one column grid">
+                    <div class="row">
+                        <div class="middle center aligned column">
+                            <uc1:WucLogoSitioWebascx runat="server" ID="WucLogoSitioWebascx1" />
+                            <WucBtnTotal:WucBotonTotal runat="server" ID="WucBotonTotal1" />
+                        </div>
+                    </div>
+                    <div class="ui divider"></div>
+                    <div class="row">
+                        <div class="middle center aligned column">
+                            <uc1:WucBusqueda runat="server" ID="WucBusqueda1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="ui divider"></div>
+            </div>
+        </div>
+        <div id="t-menu">
+            <div id="d-menu" class="ui basic segment">
+                <div id="d-menupointing" class="ui inverted borderless menu">
+                    <uc1:WucInicio runat="server" ID="WucInicio" />
+                    <div id="d-boton2" class="ui pointing dropdown item">
+                        <uc2:WucMenuCategorias runat="server" ID="WucMenuCategorias" />
+                    </div>
+                    <div id="d-menuderecha" class="right menu">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderBanner" runat="server"></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <uc1:WucFooter runat="server" ID="WucFooter" />
+
+    </form>
+</body>
+</html>

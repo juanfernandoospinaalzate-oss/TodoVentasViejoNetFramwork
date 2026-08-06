@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Presentacion.MDI.PadreMDI">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAEE/YABCBAhAAKDASigAISDABAAAgAABgEBjgACAE=</HashCode>
+      <FileName>PadreMDI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentacion.MDI.Program">
+    <Position X="3" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAQ=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentacion.MDI.Properties.Resources">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentacion.MDI.Properties.Settings">
+    <Position X="8.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentacion.MDI.ServicioColor.Color" BaseTypeListCollapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAACAACAQAAQAAAAAAAgAAAgAAAAAAEAAIAAAIAAAA=</HashCode>
+      <FileName>Service References\ServicioColor\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Presentacion.MDI.ServicioColor.ColoresClient" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgAgAAEQAAAAAACAIAAAAAIAAAAAIAAAAEAAAAAA=</HashCode>
+      <FileName>Service References\ServicioColor\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Presentacion.MDI.ServicioColor.IColores">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgAgAAEQAAAAAACAIAAAAAIAAAAAIAAAAEAAAAAA=</HashCode>
+      <FileName>Service References\ServicioColor\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Presentacion.MDI.ServicioColor.IColoresChannel">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\ServicioColor\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

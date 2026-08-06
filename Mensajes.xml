@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mensajes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mensaje>
+		<codigo>0001</codigo>
+		<tipoMensaje>CRUD Eliminar Elemento</tipoMensaje>
+		<evento>Eliminar un elemento.</evento>
+		<texto>¿Seguro de eliminar el elemento?</texto>
+		<detalles>se muesta cuando se trata de eliminar algún registro</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0002</codigo>
+		<tipoMensaje>CRUD Eliminar Elemento</tipoMensaje>
+		<evento>Error controlado, no se puede eliminar el elemento.</evento>
+		<texto>No se puede eliminar el elemento porque está siendo utilizado.</texto>
+		<detalles>Cuando se trata de eliminar un registro que tiene otros registros relacionados en al base de datos.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0003</codigo>
+		<tipoMensaje>CRUD Eliminar Elemento</tipoMensaje>
+		<evento>Error controlado, no se puede eliminar el elemento.</evento>
+		<texto>No se puede eliminar el elemento porque es parte de los datos predeterminados de la aplicación</texto>
+		<detalles>Cuando se intenta eliminar un registro que pertenece a los datos iniciales del a base de datos, colores, ciudades, unidades de medida entre otros.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0004</codigo>
+		<tipoMensaje>CRUD Eliminar Elemento</tipoMensaje>
+		<evento>Error al intentar eliminar el elemento.</evento>
+		<texto>No se puede eliminar el elemento por un error desconocido, contacte al administrador para resolver el problema</texto>
+		<detalles>Cuando se intenta eliminar y se dispara un erro no controlado</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0005</codigo>
+		<tipoMensaje>Manejo de Archivo</tipoMensaje>
+		<evento>El archivo no existe o no se puede leer</evento>
+		<texto>El archivo &lt;RutaArchivo&gt; no existe o no se puede leer</texto>
+		<detalles>Mensaje para mostrar si se trata de acceder a un archivo pero este no se encuentra disponible</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0006</codigo>
+		<tipoMensaje>CRUD Eliminar Elemento</tipoMensaje>
+		<evento>Eliminar un elemento.</evento>
+		<texto>Los datos fueron eliminados exitosamente !!</texto>
+		<detalles>El elemento fue eliminado exitosamente de la base de datos pasando por todos los correspondientes controles</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0007</codigo>
+		<tipoMensaje>CRUD Actualizar Elemento</tipoMensaje>
+		<evento>Actualizar un elemento</evento>
+		<texto>Los datos fueron modificados exitosamente !!</texto>
+		<detalles>El elemento fue modificado exitosamente en la base de datos pasando por todos los correspondients controles</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0008</codigo>
+		<tipoMensaje>CRUD Eliminar Elemento</tipoMensaje>
+		<evento>Error controlado, no se puede eliminar el elemento.</evento>
+		<texto>No se puede eliminar el elemento porque no existe en la base de datos.</texto>
+		<detalles>El elemento no se encuentra en la base de datos por lo que no puede ser eliminado</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0009</codigo>
+		<tipoMensaje>CRUD Insertar Elemento</tipoMensaje>
+		<evento>Insertar un elemento</evento>
+		<texto>El registro fue ingresado exitosamente en el sistema</texto>
+		<detalles>Se ingresa un registro nuevo en la base de datos pasando todos los controles correspondientes</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0010</codigo>
+		<tipoMensaje>CRUD Insertar Elemento</tipoMensaje>
+		<evento>Error controlado, uno o varios elementos se encuentra vacíos</evento>
+		<texto>No se puede ingresar el registro porque hay elementos obligatorios que no han sido diligenciados "&lt;LISTA_ELEMENTOS_VACIOS&gt;".</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos pero hay elementos obligatorios que no han sido diligenciados</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0011</codigo>
+		<tipoMensaje>CRUD Insertar Elemento</tipoMensaje>
+		<evento>Ya se encuentra un dato no repetitivo en el registro</evento>
+		<texto>No se puede ingresar el registro porque hay un elemento que ya existe y no puede ser duplicado "&lt;NOMBRE_ELEMENTO&gt;"</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos pero el nombre del color ya se encuentra registrado.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0012</codigo>
+		<tipoMensaje>CRUD Insertar Actualizar Color</tipoMensaje>
+		<evento>El código Hexadecimal para un color RGB no tiene exactamente 6 caracteres</evento>
+		<texto>El código hexadecimal tiene que tener exactamente 6 caracteres</texto>
+		<detalles>Se intenta ingresar ya sea para inserción o para modificación un código RGB que no tiene exactamente 6 caracteres</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0013</codigo>
+		<tipoMensaje>CRUD Insertar Actualizar Color</tipoMensaje>
+		<evento>El código Hexadecimal para un color RGB contiene caracteres no válidos.</evento>
+		<texto>El código Hexadecimal para un color RGB contiene caracteres no válidos.</texto>
+		<detalles>un código hexadecimal para un color rgb solo puede tener caracteres [0-9], [a-f], [A-F]</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0014</codigo>
+		<tipoMensaje>Validaciones Comúnes</tipoMensaje>
+		<evento>La cadena de texto sobrepasa el máximo de caracteres permitidos</evento>
+		<texto>La longitud de texto para el campo "&lt;NOMBRE_CAMPO&gt;" sobrepasa la longitud máxima permitida "&lt;CANTIDAD_CARACTERES&gt;" caracteres</texto>
+		<detalles>Si se intenta ingresar una cadena de caracteres que supera la longitud de caractres establecida en la base de datos.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0015</codigo>
+		<tipoMensaje>Validacion al Actualizar </tipoMensaje>
+		<evento>Ya se encuentra un dato repetido en el registro</evento>
+		<texto>No se puede actualizar porque hay un elemento que ya existe y no puede ser duplicado</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos pero el IdCategoria ya se encuentra registrado.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0016</codigo>
+		<tipoMensaje>CRUD Insertar Elemento</tipoMensaje>
+		<evento>El elemento que se desea ingresar contiene una referencia nula</evento>
+		<texto>No se puede intresar el registro porque es un elemento NULL</texto>
+		<detalles>se  intenta ingresar un registro nuevo en la base de datos pero el objeto llegó con una referencia nula</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0017</codigo>
+		<tipoMensaje>CRUD Actualizar Elemento</tipoMensaje>
+		<evento>No se pudo actualizar el elemento</evento>
+		<texto>No se puede actualizar  el elemento por un error desconocido, contacte al administrador para resolver el problema. Nro del error + "&lt;NROERROR&gt;"</texto>
+		<detalles>Error al intentar modificar los elementos en la base de datos pasando por todos los correspondientes controles</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0018</codigo>
+		<tipoMensaje>CRUD Actualizar Categoría</tipoMensaje>
+		<evento>No hay una Categoría Seleccionada</evento>
+		<texto>No se puede actualizar porque no hay una categoría seleccionada</texto>
+		<detalles>Se intenta modificar una categoría pero no hay una categoría seleccionada en el control de categorías</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0019</codigo>
+		<tipoMensaje>CRUD Insertar Categoría</tipoMensaje>
+		<evento>No hay una Categoría Seleccionada</evento>
+		<texto>No se puede añadir un elemento porque no hay una categoría seleccionada</texto>
+		<detalles>Se intenta añadir una categoría nueva pero se debe seleccionar una categoría padre o al menos indicar que no hay categoría padre</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0020</codigo>
+		<tipoMensaje>CRUD Insertar Categoría</tipoMensaje>
+		<evento>No hay un nombre de categoría para insertar</evento>
+		<texto>No se puede ingresar el registro porque no hay un nombre de categoría</texto>
+		<detalles>Se intenta añadir una categoría nueva pero no hay un nombre de categoría que ingresar</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0021</codigo>
+		<tipoMensaje>CRUD Insertar Categoría</tipoMensaje>
+		<evento>No hay una descripción de categoría para insertar</evento>
+		<texto>No se puede ingresar el registro porque no hay una descripción para la categoría</texto>
+		<detalles>Se intenta añadir una categoría nueva pero no hay una descripción de categoría que ingresar</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0022</codigo>
+		<tipoMensaje>CRUD Insertar Categoría</tipoMensaje>
+		<evento>No hay una lista de palabras clave para para insertar</evento>
+		<texto>No se puede ingresar el registro porque no hay una lista de palabras clave separadas por coma para la categoría</texto>
+		<detalles>Se intenta añadir una categoría nueva pero no hay una palbras clave que ingresar</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0023</codigo>
+		<tipoMensaje>CRUD Insertar Categoría</tipoMensaje>
+		<evento>Ya se encuentra un nombre de categoría en el registro</evento>
+		<texto>No se puede ingresar el registro porque ya hay una categoría con el mismo nombre</texto>
+		<detalles>Se intenta añadir una categoría nueva pero el mismo nombre ya se encuentra registrado</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0024</codigo>
+		<tipoMensaje>CRUD Artículo</tipoMensaje>
+		<evento>No hay un Título de artículo para insertar</evento>
+		<texto>No se puede ingresar el registro porque no hay un título para el artículo</texto>
+		<detalles>Se intenta añadir un artículo nuevo pero no hay un titulo que ingresar</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0025</codigo>
+		<tipoMensaje>CRUD  Artículo</tipoMensaje>
+		<evento>No hay una Descripción de Articulo para insertar</evento>
+		<texto>No se puede ingresar el registro porque no hay una descripción para el artículo</texto>
+		<detalles>Se intenta añadir un artículo nuevo pero no hay una descripción que ingresar</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0026</codigo>
+		<tipoMensaje>CRUD  Artículo</tipoMensaje>
+		<evento>No hay una Marca ni se ha especificado que no se tenga una marca</evento>
+		<texto>No se puede ingresar el registro porque no hay una marca para el artículo o no se ha especificado que no se  tenga una marca</texto>
+		<detalles>Se intenta añadir un artículo nuevo pero no hay una referencia a la tabla de marca, se usa un id (cero) o un Id de marca que no existe</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0027</codigo>
+		<tipoMensaje>CRUD  Artículo</tipoMensaje>
+		<evento>No hay una lista de palabras relacionadas al artículo para insertar</evento>
+		<texto>No se puede ingresar el registro porque no hay una lista de palabras relacionadas sepradas por coma para el artículo</texto>
+		<detalles>Se intenta añadir un artículo nuevo pero no hay una lista de palabras relacionadas, separadas por coma.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0028</codigo>
+		<tipoMensaje>CRUD  Artículo</tipoMensaje>
+		<evento>No Se ha especificado la cantidad de meses de garantía para el artículo</evento>
+		<texto>No se puede ingresar el registro porque no hay un tiempo de garantía especificado para el artículo o al menos indicar con un cero que no hay garantía</texto>
+		<detalles>Se intenta añadir un artículo nuevo pero no hay un número de meses de garantía que puede ser cero o cualquier número entero</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0029</codigo>
+		<tipoMensaje>CRUD  Artículo</tipoMensaje>
+		<evento>La URL Especificada no es una URL válida</evento>
+		<texto>No se puede ingresar el registro porque no hay una url de video válida para el artículo.</texto>
+		<detalles>Se intenta añadir un artículo nuevo pero no hay una url válida para el campo de video</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0030</codigo>
+		<tipoMensaje>CRUD  Artículo</tipoMensaje>
+		<evento>La URL Especificada no es una URL válida pero no usa el protocolo http</evento>
+		<texto>No se puede ingresar el registro porque la url no utiliza el esquema http</texto>
+		<detalles>Se intenta añadir un artículo nuevo pero la url no utiliza el protocolo http</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0031</codigo>
+		<tipoMensaje>CRUD  Artículo</tipoMensaje>
+		<evento>No hay una Meta Descripción para insertar</evento>
+		<texto>No se puede ingresar el registro porque no hay una Meta Descripción para mostrar</texto>
+		<detalles>Se intenta añadir un artículo nuevo pero no hay una meta descripción para insertar</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0032</codigo>
+		<tipoMensaje>CRUD  Artículo</tipoMensaje>
+		<evento>No hay una lista de Meta Palabras para insertar</evento>
+		<texto>No se puede ingresar el registro porque no hay una lista Meta Palabras para mostrar</texto>
+		<detalles>Se intenta añadir un artículo nuevo pero no hay una lista de meta palabras separadas por coma para insertar</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0033</codigo>
+		<tipoMensaje>CRUD  Artículo</tipoMensaje>
+		<evento>El número máximo de filtros activos es de 3</evento>
+		<texto>No se puede ingresar el registro porque hay más de 3 filtros activos</texto>
+		<detalles>Se intenta añadir un artículo nuevo pero se sobrepasan la cantidad de filtros artículos permitidos, 3 por artículo.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0034</codigo>
+		<tipoMensaje>CRUD  Artículo</tipoMensaje>
+		<evento>No hay una Categoría Seleccionada</evento>
+		<texto>No se puede ingresar el registro porque no hay una categoría seleccionada</texto>
+		<detalles>Se intenta añadir un artículo nuevo pero no hay una categoría seleccionada para insertar</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0035</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay registros en el grid de presentaciones artículo o no hay selección</evento>
+		<texto>Se debe tener un artículo seleccionado para iniciar la pantalla de edición de las presentaciones.</texto>
+		<detalles>El usuario hace click en el botón de edición de presentación artículo en la pantalla de artículos para abrir la pantalla de edición de prenstaciones</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0036</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay un Id de artículo para relacionar a la presentación de artículo</evento>
+		<texto>No se puede ingresar el registro porque no hay una identificación de artículo para relacionar</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay una identificación de artículo para relacionar con la presentación que se intenta ingresar</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0037</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay un código de barras</evento>
+		<texto>No se puede ingresar el registro porque no hay una código de barras para la presentación de artículo</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay codigo de barras para asociar o en su defecto un código cualquiera</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0038</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay un Título o Nombre de presentación artículo para insertar</evento>
+		<texto>No se puede ingresar el registro porque no hay un título para la presentación del artículo</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay un título de presentación de artículo  (nombre)</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0039</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay una talla para insertar</evento>
+		<texto>No se puede ingresar el registro porque no hay una talla para la presentación de artículo o no se ha especificado que no maneja talla</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay una talla, se debe especificar al menos que la presentación no tiene talla</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0040</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay una unidad de volumen para ingresar</evento>
+		<texto>No se puede ingresar el registro porque no hay una Unidad de Volumen para la presentación de artículo o no se ha especificado que no maneja un contenido volumetrico</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay una unidad de volumen, se debe especificar al menos que la presentación no maneja contenido volumetrico</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0041</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay una unidad de Masa para Ingresar</evento>
+		<texto>No se puede ingresar el registro porque no hay una Unidad de Masa para la presentación de artículo o no se ha especificado que no maneja una unidad de Masa (Peso)</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay una unidad de Masa, se debe especificar al menos que la presentación no maneja Masa (Peso)</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0042</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay una unidad de Longitud para ingresar</evento>
+		<texto>No se puede ingresar el registro porque no hay una unidad de Longitud para la presentación de artículo o no se ha especificado que no maneja una unidad de Longitud</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay una unidad de Longitud, se debe especificar al menos que la presentación no Maneja Longitud</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0043</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay un color Seleccionado para ingresar</evento>
+		<texto>No se puede ingresar el registro porque no hay un color para la presentación o no se ha especificado que no se maneja un color</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay un un color seleccionado, se debe especificar al menos que la presentación no maneja un Color</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0044</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay un Sabor para ingresar</evento>
+		<texto>No se puede ingresar el registro porque no hay un sabor para la presentación o no se ha especificado que no se maneja un sabor</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay un color seleccionado, se debe especificar al menos que la presentación no maneja un Color</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0045</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay una descripción para ingresar</evento>
+		<texto>No se puede ingresar el registro porque no hay una descripción para la presentación.</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay una descripción para ingresar.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0046</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay Existencias para ingresar</evento>
+		<texto>No se puede ingresar el registro porque no hay una cantidad de existencias para la presentación</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay una cantidad de existencias para ingresar o al menos especificar con un cero que no hay existencias</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0047</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>El valor que especifica existencias debe ser un número entero</evento>
+		<texto>No se puede ingresar el registro porque la cantidad especificada no es válida</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay una cantidad valida (valor numérico entero)</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0048</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay un precio para ingresar</evento>
+		<texto>No se puede ingresar el registro porque no hay un precio para la presentación</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay un precio para ingresar o al menos especificar como precio Cero</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0049</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>El valor que especifica el precio no es numérico</evento>
+		<texto>No se puede ingresar el registro porque la cantidad especificada no es válida</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay una cantidad válida (valor numérico con o sin decimales)</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0050</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay un costo para ingresar</evento>
+		<texto>No se puede ingresar el registro porque no hay un costo para la presentación</texto>
+		<detalles>se intenta añadir una presentación de artículo pero no hay un costo para ingresar o al menos especificar como costo cero</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0051</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>El valor que espedifica el csoto debe ser un numérico</evento>
+		<texto>No se puede ingresar el registro porque el valor especificado no es válido</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay una cantidad válida (valor numérico con o sin decimales)</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0052</codigo>
+		<tipoMensaje>CRUD  Artículo</tipoMensaje>
+		<evento>Error desconocido al intentar insertar o actualizar un artículo</evento>
+		<texto>No se puede ingresar el registro debido a un error desconocido, consulte con el administrador del sistema</texto>
+		<detalles>Se intenta añadir un artículo pero ocurrió un error controlado no conocido, se debe consultar el log de errores.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0053</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>No hay una unidad de presentación para ingresar</evento>
+		<texto>No se puede ingresar el registro porque no hay una unidad de presentación o no se ha especirficado que no maneja unidad de presentación</texto>
+		<detalles>Se intenta añadir una presentación de artículo pero no hay una unidad de presentación para ingresar o al menos no se ha especiicado que no se maneja una.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0054</codigo>
+		<tipoMensaje>Configuración Catalogo PDF por Categorías</tipoMensaje>
+		<evento>No hay una Categoría Seleccionada</evento>
+		<texto>No se puede ingresar el registro porque no hay una categoría seleccionada</texto>
+		<detalles>Se intenta añadir una configuración por categoría al catálogo pero no hay una categoría para añadir</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0057</codigo>
+		<tipoMensaje>Configuración Banner Principal</tipoMensaje>
+		<evento>Error desconocido al intentar insertar o actualizar la Configuración</evento>
+		<texto>No se puede guardar la información debiro a un error desconocido, consulte con el administrador del sistema</texto>
+		<detalles>Se intenta cuardar una configuración ya sea por inserción o por actulización pero ha ocurrido un error a nivel de bases de datos</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0058</codigo>
+		<tipoMensaje>Configuración Banner Principal</tipoMensaje>
+		<evento>Insertar o actualizar la configuración del banner principal</evento>
+		<texto>La configuración fue Actualizada exitosamente.</texto>
+		<detalles>Se ingresa el primer registro o se actualiza el existente para la la configuración del banner</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0059</codigo>
+		<tipoMensaje>CRUD Presentación Artículo</tipoMensaje>
+		<evento>Hay presentaciones de artículo asociadas</evento>
+		<texto>No se puede eliminar el registro porque hay al menos una presentación de artículo asociada</texto>
+		<detalles>Se intenta eliminar un artículo pero tiene presentaciones asociadas, solo se puede eliminar un artículo cuando no tiene presentaciones asociadas en el sistema.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0060</codigo>
+		<tipoMensaje>CRUD Registro Usuario</tipoMensaje>
+		<evento>El documento de identidad ya se encuentra registrado.</evento>
+		<texto>No se puede ingresar el registro porque el documento de identidad ya se encuentra registrado</texto>
+		<detalles>Se intenta añadir un usuario nuevo, pero ya está registrado su documento, el administrador del sistema podrá arreglar el inconveniente telefónicamente</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0061</codigo>
+		<tipoMensaje>CRUD Registro Usuario</tipoMensaje>
+		<evento>La dirección del Email ya se encuentra registrada.</evento>
+		<texto>No se puede ingresar el registro porque el correo electrónico ya se encuentra registrado</texto>
+		<detalles>Se intenta añadir un usuario nuevo, pero ya está registrado su dirección de correo, el administrador del sistema podrá arreglar el inconveniente telefónicamente</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0062</codigo>
+		<tipoMensaje>Inicio de Sesión</tipoMensaje>
+		<evento>El usuario y/o la contraseña se encuentra errada</evento>
+		<texto>Nombre de Usuario y/o Contraseña incorrecta</texto>
+		<detalles>Se intenta iniciar sesión en la aplicación web, pero el usuario o la contraseña son incorrectas, o el usuario no se encuentra registrado</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0063</codigo>
+		<tipoMensaje>Carga Descarga Inventario</tipoMensaje>
+		<evento>Codigo de barras vacío</evento>
+		<texto>El código de barras no puede estar vacío</texto>
+		<detalles>Se intenta hacer una descarga de inventario pero no hay un codigo de barras para buscar</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0064</codigo>
+		<tipoMensaje>Carga Carga Inventario</tipoMensaje>
+		<evento>Codigo de barras vacío</evento>
+		<texto>El código de barras no puede estar vacío</texto>
+		<detalles>Se intenta hacer una carga de inventario pero no hay un codigo de barras para buscar</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0065</codigo>
+		<tipoMensaje>Carga Descarga Inventario</tipoMensaje>
+		<evento>Cantidad, Cero en input descarga inventario</evento>
+		<texto>La cantidad a descargar no puede ser cero</texto>
+		<detalles>Se intenta hacer una descarga de inventario pero la cantidad ingresada a descargar es cero</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0066</codigo>
+		<tipoMensaje>Carga Carga Inventario</tipoMensaje>
+		<evento>Cantidad, Cero en input carga inventario</evento>
+		<texto>La cantidad a cargar no puede ser cero</texto>
+		<detalles>Se intenta hacer una carga de inventario pero la cantidad ingresada a cargar es cero</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0067</codigo>
+		<tipoMensaje>Carga Descarga Inventario</tipoMensaje>
+		<evento>Cantidad vacia en la descarga de inventario (en presentación)</evento>
+		<texto>La cantidad a Descargar no puede estar vacía</texto>
+		<detalles>Se intenta hacer una descarga de inventario pero la cantidad en el campo de texto está vacía</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0068</codigo>
+		<tipoMensaje>Carga Carga Inventario</tipoMensaje>
+		<evento>Cantidad vacía en la carga de inventario (en presentación)</evento>
+		<texto>La cantidad a cargar no puede estar vacía</texto>
+		<detalles>Se intenta hacer una carga de inventario pero la cantidad en el campo de texto está vacía</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0069</codigo>
+		<tipoMensaje>Carga Descarga Inventario</tipoMensaje>
+		<evento>Cantidad no numérica a cargar o descargar (En presentación)</evento>
+		<texto>La cantidad tiene que ser numerica</texto>
+		<detalles>Se intenta hacer una carga o una descarga de de inventario pero el dato no es numérico</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0070</codigo>
+		<tipoMensaje>Carga Descarga Inventario</tipoMensaje>
+		<evento>Cantidad negativa en la descarga de inventario (En presentación)</evento>
+		<texto>La cantidad a descargar no puede ser negativa</texto>
+		<detalles>Se intenta hacer una descarga de inventario pero el dato es un número negativo</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0071</codigo>
+		<tipoMensaje>Carga Carga Inventario</tipoMensaje>
+		<evento>Cantidad negativa en la carga de inventario (En presentación)</evento>
+		<texto>La cantidad a cargar no puede ser negativa</texto>
+		<detalles>Se intenta hacer una carga de inventario pero el dato es un número negativo</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0072</codigo>
+		<tipoMensaje>Carga Descarga Inventario</tipoMensaje>
+		<evento>Codigo de barras no encontado en base de datos</evento>
+		<texto>Código de barras no encontrado</texto>
+		<detalles>Se intenta hacer una descarga de inventario pero el código de barras no fue encontrado en la base de datos</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0073</codigo>
+		<tipoMensaje>Carga Carga Inventario</tipoMensaje>
+		<evento>Codigo de barras no encontado en base de datos</evento>
+		<texto>Código de barras no encontrado</texto>
+		<detalles>Se intenta hacer una descarga de inventario pero el código de barras no fue encontrado en la base de datos</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0074</codigo>
+		<tipoMensaje>Carga Descarga Inventario</tipoMensaje>
+		<evento>Cantidad Cero en Base de datos antes de ejecutar la descarga de inventario</evento>
+		<texto>No se puede hacer la descarga, el inventario ya registra cero existencias</texto>
+		<detalles>Se intenta hacer una descarga de inventario, pero ya hay existencias cero en la base de datos</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0075</codigo>
+		<tipoMensaje>Carga Descarga Inventario</tipoMensaje>
+		<evento>Cantidad negativa en Base de datos antes de ejecutar la descarga de inventario</evento>
+		<texto>No se puede hacer la descarga, el inventario ya registra existencias negativas</texto>
+		<detalles>Se intenta hacer una descarga de inventario, pero ya hay existencias negativas en la base de datos</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0076</codigo>
+		<tipoMensaje>Carga Descarga Inventario</tipoMensaje>
+		<evento>Cantidad negativa en Base de datos después de ejecutar la descarga de inventario</evento>
+		<texto>No se puede hacer la descarga, el inventario registraría existencias negativas</texto>
+		<detalles>Se intenta hacer una descarga de inventario, pero ya hay existencias negativas en la base de datos</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0077</codigo>
+		<tipoMensaje>Carga Carga Inventario</tipoMensaje>
+		<evento>Operación de carga de inventario fue exitosa</evento>
+		<texto>El registro fue ingresado exitosamente en el sistema</texto>
+		<detalles>Se ingresa un registro nuevo en la base de datos pasando todos los controles correspondientes</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0078</codigo>
+		<tipoMensaje>Carga Descarga Inventario</tipoMensaje>
+		<evento>Operación de descarga de inventario fue exitosa</evento>
+		<texto>Desarga de inventario exitosa</texto>
+		<detalles>La descarga de inventario fue exitosa</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0079</codigo>
+		<tipoMensaje>CRUD Presentación Artículo Eliminar</tipoMensaje>
+		<evento>Hay registros relacionados</evento>
+		<texto>No se puede eliminar el elemento porque tiene ventas asociadas</texto>
+		<detalles>Se intenta eliminar un elemento de la tabla PresentacionArticulo pero hay registros asociados en una o ambas tablas  DetalleVenta y DetalleVentaWeb</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0080</codigo>
+		<tipoMensaje>CRUD Presentación Artículo Eliminar</tipoMensaje>
+		<evento>Hay registros relacionados</evento>
+		<texto>No se puede eliminar el elemento porque tiene movimientos asociados en el kardex</texto>
+		<detalles>Se intenta eliminar un elemento de la tabla PresentacionArticulo pero hay registros asociados en la tabla de kardex</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0081</codigo>
+		<tipoMensaje>CRUD Insertar Elemento</tipoMensaje>
+		<evento>Insertar un elemento</evento>
+		<texto>El registro no pudo ser ingresado por un error desconocido</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, y se dispara un error general</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0082</codigo>
+		<tipoMensaje>CRUD Insertar Kadex</tipoMensaje>
+		<evento>Tanto CantidadEntrada como Cantidad de Salida son diferentes a Cero</evento>
+		<texto>Tando CantidadEntrada como Cantidad de Salida son diferentes a Cero, un valor debe ser cero y el otro debe ser diferente de cero</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición de una sola cantidad diligenciada</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0083</codigo>
+		<tipoMensaje>CRUD Insertar Kadex</tipoMensaje>
+		<evento>Tanto CantidadEntrada como Cantidad de Salida son Cero</evento>
+		<texto>Tando CantidadEntrada como Cantidad de Salida son Cero, un valor debe ser cero y el otro debe ser diferente de cero</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición de una sola cantidad diligenciada</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0084</codigo>
+		<tipoMensaje>CRUD Insertar Kadex (En PresentaciónArticulo)</tipoMensaje>
+		<evento>Cantidad de Salida es diferente a Cero</evento>
+		<texto>La cantidad de salida en kardex, es debe ser cero al crear la presentación de Artículo</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición, la cantidad de Salida en el registro del Kardex tiene que ser Cero al crear una presentación de Artículo para no generar stock negativo en kardex ni en existencias</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0085</codigo>
+		<tipoMensaje>CRUD Insertar Kadex (En PresentaciónArticulo)</tipoMensaje>
+		<evento>La cantidad de Entrada es negativa</evento>
+		<texto>La cantidad de entrada en kardex, debe ser cero, o ser posiriva, al crear la presentación de Artículo</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición, la cantiad de Entrada en el registro del Kardex tiene que ser Cero, o superior a cero al crear una presentación de artículo, para indicar si se inicia con stock vacío, o con existencias.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0086</codigo>
+		<tipoMensaje>CRUD Insertar PresentacionArticulo</tipoMensaje>
+		<evento> Ambas formas de descuento no pueden estar Activas a la vez</evento>
+		<texto>Ambas formas de descuento están activas a la vez.</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición de una sola forma de descuento activa para la presentación del artículo teniendo el campo UsarDescuento en true</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0087</codigo>
+		<tipoMensaje>CRUD Insertar PresentacionArticulo</tipoMensaje>
+		<evento> Ambas formas de descuento no pueden estar Inactivas a la vez</evento>
+		<texto>Ambas formas de descuento están inactivas a la vez.</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición de una sola forma de descuento inactiva para la presentación del artículo  teniendo el campo UsarDescuento en true</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0088</codigo>
+		<tipoMensaje>CRUD Insertar PresentacionArticulo</tipoMensaje>
+		<evento>El porcentaje configurado está bien, pero el valor fijo debería ser cero</evento>
+		<texto>Cuando se configura usar un porcenaje de descuento, el valor fijo de descuento debe ser cero</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición de una sola forma de descuento configurada para la presentación del artículo, teniendo los campos UsarDescuento en true y usarPorcentajeDescuento en true, el campo ValorFijoDescuento debe ser cero</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0089</codigo>
+		<tipoMensaje>CRUD Insertar PresentacionArticulo</tipoMensaje>
+		<evento>El porcentaje configurado es incorrecto</evento>
+		<texto>Cuando se configura usar un porcenaje de descuento, el valor del porcentaje debe ser positivo</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición de valor para el porcentaje de descuento, este debe ser positivo</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0090</codigo>
+		<tipoMensaje>CRUD Insertar PresentacionArticulo</tipoMensaje>
+		<evento>El Valor fijo configurado está bien, pero el porcentaje debe ser cero</evento>
+		<texto>Cuando se confiuga usar un valor fijo de descuento, el porcentaje de descuento tiene que ser cero</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición de una sola forma de descuento configurada para la presentación del artículo, teniendo los campos UsarDescuento en true y usarValorFijoDescuento en true, el campo ValorPorcentajeDescuento debe ser cero</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0091</codigo>
+		<tipoMensaje>CRUD Insertar PresentacionArticulo</tipoMensaje>
+		<evento>El valor fijo configurado es incorrecto</evento>
+		<texto>Cuando se configura usar un valor fijo de descuento, el valor fijo del descuento debe ser positivo</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición de valor fijo de descuento este debe ser positivo</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0092</codigo>
+		<tipoMensaje>CRUD Insertar PresentacionArticulo</tipoMensaje>
+		<evento>Las fechas de inicio y término de descuento están fuera de rango</evento>
+		<texto>La fecha de inicio de descuento debe ser inferior a la fecha final de descuento</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición de rango de valores entre las fechas inicial y final de desuento, la fecha inicial debe ser anterior a la fecha de finalización de descuento</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0093</codigo>
+		<tipoMensaje>CRUD Insertar PresentacionArticulo</tipoMensaje>
+		<evento>Las fechas de inicio y término de descuento están fuera de rango</evento>
+		<texto>Lás fechas de inicio y final de descuento no están diligenciadas</texto>
+		<detalles>Se intenta ingresar un registro nuevo en la base de datos, no se cumple la condición de diligenciamiento de fechas no se cumple, alguna de las fechas, de inicio y término de descuento no fue diligenciada</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0094</codigo>
+		<tipoMensaje>CRUD Actualizar PresentacionArticulo</tipoMensaje>
+		<evento>Cantidad de Salida debe ser positiva o cero</evento>
+		<texto>La cantiad de salida del Cardex no puede ser negativa</texto>
+		<detalles>Se intenta actualizar la presentación de artículo, pero se hace en transacción con una inserción en la tabla de kardex, esta no puede tener valores negativos ni en la variable de entrada ni en la variable de salida</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0095</codigo>
+		<tipoMensaje>CRUD Actualizar PresentacionArticulo</tipoMensaje>
+		<evento>Cantidad de Entrada debe ser positiva o cero</evento>
+		<texto>La cantidad de entrada del Cardex no puede ser negativa</texto>
+		<detalles>Se intenta actualizar la presentación de artículo, pero se hace en transacción con una inserción en la tabla de kardex, esta no puede tener valores negativos ni en la variable de entrada ni en la variable de salida</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0096</codigo>
+		<tipoMensaje>CRUD Insertar Actualizar PresentacionArticulo</tipoMensaje>
+		<evento>El código EAN tiene más de 30 caracteres</evento>
+		<texto>El código de Barras EAN no puede tener más de 18 caracteres</texto>
+		<detalles>Se intenta ingresar un registro nuevo, o se intenta actualizar uno ya existente con un Codigo de Barras EAN13 de más de 18 caracteres. Si se permite pasar más de 18 caracteres al ingresar a la base de datos quedarán truncados, ocasionando posibles códigos duplicados.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0097</codigo>
+		<tipoMensaje>CRUD Insertar Actualizar PresentacionArticulo</tipoMensaje>
+		<evento>El nombre de la presentación de artículo tiene más de 100 caracteres</evento>
+		<texto>El nombre de a presentación del artículo no puede tener más de 100 caracteres</texto>
+		<detalles>Se intenta ingresar un registro nuevo, o se intenta actualizar uno ya existente con un nombre de presentación de artículo de más de 100 caracteres. Si se permite pasar más de 100 caracteres al ingresar a la base de datos quedarán truncados, ocasionando posibles presentaciones duplicadas</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0098</codigo>
+		<tipoMensaje>CRUD Insertar PresentacionArticulo</tipoMensaje>
+		<evento>El Codigo de barras ya existe en base de datos</evento>
+		<texto>Ya hay una presentación de artículo utilizando el código de barras</texto>
+		<detalles>Se intenta ingresar un registro nuevo, pero ya hay un codigo de barras asociado a otra presentación de artículo, si se permite, dispara una excepción en la capa de datos por la restricción de duplicidad del campo.</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0099</codigo>
+		<tipoMensaje>CRUD Actualizar PresentacionArticulo</tipoMensaje>
+		<evento>El Codigo de barras ya existe en base de datos para otra presentacion de artículo</evento>
+		<texto>Ya hay otra presentación de artículo utilizando el código de barras</texto>
+		<detalles>Se inenta actualizar la presentación de artículo pero ya hay otra presentación de artículo asociado a ese código de barras</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0100</codigo>
+		<tipoMensaje>CRUD Insertar Actualizar Email</tipoMensaje>
+		<evento>Formato de Email no Válido</evento>
+		<texto>El formato de Email no es válido</texto>
+		<detalles>Se intenta Ingresar o Actualizar un registro que contiene un formato de E-Mail que no es válido o está incompleto</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0099</codigo>
+		<tipoMensaje>CRUD Actualizar PresentacionArticulo</tipoMensaje>
+		<evento>El Codigo de barras ya existe en base de datos para otra presentacion de artículo</evento>
+		<texto>Ya hay otra presentación de artículo utilizando el código de barras</texto>
+		<detalles>Se inenta actualizar la presentación de artículo pero ya hay otra presentación de artículo asociado a ese código de barras</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0100</codigo>
+		<tipoMensaje>CRUD Insertar Actualizar Email</tipoMensaje>
+		<evento>Formato de Email no Válido</evento>
+		<texto>El formato de Email no es válido</texto>
+		<detalles>Se intenta Ingresar o Actualizar un registro que contiene un formato de E-Mail que no es válido o está incompleto</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0101</codigo>
+		<tipoMensaje>Configuración Banner Principal</tipoMensaje>
+		<evento>No se ha gestionado el primer Big Banner</evento>
+		<texto>Se debe gestionar la primera imágen para el Big Banner</texto>
+		<detalles>Al gestionar las imágenes del banner, es obligatorio diligenciar la primera imagen del banner</detalles>
+	</mensaje>
+	<mensaje>
+		<codigo>0102</codigo>
+		<tipoMensaje>Configuración Banner Principal</tipoMensaje>
+		<evento>No se ha gestionado el primer Small Banner</evento>
+		<texto>Se debe gestionar la primera imágen para el Small Banner</texto>
+		<detalles>Al gestionar las imágenes del banner, es obligatorio diligenciar la primera imagen del small banner</detalles>
+	</mensaje>
+</mensajes>

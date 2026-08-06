@@ -1,0 +1,1225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4EE56908-53CB-4A50-BAE0-7B1DA48B41B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fachada.WebPublica</RootNamespace>
+    <AssemblyName>Fachada.WebPublica</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>FachadaWebPublica.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Pruebas|AnyCPU'">
+    <OutputPath>bin\Pruebas\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Build.Framework.17.4.0\lib\net472\Microsoft.Build.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Albaran.cs" />
+    <Compile Include="Articulo.cs" />
+    <Compile Include="BannerPrincipal.cs" />
+    <Compile Include="Busqueda.cs" />
+    <Compile Include="Carrito.cs" />
+    <Compile Include="Categoria.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="ConfiguracionPieDePagina.cs" />
+    <Compile Include="Direccion.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="Marca.cs" />
+    <Compile Include="PaisDepartamentoCiudad.cs" />
+    <Compile Include="PresentacionArticulo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sabor.cs" />
+    <Compile Include="Service References\ServicioAlbaran\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioArticulo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioBancoRepublicaCO\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioBannerPrincipal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioBusqueda\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioCarrito\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioCategoria\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioCliente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioColor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioConfiguracionPieDePagina\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioDireccion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioLogin\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioMarca\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioPaisDepartamentoCiudad\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioPresentacionArticulo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioSabor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioTalla\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioTRM\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioUnidadLongitud\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioUnidadMasa\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioUnidadPresentacion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioUnidadVolumen\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Talla.cs" />
+    <Compile Include="UnidadLongitud.cs" />
+    <Compile Include="UnidadMasa.cs" />
+    <Compile Include="UnidadPresentacion.cs" />
+    <Compile Include="UnidadVolumen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ContratosWeb\ContratosWeb.csproj">
+      <Project>{4e853789-4f1c-47c0-832d-745439714b3c}</Project>
+      <Name>ContratosWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EntidadesWeb\EntidadesWeb.csproj">
+      <Project>{f4362bf5-3d0f-4b66-bf9e-7af4dc55fcc4}</Project>
+      <Name>EntidadesWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logging\Logging.csproj">
+      <Project>{025d37af-05ed-4aee-b4eb-64f8633f8912}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MensajesWeb\MensajesWeb.csproj">
+      <Project>{925fec3d-f81f-4ca4-b98e-0443eb1f42e7}</Project>
+      <Name>MensajesWeb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FachadaWebPublica.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\EntidadesWeb.Articulo.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Articulo1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Banco.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Banco1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.BannerPrincipal.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.BannerPrincipal1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Busqueda.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Carrito.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Categoria.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Categoria1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Ciudad.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Cliente.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Color.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Color1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ConfiguracionMediosDePagoPayU.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ConfiguracionMediosDePagoPayU1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ConfiguracionPieDePagina.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ConfiguracionPieDePagina1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.DatosPersonales.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Departamento.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Direccion.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.DireccionParaGrid.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Franquicia.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ItemCarrito.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Marca.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Marca1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Pais.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Pais1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.PresentacionArticulo.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.PresentacionArticulo1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ResultadoTransaccion.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ResultadoTransaccion1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ResultadoTransaccion2.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ResultadoTransaccion3.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ResultadoTransaccion4.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ResultadoTransaccion5.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.ResultadoTrasaccionPayU.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Sabor.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Sabor1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Talla.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Talla1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.UnidadLongitud.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.UnidadLongitud1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.UnidadMasa.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.UnidadMasa1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.UnidadPresentacion.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.UnidadPresentacion1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.UnidadVolumen.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.UnidadVolumen1.datasource" />
+    <None Include="Properties\DataSources\EntidadesWeb.Venta.datasource" />
+    <None Include="Service References\ServicioAlbaran\Albaran.wsdl" />
+    <None Include="Service References\ServicioAlbaran\Albaran.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioAlbaran\Albaran1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioAlbaran\Albaran2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioArticulo\Articulo.wsdl" />
+    <None Include="Service References\ServicioArticulo\Articulo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioArticulo\Articulo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioArticulo\Articulo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioArticulo\Articulo3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioArticulo\Articulo4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.Account.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.ACL.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.addReportToPageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.applyReportDefaultsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.applyReportParamsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.AuthResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.cancelJobResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.cancelQueryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.CatalogObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.clearQueryCacheResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.copyItem2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.copyItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.createFolderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.createLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.deleteIBotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.deleteItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.deleteResultSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.describeColumnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.describeSubjectAreaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.describeTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.endPageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.ErrorInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.evaluateConditionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.evaluateInlineConditionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.executeIBotNowResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.executeSQLQueryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.executeXMLQueryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.exportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.fetchNextResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.forgetAccountsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.generateReportSQLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getAccountsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getCommonBodyHtmlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getConditionCustomizableReportElementsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getCountsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getCurUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getGlobalPrivilegeACLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getGlobalPrivilegesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getGroupsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getHeadersHtmlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getHtmlForPageWithOneReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getHtmlForReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getItemInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getJobInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getMembersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getPermissionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getPrivilegesStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getPromptedColumnsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getPromptedFiltersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getSessionEnvironmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getSessionVariablesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getSubItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.getSubjectAreasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.impersonateexResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.impersonateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.ImportError.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.importResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.isMemberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.ItemInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.JobInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.joinGroupsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.keepAliveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.leaveGroupsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.logoffResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.logonexResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.logonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.maintenanceModeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.markForReplicationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.moveIBotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.moveItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.pasteItem2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.prepareCacheResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.Privilege.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.purgeCacheResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.purgeLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.QueryResults.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.readObjectsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.removeFolderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.renameAccountsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.SAColumn.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.SASubjectArea.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.SATable.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.saveResultSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.sendMessageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.SessionEnvironment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.setBridgeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.setItemAttributesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.setItemPropertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.setOwnershipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.startPageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.subscribeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.unsubscribeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.updateCatalogItemACLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.updateGlobalPrivilegeACLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.upgradeXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.writeIBotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.writeListFilesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\Fachada.WebPublica.ServicioBancoRepublicaCO.writeObjectsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioBancoRepublicaCO\saw.wsdl" />
+    <None Include="Service References\ServicioBannerPrincipal\BannerPrincipal.wsdl" />
+    <None Include="Service References\ServicioBannerPrincipal\BannerPrincipal.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioBannerPrincipal\BannerPrincipal1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioBannerPrincipal\BannerPrincipal2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioBannerPrincipal\BannerPrincipal3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioBusqueda\Busqueda.wsdl" />
+    <None Include="Service References\ServicioBusqueda\Busqueda.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioBusqueda\Busqueda1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioBusqueda\Busqueda2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioBusqueda\Busqueda3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCarrito\Carrito.wsdl" />
+    <None Include="Service References\ServicioCarrito\Carrito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCarrito\Carrito1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCarrito\Carrito2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCarrito\Carrito3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCarrito\Carrito41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCategoria\Categoria.wsdl" />
+    <None Include="Service References\ServicioCategoria\Categoria.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCategoria\Categoria1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCategoria\Categoria2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCategoria\Categoria3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCliente\Cliente.wsdl" />
+    <None Include="Service References\ServicioCliente\Cliente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCliente\Cliente1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioCliente\Cliente2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioColor\Color.wsdl" />
+    <None Include="Service References\ServicioColor\Color.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioColor\Color1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioColor\Color2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioColor\Color3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioConfiguracionPieDePagina\ConfiguracionPieDePagina.wsdl" />
+    <None Include="Service References\ServicioConfiguracionPieDePagina\ConfiguracionPieDePagina.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioConfiguracionPieDePagina\ConfiguracionPieDePagina1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioConfiguracionPieDePagina\ConfiguracionPieDePagina2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioConfiguracionPieDePagina\ConfiguracionPieDePagina3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioDireccion\Direccion.wsdl" />
+    <None Include="Service References\ServicioDireccion\Direccion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioDireccion\Direccion1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioDireccion\Direccion2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioDireccion\Direccion3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioLogin\Login.wsdl" />
+    <None Include="Service References\ServicioLogin\Login.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioLogin\Login1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioLogin\Login2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioLogin\Login3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioMarca\Marca.wsdl" />
+    <None Include="Service References\ServicioMarca\Marca.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioMarca\Marca1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioMarca\Marca2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioMarca\Marca3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioPaisDepartamentoCiudad\PaisDepartamentoCiudad.wsdl" />
+    <None Include="Service References\ServicioPaisDepartamentoCiudad\PaisDepartamentoCiudad.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioPaisDepartamentoCiudad\PaisDepartamentoCiudad1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioPaisDepartamentoCiudad\PaisDepartamentoCiudad2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioPaisDepartamentoCiudad\PaisDepartamentoCiudad3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioPresentacionArticulo\PresentacionArticulo.wsdl" />
+    <None Include="Service References\ServicioPresentacionArticulo\PresentacionArticulo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioPresentacionArticulo\PresentacionArticulo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioPresentacionArticulo\PresentacionArticulo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioPresentacionArticulo\PresentacionArticulo3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioSabor\Sabor.wsdl" />
+    <None Include="Service References\ServicioSabor\Sabor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioSabor\Sabor1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioSabor\Sabor2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioSabor\Sabor3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioTalla\Talla.wsdl" />
+    <None Include="Service References\ServicioTalla\Talla.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioTalla\Talla1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioTalla\Talla2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioTalla\Talla3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioTRM\Fachada.WebPublica.ServicioTRM.queryTCRMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioTRM\Fachada.WebPublica.ServicioTRM.tcrmResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioTRM\TCRMServicesWebService.wsdl" />
+    <None Include="Service References\ServicioUnidadLongitud\UnidadLongitud.wsdl" />
+    <None Include="Service References\ServicioUnidadLongitud\UnidadLongitud.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadLongitud\UnidadLongitud1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadLongitud\UnidadLongitud2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadLongitud\UnidadLongitud3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadMasa\UnidadMasa.wsdl" />
+    <None Include="Service References\ServicioUnidadMasa\UnidadMasa.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadMasa\UnidadMasa1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadMasa\UnidadMasa2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadMasa\UnidadMasa3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadPresentacion\UnidadPresentacion.wsdl" />
+    <None Include="Service References\ServicioUnidadPresentacion\UnidadPresentacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadPresentacion\UnidadPresentacion1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadPresentacion\UnidadPresentacion2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadPresentacion\UnidadPresentacion3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadVolumen\UnidadVolumen.wsdl" />
+    <None Include="Service References\ServicioUnidadVolumen\UnidadVolumen.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadVolumen\UnidadVolumen1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadVolumen\UnidadVolumen2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioUnidadVolumen\UnidadVolumen3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServicioAlbaran\" />
+    <WCFMetadataStorage Include="Service References\ServicioArticulo\" />
+    <WCFMetadataStorage Include="Service References\ServicioBancoRepublicaCO\" />
+    <WCFMetadataStorage Include="Service References\ServicioBannerPrincipal\" />
+    <WCFMetadataStorage Include="Service References\ServicioBusqueda\" />
+    <WCFMetadataStorage Include="Service References\ServicioCarrito\" />
+    <WCFMetadataStorage Include="Service References\ServicioCategoria\" />
+    <WCFMetadataStorage Include="Service References\ServicioCliente\" />
+    <WCFMetadataStorage Include="Service References\ServicioColor\" />
+    <WCFMetadataStorage Include="Service References\ServicioConfiguracionPieDePagina\" />
+    <WCFMetadataStorage Include="Service References\ServicioDireccion\" />
+    <WCFMetadataStorage Include="Service References\ServicioLogin\" />
+    <WCFMetadataStorage Include="Service References\ServicioMarca\" />
+    <WCFMetadataStorage Include="Service References\ServicioPaisDepartamentoCiudad\" />
+    <WCFMetadataStorage Include="Service References\ServicioPresentacionArticulo\" />
+    <WCFMetadataStorage Include="Service References\ServicioSabor\" />
+    <WCFMetadataStorage Include="Service References\ServicioTalla\" />
+    <WCFMetadataStorage Include="Service References\ServicioTRM\" />
+    <WCFMetadataStorage Include="Service References\ServicioUnidadLongitud\" />
+    <WCFMetadataStorage Include="Service References\ServicioUnidadMasa\" />
+    <WCFMetadataStorage Include="Service References\ServicioUnidadPresentacion\" />
+    <WCFMetadataStorage Include="Service References\ServicioUnidadVolumen\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCliente\Cliente.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCliente\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCliente\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCliente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioDireccion\Direccion.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioDireccion\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioDireccion\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioDireccion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioLogin\Login.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioLogin\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioLogin\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioLogin\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioPaisDepartamentoCiudad\PaisDepartamentoCiudad.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioPaisDepartamentoCiudad\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioPaisDepartamentoCiudad\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioPaisDepartamentoCiudad\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCategoria\Categoria.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCategoria\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCategoria\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCategoria\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioArticulo\Articulo.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioArticulo\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioArticulo\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioArticulo\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioPresentacionArticulo\PresentacionArticulo.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioPresentacionArticulo\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioPresentacionArticulo\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioPresentacionArticulo\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadMasa\UnidadMasa.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadMasa\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadMasa\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadMasa\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadVolumen\UnidadVolumen.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadVolumen\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadVolumen\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadVolumen\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadLongitud\UnidadLongitud.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadLongitud\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadLongitud\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadLongitud\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioTalla\Talla.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioTalla\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioTalla\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioTalla\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioColor\Color.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioColor\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioColor\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioColor\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioSabor\Sabor.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioSabor\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioSabor\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioSabor\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCarrito\Carrito.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCarrito\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCarrito\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioCarrito\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadPresentacion\UnidadPresentacion.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadPresentacion\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadPresentacion\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioUnidadPresentacion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioBusqueda\Busqueda.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioBusqueda\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioBusqueda\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioBusqueda\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioTRM\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioTRM\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioTRM\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioBancoRepublicaCO\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioBancoRepublicaCO\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioBancoRepublicaCO\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioAlbaran\Albaran.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioAlbaran\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioAlbaran\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioAlbaran\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioConfiguracionPieDePagina\ConfiguracionPieDePagina.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioConfiguracionPieDePagina\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioConfiguracionPieDePagina\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioConfiguracionPieDePagina\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioMarca\Marca.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioMarca\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioMarca\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioMarca\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioBannerPrincipal\BannerPrincipal.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioBannerPrincipal\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioBannerPrincipal\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioBannerPrincipal\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets" Condition="Exists('..\..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

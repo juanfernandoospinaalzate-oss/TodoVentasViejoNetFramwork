@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="24cacdcf-93cc-4409-a8e0-0b1c4ade3ce0" name="CasosDeUsoUnidadLongitud" linkedPackageId="bd724476-c687-4417-8aed-03374403fa8b" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="b3ce6c4d-7a3e-4734-8a15-be941d95ce8e" name="Usuario General" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d388df69-3ff8-476b-9972-280607bae3d9" />
+        <targetEnds>
+          <association Id="eebdb624-5de4-4575-be12-0e63385fb2bd" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0001 Buscar Tallas" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c09009f0-ca18-4e65-aa15-830583321072" LastKnownName="0001 Buscar Longitud" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3a2343b0-f7d1-458d-a11a-106252cafea0" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3c1f6132-6a83-486e-8d0b-bb052cb57fe2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7be66c03-2081-4649-be15-3adaad6b1b88" name="0001 Buscar Tallas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5ba7d98a-bb99-42f4-8cfe-16138ca6a4b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7dc547d5-5ea1-4ced-8d79-6936745767e2" />
+          </association>
+          <association Id="e2ddd317-12e1-471e-a6d5-d2eccb072fd9" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0002 Añadir Talla" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="858f968e-153c-4f3d-afdc-67c22827dd29" LastKnownName="0002 Añadir Longitud" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2737ac9c-eabb-4631-8fe8-e8850b516801" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ce7cfb6e-0923-4ebd-9a9e-992177d136b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf8bc71c-a0cb-4e3f-95f8-63243cf3b277" name="0002 Añadir Talla" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8f5f833f-549b-4f9b-8be1-f2710781cf65" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="db6a28e6-8c1d-465e-b7b6-ebc8347bdcb9" />
+          </association>
+          <association Id="d105b5d7-2013-4662-b5d6-ff974d46eaf8" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0003 Modificar Talla" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e1339b89-2b61-4c19-902a-c6caebefd584" LastKnownName="0003 Modificar Longitud" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="365c6a57-0636-4679-b524-c2246a11ee00" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="067438c8-ac73-4bb6-855c-c2360499f311" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d55fb22f-2f4f-46aa-aa73-f180be198d6b" name="0003 Modificar Talla" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4ff37607-7711-41a0-8e54-9f992a8d57c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c0a825e7-4e35-4be7-973e-642862118c05" />
+          </association>
+          <association Id="24b68b54-76a1-4612-8219-94d2fbf6d771" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0004 Eliminar Talla" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ad973891-3980-4ed7-bdd0-db67a21c74fb" LastKnownName="0004 Eliminar Longitud" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5a15274b-afe1-47b0-8c77-04ae12af681b" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="192cb52b-b51a-4cd2-8239-ec2265be12c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ff5f1370-0bcd-4111-8e1e-8202e071102e" name="0004 Eliminar Talla" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ebbde777-b853-4f3b-9400-39c0b7715b8a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8853d40b-9024-4524-8816-c18ed8b8a9b8" />
+          </association>
+          <association Id="e54aae42-fd74-4d71-bd1a-7c8dfac76233" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0005  Listar Tallas" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="50224a76-d63e-4929-8505-38c148acc8d9" LastKnownName="0005  Listar Longitud" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0315d2a6-f980-4542-b794-9c81f2a80d6e" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f79ca86d-0664-4155-9be2-a29285428c9b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7cc8c285-94a0-490a-83e8-058e050536cb" name="0005  Listar Tallas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="78140566-0b42-46d3-bb0f-052955d49408" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="889a0b17-8593-499f-a90d-217da86767ae" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="858f968e-153c-4f3d-afdc-67c22827dd29" name="0002 Añadir Longitud" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0cd0fcc-e153-4fa7-aaa9-3d9877f5d6e1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e1339b89-2b61-4c19-902a-c6caebefd584" name="0003 Modificar Longitud" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="82e849c5-7b68-4c25-a064-f09168707f9a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ad973891-3980-4ed7-bdd0-db67a21c74fb" name="0004 Eliminar Longitud" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c1ec5696-b1b9-41d4-94b5-bac5716f83ae" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="50224a76-d63e-4929-8505-38c148acc8d9" name="0005  Listar Longitud" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="46dcdc4a-d6de-4e4d-97c3-a20adfbe1b5a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c09009f0-ca18-4e65-aa15-830583321072" name="0001 Buscar Longitud" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c16046ae-af58-4c31-8c70-0b2d9a0c27be" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="a017c936-aa80-4bc4-86a8-777439ffdc62" name="Subsystem1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b1c3f8d1-7290-426c-b12b-c3095bb42687" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4673b9af-deb7-4bc8-9b93-bd469c8e8f63" name="0002 Añadir Longitud" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3ed78614-4c04-4087-bb0e-1a11a5d0e101" />
+        <subjects>
+          <subsystemMoniker Id="a017c936-aa80-4bc4-86a8-777439ffdc62" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4c5a5a5a-1315-4ec3-9409-cf03c588b432" name="0003 Modificar Longitud" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="141351e4-69b8-44a1-9fc5-56714019e9a2" />
+        <subjects>
+          <subsystemMoniker Id="a017c936-aa80-4bc4-86a8-777439ffdc62" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4972b0f0-8815-4c9e-913e-3d58835f0bff" name="0004 Eliminar Longitud" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf46d0df-fc35-4f3a-9a80-8cd74480cd9d" />
+        <subjects>
+          <subsystemMoniker Id="a017c936-aa80-4bc4-86a8-777439ffdc62" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5d304415-093a-416a-95dc-26672046c08a" name="0005  Listar Longitud" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="44d566ad-6190-4097-965a-6c4a901588c1" />
+        <subjects>
+          <subsystemMoniker Id="a017c936-aa80-4bc4-86a8-777439ffdc62" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="3db6e003-dea5-4903-a956-3ae53e2e0a17" name="Subsystem2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9a2b1b51-f4c4-4d1f-aacd-033151ca2933" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d2ba0a76-fcdd-4fe5-9a15-91850e0c2864" name="0001 Buscar Longitud" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4730f638-dfe1-4832-a4b3-52a4e00c4014" />
+        <subjects>
+          <subsystemMoniker Id="3db6e003-dea5-4903-a956-3ae53e2e0a17" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="bd724476-c687-4417-8aed-03374403fa8b" name="Modelado">
+    <elementDefinition Id="c1bdd0b8-49a6-4114-99ec-5412c296caa2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="284cf564-4df7-4c74-8296-43e7bea77df2">
+        <profileInstance Id="3346d395-e429-4e27-88f4-f42238845b40" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ee131ff1-668f-42fa-87e8-1775fe1ce849">
+        <profileInstance Id="e5c27f62-8a54-4997-9fbe-2720dea0737b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

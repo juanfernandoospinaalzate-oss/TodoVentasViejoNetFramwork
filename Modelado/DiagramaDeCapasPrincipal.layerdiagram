@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="50a27c06-c142-4237-a77c-5c16b324a29a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="ad75a4dc-209d-4888-99e4-7fb9f4fd40e3" name="Presentación">
+      <childLayers>
+        <layer Id="8957a43c-7ed5-4787-b5ec-3d8a8559b2e4" name="Aplicaciones Windows y Web">
+          <childLayers>
+            <layer Id="4bbb4fa8-6f55-49eb-b6a2-8fd93a630392" name="Inventario" />
+            <layer Id="76b0f94b-606e-426b-b7b6-c5f8798e7e32" name="POS" />
+            <layer Id="c0a32f03-f44b-4068-b19c-86423b33507a" name="CRM" />
+            <layer Id="0b6ae965-832d-4d16-9e1e-eda7d14078f7" name="Autenticación y autorización" />
+            <layer Id="a320bdfb-70fa-46cb-aa03-54ba79531e5d" name="Facturación" />
+            <layer Id="eaafc908-50bf-4769-b2d6-f0a09885b95c" name="Informes" />
+            <layer Id="9021fb9c-456f-463a-a051-716024775390" name="Etiquetas" />
+            <layer Id="9b725769-9f63-44f7-8899-c0b991e301cd" name="Contabilidad" />
+            <layer Id="be9a999f-996c-4bd1-9a57-573bc0eb0180" name="Generación Site Map" />
+            <layer Id="9bbfa8eb-5012-4cca-8f4f-d36111b5405d" name="Tablas Maestras" />
+            <layer Id="b0bb27c0-e858-42ed-a2ac-873e6ed08a3c" name="Publicidad y Mercadeo" />
+          </childLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="3cecfc4a-0ea8-4b60-8e72-2e66949381da" name="Fachada">
+      <childLayers>
+        <layer Id="3b86448a-4767-467d-8c8f-dd615bc0ba29" name="Inventario" />
+        <layer Id="09e50eae-5c24-4eca-a681-3660022e7472" name="POS" />
+        <layer Id="ef132f62-d4b7-400b-b4d0-f302bcb584ee" name="Facturación" />
+        <layer Id="5aecf4ab-d067-4925-b673-a390eebe5130" name="CRM" />
+        <layer Id="2c05928e-de37-4b48-b754-f0a59cb6355a" name="Autenticación y autorización" />
+        <layer Id="9c6404c1-c7b5-4a6a-b3ef-f142be785a0a" name="Informes" />
+        <layer Id="33ea3938-3d5b-42a0-b56f-0ba2e4695fa6" name="Etiquetas" />
+        <layer Id="59653864-1a1f-481d-80a6-7a634a706fcc" name="Contabilidad" />
+        <layer Id="2669c0d4-ddad-43af-8628-f388c7d58742" name="Tablas Maestras" />
+        <layer Id="d843fe1f-65b7-4bfe-a3cb-b80340c80a79" name="Generación Site Map" />
+        <layer Id="e649c9cf-de7f-451d-b542-f4bd2c1b77c7" name="Publicidad y Mercadeo" />
+      </childLayers>
+    </layer>
+    <layer Id="d2e5e912-7d41-4868-913f-7bbe9286cdbf" name="Reglas de Negocio">
+      <childLayers>
+        <layer Id="9e4801c3-b981-4cae-9d81-14edf4c8b76f" name="Inventario" />
+        <layer Id="d17b0fad-0fe3-4d32-980f-da672f50459e" name="POS" />
+        <layer Id="2c024614-6bf9-4d38-a825-87e6841cde2a" name="Facturación" />
+        <layer Id="7707ec76-ad27-433d-863d-173125211954" name="CRM" />
+        <layer Id="404f6c02-bf94-444c-b071-0f342936aa19" name="Autenticación y autorización" />
+        <layer Id="b5eb0d25-e5b4-4957-a1f2-4332acb7468e" name="Informes" />
+        <layer Id="36973cd2-b482-4749-8654-de759aa337a4" name="Etiquetas" />
+        <layer Id="afadf69b-803f-4716-ab74-7d4c0e88cc74" name="Contabilidad" />
+        <layer Id="2b824dfa-2f04-44d3-9c4a-8e1c95c530f4" name="Tablas Maestras" />
+        <layer Id="a779a7b0-d197-4903-b804-72afa8ab1a08" name="Generación Site Map" />
+        <layer Id="1c886488-b900-4b26-80f6-b0f772b5ad59" name="Publicidad y Mercadeo" />
+      </childLayers>
+    </layer>
+    <layer Id="0424d482-a0d7-4f27-adc1-a891b189603a" name="Utilidades">
+      <childLayers>
+        <layer Id="b5aef8bb-7d3b-40b0-967b-2e26e5b99e57" name="Componente PDF" />
+        <layer Id="ea48ec4a-f522-4bcb-afd0-9baee2850519" name="Imágenes" />
+      </childLayers>
+    </layer>
+    <layer Id="fc28c7c3-7604-4c4f-b11f-af23c0deacf9" name="Validación">
+      <childLayers>
+        <layer Id="1c04b41b-1c1a-4570-bb67-a24973ca47ef" name="Inventario" />
+        <layer Id="f4ccdb0c-f14b-489b-a777-4b1b05df37fc" name="POS" />
+        <layer Id="fdf98267-60d8-4cf9-8a65-7e0447d5f0a9" name="Facturación" />
+        <layer Id="6dbdb24a-e3cc-4155-ab2e-b4c7ba5cc986" name="CRM" />
+        <layer Id="f72f523b-a026-4006-b536-df4db15531fd" name="Autenticación y autorización" />
+        <layer Id="b63a3629-e28c-4a95-9c22-f779fd644792" name="Informes" />
+        <layer Id="63fff500-4ec7-49b3-8c70-9440b9a92d9c" name="Etiquetas" />
+        <layer Id="f8e52dac-8301-4da3-b219-b893f2014a9b" name="Contabilidad" />
+        <layer Id="d0a655fe-2554-4e56-8643-ab642022711a" name="Tablas Maestras" />
+        <layer Id="586135cd-ea59-40c0-b2cc-acb4a87d5f67" name="Generación Site Map" />
+        <layer Id="0936da24-16ef-4d5a-a24b-d5cd6b11f1d0" name="Publicidad y Mercadeo" />
+      </childLayers>
+    </layer>
+    <layer Id="9bc71a85-1e46-446b-95de-21f97cd49a6f" name="Servicios Web">
+      <childLayers>
+        <layer Id="ab568042-3b2d-43b0-965d-dfee226bbb8e" name="Inventario" />
+        <layer Id="d94bc25b-7d22-4ecb-8d10-b8961358453d" name="POS" />
+        <layer Id="00d79bfb-8b52-437e-8ef8-c2b4e45f8b81" name="Facturación" />
+        <layer Id="9ee2ce8d-7fc9-4a4a-aeff-20dc83d21999" name="CRM" />
+        <layer Id="9595d12d-20d1-450a-8a08-69ceb83acbab" name="Autenticación y autorización" />
+        <layer Id="217b9979-e815-4ff1-a1ca-058e7d333c5a" name="Informes" />
+        <layer Id="d8ccb46b-485b-4cff-8f89-3306a96b0a57" name="Etiquetas" />
+        <layer Id="04a4f5e4-d38e-471b-ad11-e593e2650ae1" name="Contabilidad" />
+        <layer Id="fe212aff-0229-435e-8b19-3445548595fe" name="Tablas Maestras" />
+        <layer Id="64428d0a-3057-44fd-9837-bf155ed12dcd" name="Generación Site Map" />
+        <layer Id="76678963-cb2a-4e6b-8c1c-f9ba54e2153e" name="Publicidad y Mercadeo" />
+      </childLayers>
+    </layer>
+    <layer Id="b481e410-4904-45f3-9281-547c8eb389f4" name="Acceso a Datos">
+      <childLayers>
+        <layer Id="9df7cfb1-d1ff-4349-9db1-2979b6731589" name="Inventario" />
+        <layer Id="6bd89584-3dcf-44f1-8526-140839af7090" name="POS" />
+        <layer Id="d3442a73-7de6-40f9-b920-5f4ce56d5133" name="Facturación" />
+        <layer Id="cd9b90e7-0887-4c34-be1b-f4f2efd9245c" name="CRM" />
+        <layer Id="fd80845d-1c18-4e28-8fbe-f84947952902" name="Autenticación y autorización" />
+        <layer Id="616dab03-6322-4f4a-981b-c29b894945c4" name="Informes" />
+        <layer Id="7a6a5f4b-9214-47f5-912f-a2e31f2c8203" name="Etiquetas" />
+        <layer Id="1abf8ea1-86a0-4e16-9c28-6b2cf7eaf230" name="Contabilidad" />
+        <layer Id="e5b34840-757d-4134-9b5c-5eebe700d9c7" name="Tablas Maestras" />
+        <layer Id="21276c57-43c7-432b-ba71-57cdf3232592" name="Generación Site Map" />
+        <layer Id="49a5972a-9c21-42c0-8b59-f5f46791b34c" name="Publicidad y Mercadeo" />
+      </childLayers>
+    </layer>
+    <layer Id="eb54c65a-989b-483a-8f5b-ee1c4fdfe79e" name="Transversales">
+      <childLayers>
+        <layer Id="4c0b91f2-2f02-419b-9aff-2d7ecba2a65f" name="Mensajes" />
+        <layer Id="0b5160a7-9594-4604-bd87-d7388eff096b" name="Entidades" />
+        <layer Id="1d53ef90-9641-4231-a56f-34641e5df5ef" name="Contratos" />
+        <layer Id="9739b83c-0ffe-49a5-87ab-e308b0404363" name="Logging" />
+        <layer Id="21997f54-94f5-4411-9feb-b9c9eb7925fd" name="Etiquetas" />
+      </childLayers>
+    </layer>
+    <layer Id="509e4e2b-cec5-49c8-8934-a21e9919b7ec" name="Presentación Web">
+      <childLayers>
+        <layer Id="f7ab6552-a743-445a-af3f-bfef0d2390be" name="Registro y Actualización de Clientes" />
+        <layer Id="94e13d38-9a81-4c24-82d1-0b6c38cf8695" name="Generación PDF" />
+        <layer Id="1dc1806d-7fc7-49c3-9d83-63e7f58251cb" name="Carro compras" />
+        <layer Id="e3287e19-d049-4580-b039-9b20cc6fdf66" name="Búsquedas" />
+      </childLayers>
+    </layer>
+    <layer Id="bbbbfa9b-8125-42ee-89be-8364e7b433a4" name="Fachada Web">
+      <childLayers>
+        <layer Id="8ffc7214-fcc1-4f1a-ab88-779433175b5a" name="Registro y Actualización de Clientes" />
+        <layer Id="8b51608a-a1dd-4a46-b63a-091b27d081a7" name="Carro compras" />
+        <layer Id="35388a4e-21da-49c5-b75a-852806be4323" name="Generación PDF" />
+        <layer Id="6f9f232c-4c82-42e8-967c-d86ab66f409a" name="Búsquedas" />
+      </childLayers>
+    </layer>
+    <layer Id="e4de172d-519c-4ee3-b916-d87c62e29de2" name="Servicios Web Pública">
+      <childLayers>
+        <layer Id="9ef2e7d8-7527-4216-aefd-21087bcd2dee" name="Registro y Actualización de Clientes" />
+        <layer Id="f62fb440-d7c2-47f6-8ac5-5064f7a1b0bc" name="Carro compras" />
+        <layer Id="90fec2be-5bca-44ac-a5b8-3e8cdcc28cdc" name="Generación PDF" />
+        <layer Id="e6deaa5e-489a-437c-9d12-4949be423d5d" name="Módulo CGI" />
+        <layer Id="9402eff6-35c2-40b3-bdd3-acf4d1d37801" name="Búsquedas" />
+      </childLayers>
+    </layer>
+    <layer Id="0ae7b9ab-7e21-42eb-b891-54ba270e1333" name="Validación Web">
+      <childLayers>
+        <layer Id="b388c8ea-7a49-415f-90af-f47c8d345405" name="Registro y Actualización de Clientes" />
+        <layer Id="67ca438c-628a-4c74-85ce-2be7b4ed7114" name="Carro compras" />
+        <layer Id="0a7f58e9-644d-4dec-8eca-77dc88952311" name="Generación PDF" />
+        <layer Id="d344c424-aeda-4f49-9cc1-f350b1e342c0" name="Módulo CGI" />
+        <layer Id="4b6ae917-12fd-474e-b243-09ff13943c78" name="Búsquedas" />
+      </childLayers>
+    </layer>
+    <layer Id="c9264ad4-5832-4327-a2da-6a46c656b512" name="Reglas de Negocio Web">
+      <childLayers>
+        <layer Id="a81f89dd-1c31-4dd2-9a55-af119b188427" name="Registro y Actualización de Clientes" />
+        <layer Id="c9708fde-b743-4f0c-9c9a-1e55a2d4b763" name="Carro compras" />
+        <layer Id="34d0ed47-014f-4f28-810d-97afbe36f1bd" name="Generación PDF" />
+        <layer Id="aff78593-1d5a-4670-aa82-b8c8d552b8d8" name="Módulo CGI" />
+        <layer Id="fb44a040-8a22-493e-81bb-bd2c1a2a9e66" name="Búsquedas" />
+      </childLayers>
+    </layer>
+    <layer Id="09a74e6d-a022-4e5a-9da8-5bdf6df8c952" name="Acceso a Datos Web">
+      <childLayers>
+        <layer Id="950989f4-1223-40a3-90a9-0f48fe53f562" name="Registro y Actualización de Clientes" />
+        <layer Id="f35a0a4f-9d65-4641-b75b-66cbe67f8505" name="Carro compras" />
+        <layer Id="f20fa87d-8b89-4a9b-9593-1f1fe6492174" name="Generación PDF" />
+        <layer Id="126b9b12-004a-4427-ab6e-880f3060d422" name="Módulo CGI" />
+        <layer Id="bbfa602e-244f-4b0c-aa3f-135a2b2673fd" name="Búsquedas" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

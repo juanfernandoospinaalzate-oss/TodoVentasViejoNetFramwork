@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{cfda02d5-286a-47ac-83fc-d51ec5aa79fa}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Modelado</Name>
+    <RootNamespace>Modelado</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccProvider>
+    </SccProvider>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Pruebas' ">
+    <OutputPath>bin\Pruebas\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="false" />
+  <ItemGroup>
+    <Content Include="Casos de Uso\Articulos\CasosDeUsoArticulo.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Articulos\CasosDeUsoArticulos.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Articulos\CasosDeUsoArticulos.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\Articulos\CasosDeUsoArticulos.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\Categorias\CasosDeUsoCategorias.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Categorias\CasosDeUsoCatetegorias.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Categorias\CasosDeUsoCatetegorias.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\Categorias\CasosDeUsoCatetegorias.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\Colores\CasosDeUsoColores.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Colores\CasosDeUsoColores.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Colores\CasosDeUsoColores.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\Colores\CasosDeUsoColores.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\ListaDeCasosDeUso.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Marcas\CasosDeUsoMarca.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Marcas\CasosDeUsoMarca.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Marcas\CasosDeUsoMarca.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\Marcas\CasosDeUsoMarca.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\PresentacionArticulo\CasosDeUsoPresentacionArticulo.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\PresentacionArticulo\CasosDeUsoPresentacionArticulo.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\PresentacionArticulo\CasosDeUsoPresentacionArticulo.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\PresentacionArticulo\CasosDeUsoPresentacionArticulo.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\Tallas\CasosDeUsoTallas.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Tallas\CasosDeUsoTallas.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Tallas\CasosDeUsoTallas.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\Tallas\CasosDeUsoTallas.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\UnidadDeLongitud\CasosDeUsoUnidadLongitud.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\UnidadDeLongitud\CasosDeUsoUnidadLongitud.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\UnidadDeLongitud\CasosDeUsoUnidadLongitud.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\UnidadDeLongitud\CasosDeUsoUnidadLongitud.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\UnidadDeVolumen\CasosDeUsoUnidadVolumen.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\UnidadDeVolumen\CasosDeUsoUnidadVolumen.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\UnidadDeVolumen\CasosDeUsoUnidadVolumen.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\UnidadDeVolumen\CasosDeUsoUnidadVolumen.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\UnidadesDeMasa\CasosDeUsoUnidadDeMasa.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\UnidadesDeMasa\CasosDeUsoUnidadDeMasa.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\UnidadesDeMasa\CasosDeUsoUnidadDeMasa.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\UnidadesDeMasa\CasosDeUsoUnidadMasa.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0004.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Casos de Uso\Colores" />
+    <Folder Include="Casos de Uso\Categorias" />
+    <Folder Include="Casos de Uso\Articulos" />
+    <Folder Include="Casos de Uso\Marcas" />
+    <Folder Include="Casos de Uso\PresentacionArticulo" />
+    <Folder Include="Casos de Uso\UnidadDeVolumen" />
+    <Folder Include="Casos de Uso\UnidadDeLongitud" />
+    <Folder Include="Casos de Uso\UnidadesDeMasa" />
+    <Folder Include="Casos de Uso\Tallas" />
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Modelado.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Casos de Uso" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="DiagramaDeCapasPrincipal.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="DiagramaDeCapasPrincipal.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagramaDeCapasPrincipal.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="DiagramaDeCapasPrincipal.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagramaDeCapasPrincipal.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>

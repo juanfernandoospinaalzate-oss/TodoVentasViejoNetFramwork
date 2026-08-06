@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CasosDeUsoTallas">
+  <useCaseModelRootMoniker Id="164f46c3-8924-46a1-aa85-ac85fd25e6af" />
+  <nestedChildShapes>
+    <actorShape Id="d8be8c87-8d5a-444d-a443-6d2f7d408be8" absoluteBounds="0.75, 2.25, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="2e7fbc95-dc8c-456e-98a4-0698c494b138" LastKnownName="Usuario General" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="fdc18107-46f6-4245-b051-d666193340b2" absoluteBounds="2.25, 1.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="dd417980-78fa-4bde-bc6d-2298bd80b467" LastKnownName="0002 Añadir Talla" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.25 : 2.39285714285714); (2.37037169881735 : 1.91269784336399)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="25f7a652-3300-49a0-904e-eecd1e5091c0" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="d8be8c87-8d5a-444d-a443-6d2f7d408be8" />
+        <useCaseShapeMoniker Id="fdc18107-46f6-4245-b051-d666193340b2" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="258ebfc2-1a98-4e23-8e45-cb9e851beb11" absoluteBounds="2.25, 2.125, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e3a71ea7-cfaf-403b-99b1-85988273ab23" LastKnownName="0003 Modificar Talla" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.25 : 2.5); (2.25 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="0b847cf7-8114-4928-8f58-f59c6c657ace" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="d8be8c87-8d5a-444d-a443-6d2f7d408be8" />
+        <useCaseShapeMoniker Id="258ebfc2-1a98-4e23-8e45-cb9e851beb11" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="c190afd3-45b3-4604-a4d4-fa599ba94b95" absoluteBounds="2.25, 3, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f452bd81-e482-4baa-a164-594367b2987e" LastKnownName="0004 Eliminar Talla" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.25 : 2.625); (2.33397485283108 : 3.16698742641554)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="c7f0ba22-0a39-4a42-bec9-d44aab37896d" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="d8be8c87-8d5a-444d-a443-6d2f7d408be8" />
+        <useCaseShapeMoniker Id="c190afd3-45b3-4604-a4d4-fa599ba94b95" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="10884986-1cd3-49be-a693-fe7097cd95d7" absoluteBounds="2.25, 4, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4263319d-3e23-442c-9791-07865b3c0a52" LastKnownName="0005  Listar Tallas" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.18238661836566 : 2.75); (2.25391813120786 : 4.218763885262)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="52ab02db-7eb9-46ef-8ea2-a253c44bf388" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="d8be8c87-8d5a-444d-a443-6d2f7d408be8" />
+        <useCaseShapeMoniker Id="10884986-1cd3-49be-a693-fe7097cd95d7" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="ec65cf2f-7e17-4364-b2df-c7fef9bfdd5c" absoluteBounds="2.25, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="5b3c206e-82fb-420f-ba78-b54981d3e878" LastKnownName="0001 Buscar Tallas" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.2104632422714 : 2.25); (2.25080934767291 : 1.01421876075167)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="802d86bd-10f6-4837-b976-645b93826e8a" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="d8be8c87-8d5a-444d-a443-6d2f7d408be8" />
+        <useCaseShapeMoniker Id="ec65cf2f-7e17-4364-b2df-c7fef9bfdd5c" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <SubsystemShape Id="4f1094d7-3648-4527-b3ca-2a6ceaeb529d" absoluteBounds="3.875, 0.625, 4.625, 1.5" customColor="White">
+      <subsystemMoniker Id="1c7d793f-06ff-42cf-a17a-e01c6f6af142" LastKnownName="Subsystem1" />
+      <nestedChildShapes>
+        <useCaseShape Id="a93a9a62-6c2b-428c-afaf-6bff756eed6c" absoluteBounds="4, 1.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="290e349b-7f18-432e-a933-ff922922add7" LastKnownName="0002 Añadir Talla1" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="0eed559c-bd8d-4143-8dde-0e2189ddc39e" absoluteBounds="5.125, 1.125, 1, 0.625" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="63925ad7-b55c-4b5c-bbd5-aec5eeb2688e" LastKnownName="0003 Modificar Talla1" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="d02fa6e9-7caf-4756-a0db-915009130daa" absoluteBounds="6.25, 1.125, 1, 0.625" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="9bb1808a-8c35-4c58-91cd-201021411778" LastKnownName="0004 Eliminar Talla1" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="d4b56554-97c1-4899-90c8-1f746816ef74" absoluteBounds="7.375, 1.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="54f40072-3a8f-48ce-82f8-fd49857b884d" LastKnownName="0005  Listar Tallas1" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <SubsystemShape Id="1d33ef3e-225a-4c44-bd46-9217cc954337" absoluteBounds="3.875, 2.375, 2.25, 1.25" customColor="White">
+      <subsystemMoniker Id="c4d5725b-4002-4805-9a64-d5aa483a109b" LastKnownName="Subsystem2" />
+      <nestedChildShapes>
+        <useCaseShape Id="1d3bbc54-fa19-4932-a637-9e6ae1afddab" absoluteBounds="4, 2.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="fb7e566e-c3cc-40d0-80ef-509d6a366a57" LastKnownName="0001 Buscar Tallas1" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="05c993ee-6d5d-47e5-8290-741ce2045764" name="CasosDeUsoUnidadVolumen" linkedPackageId="fc3cc3c5-b41a-441a-876f-7735595fce1f" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="40098bff-038d-485e-bb26-d30e1a73c4ff">
+      <profileInstance Id="e98aae93-f1b2-4f97-be6e-85b868494163" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c3c2ac4b-0689-4ab7-8355-c43e01128de2">
+      <profileInstance Id="4e38f0fa-7e6a-4aac-834d-b8e0e7e0e0aa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="1d4fe1d7-abea-4cd1-ae82-89ba437c1691" name="Usuario General" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b368674e-d618-4f3c-98e3-7c8cfcfce5c5" />
+        <targetEnds>
+          <association Id="3cf53413-4935-4b12-afe5-63657c8b884e" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0001 Buscar Tallas" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="07ae2caa-75d1-454a-b640-3a7f114d1042" LastKnownName="0001 Buscar Volúmen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ef05ac5e-b3dc-41bb-a65d-6c314b3355c9" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="67d43faf-db1a-4f8d-a5d2-76457b61f130" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad153cfd-7605-4d15-ad17-5e9ea4060b54" name="0001 Buscar Tallas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="032645d2-e3f8-496c-9726-31a83144fa42" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f8f4b0a-2a10-427b-9347-45e20ffcb1ed" />
+          </association>
+          <association Id="406bfd09-d1b8-42d2-9672-5113c77c2a28" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0002 Añadir Talla" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e21cd5ca-e4de-482c-9e20-cc845691bb8f" LastKnownName="0002 Añadir Volúmen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b0359b5-b3ab-42e1-b69c-387ca908dcc5" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6e47c167-d256-4092-928a-9302d027e1bc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05ca2bf7-80d8-4b70-8dc9-3b389ee8888a" name="0002 Añadir Talla" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a48dfb93-ddd2-4308-aaa3-928b0b3fda0b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ce4074d6-9c99-447b-b788-5620f09fdf81" />
+          </association>
+          <association Id="ca22078d-496e-40e7-b0e7-8a40eb165d79" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0003 Modificar Talla" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b5227b9a-d219-44e3-b025-ef3817995ba1" LastKnownName="0003 Modificar Volúmen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8e6a655-b58a-4f91-ad66-58290e521400" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2160933b-70d0-4c9c-af51-db90bd4b1cd8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90e8bf28-3763-4370-83d5-1bbfacb309a4" name="0003 Modificar Talla" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8604d63d-b3be-43fa-97eb-74758f6e6af5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a3d57e16-6727-45fe-979b-10735395fa6f" />
+          </association>
+          <association Id="0e9c999b-0fcc-4392-bee2-d8765d8e7e6c" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0004 Eliminar Talla" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cabb396f-1534-4e04-a27a-8d5812da9255" LastKnownName="0004 Eliminar Volúmen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc79623f-2a08-4dcf-8edc-f1c87857e4b9" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="adef46ce-104f-4c62-8865-00f681d4569d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="88e1d4db-52e3-43c4-bee8-790beb05a421" name="0004 Eliminar Talla" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6e83f2be-db20-4155-81d9-88a9a5dcfa5f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d5dae18d-9cb0-47fe-8652-9eabaaab92d2" />
+          </association>
+          <association Id="0a1331c0-38d3-4b16-9908-3a9789df6b42" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0005  Listar Tallas" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="750024f5-d82d-4bd8-9e32-daba609bf38d" LastKnownName="0005  Listar Volúmen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="652174a7-eae7-44b7-b760-326f3148ccb8" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6295daf5-05b5-4ae1-b4dc-7f593472c645" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6ca2265-bea3-4880-883b-b06033145bbb" name="0005  Listar Tallas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6dc52cf6-9406-4573-b123-1e42c82fb670" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8f6eafc7-a734-4584-b159-d71dba4bc264" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e21cd5ca-e4de-482c-9e20-cc845691bb8f" name="0002 Añadir Volúmen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0afd58e4-0eeb-4e51-aa0e-1dd599b31145" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b5227b9a-d219-44e3-b025-ef3817995ba1" name="0003 Modificar Volúmen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f1fbf936-2112-4de2-b227-4f0f11617d3f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cabb396f-1534-4e04-a27a-8d5812da9255" name="0004 Eliminar Volúmen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="547c81cd-124c-4818-8a8c-99462784cab6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="750024f5-d82d-4bd8-9e32-daba609bf38d" name="0005  Listar Volúmen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b93a466d-8029-4bfb-ad56-3460023346cd" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="07ae2caa-75d1-454a-b640-3a7f114d1042" name="0001 Buscar Volúmen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e8d41c23-82e7-4ec5-8f8e-b9cf4082b01f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="80946fde-07b3-4b1d-85ae-b9beaacd8bd5" name="Subsystem1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="850d2fcf-4ec5-47a6-a3f1-1bdf3c405178" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="480b0d2a-62f1-47f3-824f-14dd2e488920" name="0002 Añadir Volúmen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="faa33d16-c2c2-4b10-9613-b634a459b0ce" />
+        <subjects>
+          <subsystemMoniker Id="80946fde-07b3-4b1d-85ae-b9beaacd8bd5" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="53d0d91b-cf13-418a-9ae1-81ff73a5da0e" name="0003 Modificar Volúmen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="73ae7061-1f8e-44a1-bab4-6fb09f32c760" />
+        <subjects>
+          <subsystemMoniker Id="80946fde-07b3-4b1d-85ae-b9beaacd8bd5" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="50041bfb-7cdd-4b05-b965-98cddf705472" name="0004 Eliminar Volúmen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d16c63aa-e847-414d-bad6-efc43724fabf" />
+        <subjects>
+          <subsystemMoniker Id="80946fde-07b3-4b1d-85ae-b9beaacd8bd5" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5717d160-4555-41f3-ae9d-0ac89cfc0d36" name="0005  Listar Volúmen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8392e089-504b-4e76-a7b4-c269d48bfb30" />
+        <subjects>
+          <subsystemMoniker Id="80946fde-07b3-4b1d-85ae-b9beaacd8bd5" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="cf43aeaf-8ce9-4f49-8332-c3f10313b246" name="Subsystem2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="78b926b8-0390-41c0-92a6-bd603eb61a64" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0e57ead5-3e7b-4e7f-8eac-7736e664c466" name="0001 Buscar Volúmen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d8b5072e-5c7e-48a6-8653-9a7388821903" />
+        <subjects>
+          <subsystemMoniker Id="cf43aeaf-8ce9-4f49-8332-c3f10313b246" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="fc3cc3c5-b41a-441a-876f-7735595fce1f" name="Modelado">
+    <elementDefinition Id="c1bdd0b8-49a6-4114-99ec-5412c296caa2" />
+  </package>
+</useCaseModelRoot>

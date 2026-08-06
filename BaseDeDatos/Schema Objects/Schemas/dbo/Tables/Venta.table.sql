@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[Venta]
+(
+	IdVenta int IDENTITY(1,1) NOT NULL, 		
+	NroFactura int NOT NULL,
+	IdCliente int NOT NULL,
+	DocCliente int NOT NULL,
+	NombreCliente nvarchar(30) NOT NULL, 
+	ApellidoCliente nvarchar(30) NOT NULL,
+	TelefonoClienteUno nvarchar(20) NOT NULL,
+	TelefonoClienteDos nvarchar(20) NOT NULL,
+	EmailCliente nvarchar(50) NOT NULL,
+	ContrasenaCliente nvarchar(50) NOT NULL,
+	NombreDestinatario nvarchar(30) NOT NULL, 
+	DireccionEnvioDestinatario nvarchar(80) NOT NULL,  
+	TelefonoDestinatario nvarchar(20) NOT NULL,
+	NombrePaisDestinatario nvarchar(42) NOT NULL,
+	NombreDepartamentoDestinatario nvarchar(42) NOT NULL,
+	NombreCiudadDestinatario nvarchar(42) NOT NULL,
+	Fecha date NOT NULL,
+	CodigoReferenciaPayU int NOT NULL,
+	MedioDePago nvarchar(60) NOT NULL,
+	TotalVenta float NOT NULL,
+	TotalCosto float NOT NULL,
+	NroGuia nvarchar(20) NOT NULL,
+	CostoFlete int NOT NULL,
+	Anulado bit NOT NULL, 
+    [EstadoDeLaVenta] NVARCHAR(50) NOT NULL
+)

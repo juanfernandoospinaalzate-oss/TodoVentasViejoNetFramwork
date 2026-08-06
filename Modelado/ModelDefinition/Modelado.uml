@@ -1,0 +1,1837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="c1bdd0b8-49a6-4114-99ec-5412c296caa2"
+  name="Modelado" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="02dcf4dc-113c-47ce-8b8f-6d4c9f5a4324"
+        LastKnownName="Casos de uso Colores"
+        LastKnownLocation="Package_0004.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="60492a21-1ee0-4edf-b498-b926e718a718"
+        name="CasosDeUsoColor"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedAttributesInternal>
+          <property
+            Id="ab45de75-924b-4611-96ad-c521f63e253e"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="7a073ab0-c29a-4ac2-a2e7-76cbe82c5b7f"
+                LastKnownName="Usuario General"
+                LastKnownLocation="Package_0004.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="254b04b4-0786-438e-af91-af4f9f722134"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <subsystemMoniker
+                Id="72a25791-f43b-4e27-8934-e339b0e3017c"
+                LastKnownName="Presentacion.Busquedas"
+                LastKnownLocation="Package_0004.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7dee6c3f-73ff-4700-89b9-03f54258ed80"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <useCaseMoniker
+                Id="24f3fd3a-4805-4d94-a32d-74f7de36d3f2"
+                LastKnownName="0001 Buscar Colores"
+                LastKnownLocation="Package_0004.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4757bdf6-45fe-49f8-84a3-82bcfd84d5b1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="7a073ab0-c29a-4ac2-a2e7-76cbe82c5b7f"
+                LastKnownName="Usuario General"
+                LastKnownLocation="Package_0004.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9e399b41-8710-44ac-abe7-23e2f3742a57"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="7a073ab0-c29a-4ac2-a2e7-76cbe82c5b7f"
+                LastKnownName="Usuario General"
+                LastKnownLocation="Package_0004.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="47bb8ed2-b10c-4d48-989a-782f2b646be8"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="7a073ab0-c29a-4ac2-a2e7-76cbe82c5b7f"
+                LastKnownName="Usuario General"
+                LastKnownLocation="Package_0004.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="0f23dc40-2d06-4081-83a2-a7c30a545b5d"
+        name="Enumeration1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="988d3502-4b77-4d38-8ce6-8527e1b473a0"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="8a113c13-3ed4-4e46-8a6b-f35c701341c2"
+        name="Administrador del sistema"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="93937c91-cc86-4221-aa76-4d42445f2c35"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Añadir Categoria"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="be8ad91b-1182-4b2b-a1d0-79b2be248268"
+              LastKnownName="0002-Añadir Categoría"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6baa47ef-203f-49e1-a4f6-3409c32a903f"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ef3453e-6907-4fa6-9e34-c4be7976c955"
+                  name="Añadir Categoria"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5499de59-b04d-4197-b9c6-2e0d9908118c"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Modificar Categoría"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fc6614b2-a254-4aca-bc6a-a016f133a5bd"
+              LastKnownName="0003-Modificar Categoría"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="60d4cd7b-4d7c-4a9a-ada1-b3b121075b7a"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ef4b48c6-b85e-4056-b63d-dd3bde639374"
+                  name="Modificar Categoría"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e6cbea85-5f6e-448a-9900-28f02b84aede"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Eliminar Categoría"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="42887be7-b42e-4d33-b5ff-bc729afb943b"
+              LastKnownName="0004-Eliminar Categoría"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71584504-d5e0-4855-8150-e32c61617490"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="26444cc7-24d3-48e7-92c5-074f9188037d"
+                  name="Eliminar Categoría"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="dd79f29f-ea36-4860-b374-5fcbcf914206"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Listar Categoría"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="393a55d2-f27b-475d-8486-be9263a20a75"
+              LastKnownName="0005-Listar Categoría"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c1899863-49dd-49c1-b127-80cd5cf76fed"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f8b92e24-1da6-456b-a89d-d19e6814cb9d"
+                  name="Listar Categoría"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="10ea10bd-f0f7-4ead-96f9-cfd8029ecb19"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Buscar Categoría"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="abdffc00-e5e2-4bf7-b6fa-1300c96b1fb5"
+              LastKnownName="0001 -Buscar Categoría"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d6024a4-64ca-4224-a40a-166f0492fdae"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e89d18ad-9936-4099-9ad2-2d513fed7600"
+                  name="Buscar Categoría"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="be8ad91b-1182-4b2b-a1d0-79b2be248268"
+        name="0002-Añadir Categoría"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fc6614b2-a254-4aca-bc6a-a016f133a5bd"
+        name="0003-Modificar Categoría"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="42887be7-b42e-4d33-b5ff-bc729afb943b"
+        name="0004-Eliminar Categoría"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="393a55d2-f27b-475d-8486-be9263a20a75"
+        name="0005-Listar Categoría"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="abdffc00-e5e2-4bf7-b6fa-1300c96b1fb5"
+        name="0001 -Buscar Categoría"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="f9385382-5afb-4b92-aa5f-d2ec65ee43cd"
+        name="Presentación.TablasMaestras.Categorias"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="16c94743-8523-4019-a74f-70db4adb39d7"
+        name="Presentación.Busquedas"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a3bcac35-2198-4877-889a-146ab6e4134b"
+        name="0001 -Buscar Categoría"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="16c94743-8523-4019-a74f-70db4adb39d7"
+            LastKnownName="Presentación.Busquedas"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6d71a5a6-e4b5-4d9b-a4c6-29fa24b3623e"
+        name="0002-Añadir Categoría"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="f9385382-5afb-4b92-aa5f-d2ec65ee43cd"
+            LastKnownName="Presentación.TablasMaestras.Categorias"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d8cbdd10-8d4f-4c18-8bb6-3234a540c07e"
+        name="0003-Modificar Categoría"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="f9385382-5afb-4b92-aa5f-d2ec65ee43cd"
+            LastKnownName="Presentación.TablasMaestras.Categorias"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8cc60862-54fd-4c46-a808-3c4b5d32ce47"
+        name="0004-Eliminar Categoría"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="f9385382-5afb-4b92-aa5f-d2ec65ee43cd"
+            LastKnownName="Presentación.TablasMaestras.Categorias"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="76aaa07d-978f-4ba3-b89b-4808077d5226"
+        name="0005-Listar Categoría"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="f9385382-5afb-4b92-aa5f-d2ec65ee43cd"
+            LastKnownName="Presentación.TablasMaestras.Categorias"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="7fae399d-f2ee-481f-a28e-7ac13be7f487"
+        name="Usuario General"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="8c8c47d5-32c9-431e-ae7c-af5c507407da"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0001 Buscar Tallas"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7169fd0c-32d7-4a64-8cb6-8340af019343"
+              LastKnownName="0001 Buscar Tallas"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7380e367-8940-4324-ba5c-d04f606daf3d"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="09d3847f-9330-493b-93ad-3a2efc5930ee"
+                  name="0001 Buscar Tallas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b98f075b-30f8-4ae9-956d-fbbcae180d1e"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0002 Añadir Talla"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="797fd00d-0a55-4dc1-aee4-53a23eb4a23d"
+              LastKnownName="0002 Añadir Talla"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb574f79-4acd-4772-8ae7-27eafa3d1f8c"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="887130ee-578f-4eb2-96a9-3eb90c5b92b0"
+                  name="0002 Añadir Talla"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="caf34d3c-e340-4660-aa24-a13d8c16891b"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0003 Modificar Talla"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="565cd328-3d4f-4ede-a0b1-3ea3cea2b370"
+              LastKnownName="0003 Modificar Talla"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="929b07ef-6096-4263-8016-bfc84b4ddef7"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d39b5f47-f50f-436e-8869-9f5ccbcd13bb"
+                  name="0003 Modificar Talla"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1b8cbb64-42d3-4415-b3ce-d83dce9c13ab"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0004 Eliminar Talla"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a7df673d-69d5-40b9-b6f0-6cff61d69115"
+              LastKnownName="0004 Eliminar Talla"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3bdab5e9-4050-4c31-8d1f-4c8623746a0f"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5b4e8983-975c-45e9-b2b2-f4d7197002f4"
+                  name="0004 Eliminar Talla"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="341efb13-1b5c-467a-a41c-c504e497c008"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0005  Listar Tallas"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a9077e5f-6588-4f16-b225-f67a1b1f0205"
+              LastKnownName="0005  Listar Tallas"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b9d4f05-7590-4fcc-a06b-f8922bcd94cd"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="173bcaa3-8fc6-413c-adff-192e750da727"
+                  name="0005  Listar Tallas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="797fd00d-0a55-4dc1-aee4-53a23eb4a23d"
+        name="0002 Añadir Talla"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="565cd328-3d4f-4ede-a0b1-3ea3cea2b370"
+        name="0003 Modificar Talla"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a7df673d-69d5-40b9-b6f0-6cff61d69115"
+        name="0004 Eliminar Talla"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a9077e5f-6588-4f16-b225-f67a1b1f0205"
+        name="0005  Listar Tallas"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7169fd0c-32d7-4a64-8cb6-8340af019343"
+        name="0001 Buscar Tallas"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="8b51b8eb-b7d7-4c21-8123-109f3588c055"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="6f53de36-a1f6-454e-89c6-bc0af32bce37"
+        name="Subsystem2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dc961e7d-756a-46af-bcc7-155ff2f335db"
+        name="0001 Buscar Tallas1"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6f53de36-a1f6-454e-89c6-bc0af32bce37"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b2651601-47ce-45c1-90bd-8dcc3142c386"
+        name="0002 Añadir Talla1"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8b51b8eb-b7d7-4c21-8123-109f3588c055"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d7237f97-722a-47cd-a872-571a569c6d39"
+        name="0003 Modificar Talla1"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8b51b8eb-b7d7-4c21-8123-109f3588c055"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="06834b6a-6ea8-4c80-8e6f-f805b56bda53"
+        name="0004 Eliminar Talla1"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8b51b8eb-b7d7-4c21-8123-109f3588c055"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="761b1a1e-1e8c-49b9-8ac5-4e454d332cf2"
+        name="0005  Listar Tallas1"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8b51b8eb-b7d7-4c21-8123-109f3588c055"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5b87368e-2156-4727-a501-d48974c0b257"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="2ac2c6f4-b538-40ff-ac87-7a78ff8548fa"
+        name="Actor2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f6f0c11e-eef8-4a6d-a820-35a20c51ef68"
+        name="Actor3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c6dadd38-df01-4f90-a098-02ca424f2a72"
+        name="Actor4"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b368674e-d618-4f3c-98e3-7c8cfcfce5c5"
+        name="Usuario General"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3f8f4b0a-2a10-427b-9347-45e20ffcb1ed"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0001 Buscar Tallas"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e8d41c23-82e7-4ec5-8f8e-b9cf4082b01f"
+              LastKnownName="0001 Buscar Volúmen"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67d43faf-db1a-4f8d-a5d2-76457b61f130"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="032645d2-e3f8-496c-9726-31a83144fa42"
+                  name="0001 Buscar Tallas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ce4074d6-9c99-447b-b788-5620f09fdf81"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0002 Añadir Talla"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0afd58e4-0eeb-4e51-aa0e-1dd599b31145"
+              LastKnownName="0002 Añadir Volúmen"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e47c167-d256-4092-928a-9302d027e1bc"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a48dfb93-ddd2-4308-aaa3-928b0b3fda0b"
+                  name="0002 Añadir Talla"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a3d57e16-6727-45fe-979b-10735395fa6f"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0003 Modificar Talla"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f1fbf936-2112-4de2-b227-4f0f11617d3f"
+              LastKnownName="0003 Modificar Volúmen"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2160933b-70d0-4c9c-af51-db90bd4b1cd8"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8604d63d-b3be-43fa-97eb-74758f6e6af5"
+                  name="0003 Modificar Talla"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d5dae18d-9cb0-47fe-8652-9eabaaab92d2"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0004 Eliminar Talla"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="547c81cd-124c-4818-8a8c-99462784cab6"
+              LastKnownName="0004 Eliminar Volúmen"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="adef46ce-104f-4c62-8865-00f681d4569d"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e83f2be-db20-4155-81d9-88a9a5dcfa5f"
+                  name="0004 Eliminar Talla"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8f6eafc7-a734-4584-b159-d71dba4bc264"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0005  Listar Tallas"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b93a466d-8029-4bfb-ad56-3460023346cd"
+              LastKnownName="0005  Listar Volúmen"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6295daf5-05b5-4ae1-b4dc-7f593472c645"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6dc52cf6-9406-4573-b123-1e42c82fb670"
+                  name="0005  Listar Tallas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0afd58e4-0eeb-4e51-aa0e-1dd599b31145"
+        name="0002 Añadir Volúmen"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f1fbf936-2112-4de2-b227-4f0f11617d3f"
+        name="0003 Modificar Volúmen"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="547c81cd-124c-4818-8a8c-99462784cab6"
+        name="0004 Eliminar Volúmen"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b93a466d-8029-4bfb-ad56-3460023346cd"
+        name="0005  Listar Volúmen"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e8d41c23-82e7-4ec5-8f8e-b9cf4082b01f"
+        name="0001 Buscar Volúmen"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="850d2fcf-4ec5-47a6-a3f1-1bdf3c405178"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="faa33d16-c2c2-4b10-9613-b634a459b0ce"
+        name="0002 Añadir Volúmen"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="850d2fcf-4ec5-47a6-a3f1-1bdf3c405178"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="73ae7061-1f8e-44a1-bab4-6fb09f32c760"
+        name="0003 Modificar Volúmen"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="850d2fcf-4ec5-47a6-a3f1-1bdf3c405178"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d16c63aa-e847-414d-bad6-efc43724fabf"
+        name="0004 Eliminar Volúmen"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="850d2fcf-4ec5-47a6-a3f1-1bdf3c405178"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8392e089-504b-4e76-a7b4-c269d48bfb30"
+        name="0005  Listar Volúmen"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="850d2fcf-4ec5-47a6-a3f1-1bdf3c405178"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="78b926b8-0390-41c0-92a6-bd603eb61a64"
+        name="Subsystem2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d8b5072e-5c7e-48a6-8653-9a7388821903"
+        name="0001 Buscar Volúmen"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="78b926b8-0390-41c0-92a6-bd603eb61a64"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d388df69-3ff8-476b-9972-280607bae3d9"
+        name="Usuario General"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7dc547d5-5ea1-4ced-8d79-6936745767e2"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0001 Buscar Tallas"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c16046ae-af58-4c31-8c70-0b2d9a0c27be"
+              LastKnownName="0001 Buscar Longitud"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3c1f6132-6a83-486e-8d0b-bb052cb57fe2"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ba7d98a-bb99-42f4-8cfe-16138ca6a4b8"
+                  name="0001 Buscar Tallas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="db6a28e6-8c1d-465e-b7b6-ebc8347bdcb9"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0002 Añadir Talla"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f0cd0fcc-e153-4fa7-aaa9-3d9877f5d6e1"
+              LastKnownName="0002 Añadir Longitud"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ce7cfb6e-0923-4ebd-9a9e-992177d136b4"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f5f833f-549b-4f9b-8be1-f2710781cf65"
+                  name="0002 Añadir Talla"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c0a825e7-4e35-4be7-973e-642862118c05"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0003 Modificar Talla"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="82e849c5-7b68-4c25-a064-f09168707f9a"
+              LastKnownName="0003 Modificar Longitud"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="067438c8-ac73-4bb6-855c-c2360499f311"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ff37607-7711-41a0-8e54-9f992a8d57c9"
+                  name="0003 Modificar Talla"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8853d40b-9024-4524-8816-c18ed8b8a9b8"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0004 Eliminar Talla"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c1ec5696-b1b9-41d4-94b5-bac5716f83ae"
+              LastKnownName="0004 Eliminar Longitud"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="192cb52b-b51a-4cd2-8239-ec2265be12c5"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ebbde777-b853-4f3b-9400-39c0b7715b8a"
+                  name="0004 Eliminar Talla"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="889a0b17-8593-499f-a90d-217da86767ae"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="0005  Listar Tallas"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="46dcdc4a-d6de-4e4d-97c3-a20adfbe1b5a"
+              LastKnownName="0005  Listar Longitud"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f79ca86d-0664-4155-9be2-a29285428c9b"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="78140566-0b42-46d3-bb0f-052955d49408"
+                  name="0005  Listar Tallas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f0cd0fcc-e153-4fa7-aaa9-3d9877f5d6e1"
+        name="0002 Añadir Longitud"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="82e849c5-7b68-4c25-a064-f09168707f9a"
+        name="0003 Modificar Longitud"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c1ec5696-b1b9-41d4-94b5-bac5716f83ae"
+        name="0004 Eliminar Longitud"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="46dcdc4a-d6de-4e4d-97c3-a20adfbe1b5a"
+        name="0005  Listar Longitud"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c16046ae-af58-4c31-8c70-0b2d9a0c27be"
+        name="0001 Buscar Longitud"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="b1c3f8d1-7290-426c-b12b-c3095bb42687"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3ed78614-4c04-4087-bb0e-1a11a5d0e101"
+        name="0002 Añadir Longitud"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="b1c3f8d1-7290-426c-b12b-c3095bb42687"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="141351e4-69b8-44a1-9fc5-56714019e9a2"
+        name="0003 Modificar Longitud"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="b1c3f8d1-7290-426c-b12b-c3095bb42687"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cf46d0df-fc35-4f3a-9a80-8cd74480cd9d"
+        name="0004 Eliminar Longitud"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="b1c3f8d1-7290-426c-b12b-c3095bb42687"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="44d566ad-6190-4097-965a-6c4a901588c1"
+        name="0005  Listar Longitud"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="b1c3f8d1-7290-426c-b12b-c3095bb42687"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="9a2b1b51-f4c4-4d1f-aacd-033151ca2933"
+        name="Subsystem2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4730f638-dfe1-4832-a4b3-52a4e00c4014"
+        name="0001 Buscar Longitud"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9a2b1b51-f4c4-4d1f-aacd-033151ca2933"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5de3f737-e27d-454c-80f5-e9b716686f86"
+        name="Actor5"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="dc93d710-f0e0-4dff-8369-c564de908978"
+        name="Administrador "
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="36ff9ca4-c15b-41a0-a861-3b0eab070fd5"
+            isDerived="false"
+            sourceEndRoleName="Administrador "
+            targetEndRoleName="0001 Buscar Marca"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ea422ac5-0551-45c4-8e3d-50a17a5209c9"
+              LastKnownName="0001 Buscar Marca"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6957983d-ecad-44c2-af30-f69998d60dca"
+                  name="Administrador "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d59d89fc-f02a-466b-b098-a57d805f1cb2"
+                  name="0001 Buscar Marca"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="26f87e3a-2ea0-4ba3-9ac5-fc4097ea4337"
+            isDerived="false"
+            sourceEndRoleName="Administrador "
+            targetEndRoleName="0002 Añadir Marca"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f5a41518-e567-4a45-a7f3-4cb04ba29bf1"
+              LastKnownName="0002 Añadir Marca"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ccaa1f9b-aa70-447f-a659-a8b02ac0d927"
+                  name="Administrador "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="251c0701-d5d7-435c-ad9a-c5440c8f9656"
+                  name="0002 Añadir Marca"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3aa5debc-a103-45c3-8228-7e99d5f7860b"
+            isDerived="false"
+            sourceEndRoleName="Administrador "
+            targetEndRoleName="0003 Modificar Marca"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e30b9e6f-3a97-4a00-9c6d-622ea3746c81"
+              LastKnownName="0003 Modificar Marca"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0b8b627-a573-4232-9c78-92edb784a1b0"
+                  name="Administrador "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb1542dc-7b18-43e0-8b25-9488f8367a24"
+                  name="0003 Modificar Marca"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8a1fb8ba-048b-4f50-b235-d6f2d41d360e"
+            isDerived="false"
+            sourceEndRoleName="Administrador "
+            targetEndRoleName="0004 Eliminar Marca"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fda96019-079a-4671-b750-0463229e0f5f"
+              LastKnownName="0004 Eliminar Marca"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7b70a080-bef9-4f32-94d4-f6bbade7fd2e"
+                  name="Administrador "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="63655092-7498-45e5-b4a2-b894d092fa5f"
+                  name="0004 Eliminar Marca"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="27840767-07b6-43b6-bd09-f28ff68bb195"
+            isDerived="false"
+            sourceEndRoleName="Administrador "
+            targetEndRoleName="0005  Listar Marca"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a57adbbd-0892-4517-8637-7aca2d04624b"
+              LastKnownName="0005  Listar Marca"
+              LastKnownLocation="Modelado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ae7b6f1b-0160-49e2-9ede-f0104d453df1"
+                  name="Administrador "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="af45c668-3a12-462d-9e71-3aa40c5ca178"
+                  name="0005  Listar Marca"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f5a41518-e567-4a45-a7f3-4cb04ba29bf1"
+        name="0002 Añadir Marca"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e30b9e6f-3a97-4a00-9c6d-622ea3746c81"
+        name="0003 Modificar Marca"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fda96019-079a-4671-b750-0463229e0f5f"
+        name="0004 Eliminar Marca"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a57adbbd-0892-4517-8637-7aca2d04624b"
+        name="0005  Listar Marca"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ea422ac5-0551-45c4-8e3d-50a17a5209c9"
+        name="0001 Buscar Marca"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="04821c8f-680e-4cc8-b1bd-556deda7ced9"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5d20e4b0-21dc-4933-854d-906cc9a5972f"
+        name="0002 Añadir Marca"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="04821c8f-680e-4cc8-b1bd-556deda7ced9"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e2646f17-eabd-4ac4-913b-09152aa807a3"
+        name="0003 Modificar Marca"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="04821c8f-680e-4cc8-b1bd-556deda7ced9"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="601c9578-3022-43eb-a3f7-188b16d0db95"
+        name="0004 Eliminar Marca"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="04821c8f-680e-4cc8-b1bd-556deda7ced9"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e1f97b8d-c14a-4eb4-a568-6bab43185018"
+        name="0005  Listar Marca"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="04821c8f-680e-4cc8-b1bd-556deda7ced9"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="341716be-f5d8-446f-8b24-c4103078e620"
+        name="Subsystem2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f9422c81-c99c-4798-ab24-9e8d007a47c9"
+        name="0001 Buscar Marca"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="341716be-f5d8-446f-8b24-c4103078e620"
+            LastKnownName="Subsystem2"
+            LastKnownLocation="Modelado.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

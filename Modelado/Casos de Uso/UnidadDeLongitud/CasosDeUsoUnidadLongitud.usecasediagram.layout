@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.75, 8.5" name="CasosDeUsoUnidadLongitud">
+  <useCaseModelRootMoniker Id="24cacdcf-93cc-4409-a8e0-0b1c4ade3ce0" />
+  <nestedChildShapes>
+    <actorShape Id="5ccab175-a6f0-4a84-9878-ecac40d22c0a" absoluteBounds="3.5, 4.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="b3ce6c4d-7a3e-4734-8a15-be941d95ce8e" LastKnownName="Usuario General" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="e79011e9-cf51-49eb-a53e-ccfb12fd32c8" absoluteBounds="5.125, 3.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="858f968e-153c-4f3d-afdc-67c22827dd29" LastKnownName="0002 Añadir Longitud" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 4.775); (5.23456559527848 : 4.28117376188861)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="e2ddd317-12e1-471e-a6d5-d2eccb072fd9" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="5ccab175-a6f0-4a84-9878-ecac40d22c0a" />
+        <useCaseShapeMoniker Id="e79011e9-cf51-49eb-a53e-ccfb12fd32c8" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="b83673ce-cf23-4498-a29a-dc0ef7c1d151" absoluteBounds="5.125, 4.5, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e1339b89-2b61-4c19-902a-c6caebefd584" LastKnownName="0003 Modificar Longitud" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 4.875); (5.125 : 4.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="d105b5d7-2013-4662-b5d6-ff974d46eaf8" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="5ccab175-a6f0-4a84-9878-ecac40d22c0a" />
+        <useCaseShapeMoniker Id="b83673ce-cf23-4498-a29a-dc0ef7c1d151" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="b243e94e-65ce-455c-8d4f-b6bab3648dcc" absoluteBounds="5.125, 5.375, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ad973891-3980-4ed7-bdd0-db67a21c74fb" LastKnownName="0004 Eliminar Longitud" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 4.99166666666667); (5.20047169811321 : 5.55188679245283)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="24b68b54-76a1-4612-8219-94d2fbf6d771" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="5ccab175-a6f0-4a84-9878-ecac40d22c0a" />
+        <useCaseShapeMoniker Id="b243e94e-65ce-455c-8d4f-b6bab3648dcc" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="4d2a75ad-edc3-4de9-a677-dbc747e2a66b" absoluteBounds="5.125, 6.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="50224a76-d63e-4929-8505-38c148acc8d9" LastKnownName="0005  Listar Longitud" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 4.99209889993902); (5.40226002965861 : 6.40117701993969)]" fixedFrom="Caller" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="e54aae42-fd74-4d71-bd1a-7c8dfac76233" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="5ccab175-a6f0-4a84-9878-ecac40d22c0a" />
+        <useCaseShapeMoniker Id="4d2a75ad-edc3-4de9-a677-dbc747e2a66b" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="fb807854-d0ca-4f51-8682-cfba383451e6" absoluteBounds="5.125, 3.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="c09009f0-ca18-4e65-aa15-830583321072" LastKnownName="0001 Buscar Longitud" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 4.675); (5.36000052999841 : 3.58699957600127)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="eebdb624-5de4-4575-be12-0e63385fb2bd" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="5ccab175-a6f0-4a84-9878-ecac40d22c0a" />
+        <useCaseShapeMoniker Id="fb807854-d0ca-4f51-8682-cfba383451e6" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <SubsystemShape Id="a6cb4599-3226-4efd-8470-2993dc283bc1" absoluteBounds="6.75, 3, 4.75, 2.625" customColor="White">
+      <subsystemMoniker Id="a017c936-aa80-4bc4-86a8-777439ffdc62" LastKnownName="Subsystem1" />
+      <nestedChildShapes>
+        <useCaseShape Id="2739eec3-9de5-4f3b-83b3-941a10c88620" absoluteBounds="6.875, 3.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="4673b9af-deb7-4bc8-9b93-bd469c8e8f63" LastKnownName="0002 Añadir Longitud" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="9d4481f0-2abb-457e-8962-86a789423f0e" absoluteBounds="8, 3.5, 1, 0.625" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="4c5a5a5a-1315-4ec3-9409-cf03c588b432" LastKnownName="0003 Modificar Longitud" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="088c067b-a249-41ed-8881-8d7422c9d747" absoluteBounds="9.125, 3.5, 1, 0.625" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="4972b0f0-8815-4c9e-913e-3d58835f0bff" LastKnownName="0004 Eliminar Longitud" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="f6de946f-de53-49a4-983c-f85b57582f93" absoluteBounds="10.25, 3.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="5d304415-093a-416a-95dc-26672046c08a" LastKnownName="0005  Listar Longitud" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <SubsystemShape Id="5d97acb8-66c8-4a8a-8070-4d45f9e27302" absoluteBounds="6.75, 5.875, 2.25, 1.25" customColor="White">
+      <subsystemMoniker Id="3db6e003-dea5-4903-a956-3ae53e2e0a17" LastKnownName="Subsystem2" />
+      <nestedChildShapes>
+        <useCaseShape Id="7b43f39b-c2c8-4346-a743-32c1a79bd899" absoluteBounds="6.875, 6.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="d2ba0a76-fcdd-4fe5-9a15-91850e0c2864" LastKnownName="0001 Buscar Longitud" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+  </nestedChildShapes>
+</useCaseDiagram>

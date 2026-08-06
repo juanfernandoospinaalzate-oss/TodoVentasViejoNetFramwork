@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:7235/" />
+<title>IngresoUsuario.aspx</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">IngresoUsuario.aspx</td></tr>
+</thead><tbody>
+<tr>
+	<td>type</td>
+	<td>id=ContentPlaceHolder1_TxtNombre</td>
+	<td>Edwin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContentPlaceHolder1_TxtApellido</td>
+	<td>Villa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContentPlaceHolder1_TxtTelefono1</td>
+	<td>7488992</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContentPlaceHolder1_TxtTelefono2</td>
+	<td>3207488992</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContentPlaceHolder1_TxtEmail</td>
+	<td>Dwine89@hotmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContentPlaceHolder1_TxtContrasena</td>
+	<td>Edwin10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContentPlaceHolder1_TxtConfirmarContrasena</td>
+	<td>Edwin10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContentPlaceHolder1_TxtNomDestinatario</td>
+	<td>Pepito Perez</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContentPlaceHolder1_TxtDireccion</td>
+	<td>Calle 20 # 10 - 30</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContentPlaceHolder1_TxtTelefono</td>
+	<td>999 5599</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContentPlaceHolder1_TxtIdCliente</td>
+	<td>369852147</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ContentPlaceHolder1_BtnRegistrar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ContentPlaceHolder1_BtnRegistrar</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

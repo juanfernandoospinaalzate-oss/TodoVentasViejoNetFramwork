@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15BC9E49-FA3E-464F-A63E-79E911203F29}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiciosWebPublica</RootNamespace>
+    <AssemblyName>ServiciosWebPublica</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MercadoPago, Version=1.6.1.0, Culture=neutral, PublicKeyToken=74a108154f0580e9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ComponentesExternos\Mercadopago\MercadoPago.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Build.Framework.17.4.0\lib\net472\Microsoft.Build.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Albaran.svc" />
+    <Content Include="Articulo.svc" />
+    <Content Include="BannerPrincipal.svc" />
+    <Content Include="Busqueda.svc" />
+    <Content Include="Carrito.svc" />
+    <Content Include="Categoria.svc" />
+    <Content Include="Cliente.svc" />
+    <Content Include="Color.svc" />
+    <Content Include="ConfiguracionPieDePagina.svc" />
+    <Content Include="Direccion.svc" />
+    <Content Include="Marca.svc" />
+    <Content Include="TRM_BanRep.svc" />
+    <Content Include="UnidadPresentacion.svc" />
+    <Content Include="XmlPayU\ConsultarOrdenPorIdentificador.xml" />
+    <Content Include="XmlPayU\ConsultarOrdenPorReferencia.xml" />
+    <Content Include="XmlPayU\ConsultarOrdenPorTransaccion.xml" />
+    <Content Include="XmlPayU\FirmaEncriptada.xml" />
+    <Content Include="Login.svc" />
+    <Content Include="PaisDepartamentoCiudad.svc" />
+    <Content Include="PresentacionArticulo.svc" />
+    <Content Include="Sabor.svc" />
+    <Content Include="Talla.svc" />
+    <Content Include="UnidadLongitud.svc" />
+    <Content Include="UnidadMasa.svc" />
+    <Content Include="UnidadVolumen.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XmlPayU\doPing.xml" />
+    <Content Include="XmlPayU\ListarBancosDisponibles.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XmlPayU\ListarFranquiciasDisponibles.xml" />
+    <Content Include="XmlPayU\ListarMediosDePagosActivos.xml" />
+    <Content Include="XmlPayU\ListarBancos.xml" />
+    <Content Include="XmlPayU\SubmitBancos.xml" />
+    <Content Include="XmlPayU\SubmitTarjetaCredito.xml" />
+    <Content Include="XmlPayU\SubmitTransactionBaloto.xml" />
+    <Content Include="XmlPayU\SubmitTransactionEfecty.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Albaran.svc.cs">
+      <DependentUpon>Albaran.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Articulo.svc.cs">
+      <DependentUpon>Articulo.svc</DependentUpon>
+    </Compile>
+    <Compile Include="BannerPrincipal.svc.cs">
+      <DependentUpon>BannerPrincipal.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda.svc.cs">
+      <DependentUpon>Busqueda.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Carrito.svc.cs">
+      <DependentUpon>Carrito.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Categoria.svc.cs">
+      <DependentUpon>Categoria.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.svc.cs">
+      <DependentUpon>Cliente.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Color.svc.cs">
+      <DependentUpon>Color.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracionPieDePagina.svc.cs">
+      <DependentUpon>ConfiguracionPieDePagina.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Direccion.svc.cs">
+      <DependentUpon>Direccion.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Login.svc.cs">
+      <DependentUpon>Login.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Marca.svc.cs">
+      <DependentUpon>Marca.svc</DependentUpon>
+    </Compile>
+    <Compile Include="PaisDepartamentoCiudad.svc.cs">
+      <DependentUpon>PaisDepartamentoCiudad.svc</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionArticulo.svc.cs">
+      <DependentUpon>PresentacionArticulo.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sabor.svc.cs">
+      <DependentUpon>Sabor.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Talla.svc.cs">
+      <DependentUpon>Talla.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TRM_BanRep.svc.cs">
+      <DependentUpon>TRM_BanRep.svc</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadLongitud.svc.cs">
+      <DependentUpon>UnidadLongitud.svc</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadMasa.svc.cs">
+      <DependentUpon>UnidadMasa.svc</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadPresentacion.svc.cs">
+      <DependentUpon>UnidadPresentacion.svc</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadVolumen.svc.cs">
+      <DependentUpon>UnidadVolumen.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\ServicioWebPublica.pubxml" />
+    <Content Include="ServiciosWebPublica.pfx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContratosWeb\ContratosWeb.csproj">
+      <Project>{4e853789-4f1c-47c0-832d-745439714b3c}</Project>
+      <Name>ContratosWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntidadesWeb\EntidadesWeb.csproj">
+      <Project>{f4362bf5-3d0f-4b66-bf9e-7af4dc55fcc4}</Project>
+      <Name>EntidadesWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{025d37af-05ed-4aee-b4eb-64f8633f8912}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Validacion\Validacion.WebPublica\Validacion.WebPublica.csproj">
+      <Project>{6f654fd4-6d94-4a77-9607-7861b35fdc43}</Project>
+      <Name>Validacion.WebPublica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ServiciosWebPublica.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Pruebas|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Pruebas</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>28370</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:16181/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets" Condition="Exists('..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6555F5C0-B3FA-4D4E-9A0C-7B6FEB54061B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiciosWeb</RootNamespace>
+    <AssemblyName>ServiciosWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;CODE_ANALYSIS;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Build.Framework.17.4.0\lib\net472\Microsoft.Build.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Busqueda\Busqueda.svc" />
+    <Content Include="Facturacion\Abonos.svc" />
+    <Content Include="Facturacion\ConfiguracionFactura.svc" />
+    <Content Include="Facturacion\Facturacion.svc" />
+    <Content Include="Facturacion\OrdenesCompra.svc" />
+    <Content Include="Global.asax" />
+    <Content Include="Inventario\CargaDescargaInventario.svc" />
+    <Content Include="Inventario\Kardex.svc" />
+    <Content Include="Properties\DataSources\Entidades.ResultadoTransaccion.datasource" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\ServiciosWeb.pubxml" />
+    <None Include="Service References\ServicioBusquedaWeb\Busqueda.disco" />
+    <None Include="Service References\ServicioBusquedaWeb\configuration91.svcinfo" />
+    <None Include="Service References\ServicioBusquedaWeb\configuration.svcinfo" />
+    <None Include="Service References\ServicioBusquedaWeb\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="TablasMaestras\Abonos.svc" />
+    <Content Include="TablasMaestras\Almacen.svc" />
+    <Content Include="TablasMaestras\Articulo.svc" />
+    <Content Include="TablasMaestras\BannerPrincipal.svc" />
+    <Content Include="TablasMaestras\Carrito.svc" />
+    <Content Include="TablasMaestras\ConfiguracionCatalogoPDF.svc" />
+    <Content Include="TablasMaestras\Categoria.svc" />
+    <Content Include="TablasMaestras\Ciudad.svc" />
+    <Content Include="TablasMaestras\Cliente.svc" />
+    <Content Include="TablasMaestras\Color.svc" />
+    <Content Include="TablasMaestras\ConfiguracionCatalogoPDFPorCategorias.svc" />
+    <Content Include="TablasMaestras\ConfiguracionPieDePagina.svc" />
+    <Content Include="TablasMaestras\Departamento.svc" />
+    <Content Include="TablasMaestras\Direccion.svc" />
+    <Content Include="TablasMaestras\EstadoDeLaVenta.svc" />
+    <Content Include="TablasMaestras\Favicon.svc" />
+    <Content Include="TablasMaestras\Marca.svc" />
+    <Content Include="TablasMaestras\MedioDePago.svc" />
+    <Content Include="TablasMaestras\Pais.svc" />
+    <Content Include="TablasMaestras\PresentacionArticulo.svc" />
+    <Content Include="TablasMaestras\PresentacionArticuloPorAlmacen.svc" />
+    <Content Include="TablasMaestras\Sabor.svc" />
+    <Content Include="TablasMaestras\Talla.svc" />
+    <Content Include="TablasMaestras\TarifasDomicilio.svc" />
+    <Content Include="TablasMaestras\UnidadLongitud.svc" />
+    <Content Include="TablasMaestras\UnidadMasa.svc" />
+    <Content Include="TablasMaestras\UnidadPresentacion.svc" />
+    <Content Include="TablasMaestras\UnidadVolumen.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="XmlPayU\ListarFranquiciasDisponibles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Busqueda\Busqueda.svc.cs">
+      <DependentUpon>Busqueda.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\Abonos.svc.cs">
+      <DependentUpon>Abonos.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\ConfiguracionFactura.svc.cs">
+      <DependentUpon>ConfiguracionFactura.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\Facturacion.svc.cs">
+      <DependentUpon>Facturacion.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\OrdenesCompra.svc.cs">
+      <DependentUpon>OrdenesCompra.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\CargaDescargaInventario.svc.cs">
+      <DependentUpon>CargaDescargaInventario.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Kardex.svc.cs">
+      <DependentUpon>Kardex.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServicioBusquedaWeb\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Abonos.svc.cs">
+      <DependentUpon>Abonos.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Almacen.svc.cs">
+      <DependentUpon>Almacen.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Articulo.svc.cs">
+      <DependentUpon>Articulo.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\BannerPrincipal.svc.cs">
+      <DependentUpon>BannerPrincipal.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Carrito.svc.cs">
+      <DependentUpon>Carrito.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\ConfiguracionCatalogoPDF.svc.cs">
+      <DependentUpon>ConfiguracionCatalogoPDF.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Categoria.svc.cs">
+      <DependentUpon>Categoria.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Ciudad.svc.cs">
+      <DependentUpon>Ciudad.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Cliente.svc.cs">
+      <DependentUpon>Cliente.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Color.svc.cs">
+      <DependentUpon>Color.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\ConfiguracionCatalogoPDFPorCategorias.svc.cs">
+      <DependentUpon>ConfiguracionCatalogoPDFPorCategorias.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\ConfiguracionPieDePagina.svc.cs">
+      <DependentUpon>ConfiguracionPieDePagina.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Departamento.svc.cs">
+      <DependentUpon>Departamento.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Direccion.svc.cs">
+      <DependentUpon>Direccion.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\EstadoDeLaVenta.svc.cs">
+      <DependentUpon>EstadoDeLaVenta.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Favicon.svc.cs">
+      <DependentUpon>Favicon.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Marca.svc.cs">
+      <DependentUpon>Marca.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\MedioDePago.svc.cs">
+      <DependentUpon>MedioDePago.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Pais.svc.cs">
+      <DependentUpon>Pais.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\PresentacionArticulo.svc.cs">
+      <DependentUpon>PresentacionArticulo.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\PresentacionArticuloPorAlmacen.svc.cs">
+      <DependentUpon>PresentacionArticuloPorAlmacen.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Sabor.svc.cs">
+      <DependentUpon>Sabor.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\Talla.svc.cs">
+      <DependentUpon>Talla.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\TarifasDomicilio.svc.cs">
+      <DependentUpon>TarifasDomicilio.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\UnidadLongitud.svc.cs">
+      <DependentUpon>UnidadLongitud.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\UnidadMasa.svc.cs">
+      <DependentUpon>UnidadMasa.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\UnidadPresentacion.svc.cs">
+      <DependentUpon>UnidadPresentacion.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TablasMaestras\UnidadVolumen.svc.cs">
+      <DependentUpon>UnidadVolumen.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusquedasBinariasSecuenciales\BusquedasBinariasSecuenciales.csproj">
+      <Project>{c1cc1f36-4ace-4969-ae98-c2a253c154a0}</Project>
+      <Name>BusquedasBinariasSecuenciales</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContratosWeb\ContratosWeb.csproj">
+      <Project>{4e853789-4f1c-47c0-832d-745439714b3c}</Project>
+      <Name>ContratosWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contratos\Contratos.csproj">
+      <Project>{D2FE776F-3778-43AC-B17B-8214D600883C}</Project>
+      <Name>Contratos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{E084D248-7AB7-4329-8845-BEE2594F86E9}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{025d37af-05ed-4aee-b4eb-64f8633f8912}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Validacion\Validacion.Busquedas\Validacion.Busquedas.csproj">
+      <Project>{75f7bcbe-e398-4e63-a51f-a930aeffaf67}</Project>
+      <Name>Validacion.Busquedas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Validacion\Validacion.Facturacion\Validacion.Facturacion.csproj">
+      <Project>{ebfb5500-d2e3-4cbd-981f-8502a3d19436}</Project>
+      <Name>Validacion.Facturacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Validacion\Validacion.Inventario\Validacion.Inventario.csproj">
+      <Project>{6aa2dc86-18c8-47db-b806-d444f11e3b56}</Project>
+      <Name>Validacion.Inventario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Validacion\Validacion.TablasMaestras\Validacion.TablasMaestras.csproj">
+      <Project>{0BAE8476-FB2B-4180-ABB5-4FD910397090}</Project>
+      <Name>Validacion.TablasMaestras</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ServiciosWeb.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\BusquedasBinariasSecuenciales.fakes" />
+    <None Include="Service References\ServicioBusquedaWeb\Busqueda.wsdl" />
+    <None Include="Service References\ServicioBusquedaWeb\Busqueda.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioBusquedaWeb\Busqueda1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioBusquedaWeb\Busqueda2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioBusquedaWeb\Busqueda3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServicioBusquedaWeb\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ServiciosWeb.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Pruebas|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>33553</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets" Condition="Exists('..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c5b975eb-3100-4c8f-9975-0ac17e08a1b4" name="CasosDeUsoCatetegoria" linkedPackageId="d0e3dfc2-b674-4bc6-ab43-5a7c7c23f842" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="ec34473a-4215-4633-8321-029055367445">
+      <profileInstance Id="7c8e709f-b7a3-4a50-b6b0-00f95b569523" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a5f9f688-6d6e-46a3-9d52-81d76d137ef4">
+      <profileInstance Id="5e9554ff-525b-43ec-b7c6-750699981b52" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="5c2eae2b-b561-4b11-8700-4877de8d8da0" name="Administrador del sistema" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a113c13-3ed4-4e46-8a6b-f35c701341c2" />
+        <targetEnds>
+          <association Id="ee5a3290-af65-4640-8c4f-0839032926b8" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Añadir Categoria" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="00b5de50-0bae-4120-9930-2965856df39b" LastKnownName="0002-Añadir Categoría" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4357b75d-4d59-4ffb-bb3c-08c2e76404c7" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6baa47ef-203f-49e1-a4f6-3409c32a903f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2910511-505c-4e9d-8fc4-b41a497d68ff" name="Añadir Categoria" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5ef3453e-6907-4fa6-9e34-c4be7976c955" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="93937c91-cc86-4221-aa76-4d42445f2c35" />
+          </association>
+          <association Id="8d41a4f5-2502-4668-b4a8-649063c42e29" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Modificar Categoría" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cbe9b0a3-6250-41ca-8c3f-5f276e57205c" LastKnownName="0003-Modificar Categoría" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2ddbcf77-96c3-4836-b4db-20d4eceb253a" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="60d4cd7b-4d7c-4a9a-ada1-b3b121075b7a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06f498e9-7386-4847-bedd-77e70fd6c15b" name="Modificar Categoría" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ef4b48c6-b85e-4056-b63d-dd3bde639374" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5499de59-b04d-4197-b9c6-2e0d9908118c" />
+          </association>
+          <association Id="7b37c317-ba9a-425f-bbf0-08aed66178f7" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Eliminar Categoría" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f767e227-9ba6-4bf9-a642-cdd239b4dcb9" LastKnownName="0004-Eliminar Categoría" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd7d45d6-cd82-4117-8932-f3e765b31e52" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="71584504-d5e0-4855-8150-e32c61617490" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="10bdaacd-cb0a-4ee2-8602-739fc7f5a771" name="Eliminar Categoría" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="26444cc7-24d3-48e7-92c5-074f9188037d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e6cbea85-5f6e-448a-9900-28f02b84aede" />
+          </association>
+          <association Id="fe699149-31cd-43f9-a638-50a0cb002a79" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Listar Categoría" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec00b23a-dcee-4a62-9b51-a77d3c2127e5" LastKnownName="0005-Listar Categoría" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9be79c35-cbed-4038-bfe1-93ffb7ad6cf5" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c1899863-49dd-49c1-b127-80cd5cf76fed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="000da77a-dda0-4bb1-a8f4-e1ec1b711225" name="Listar Categoría" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f8b92e24-1da6-456b-a89d-d19e6814cb9d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dd79f29f-ea36-4860-b374-5fcbcf914206" />
+          </association>
+          <association Id="fc86fa0e-ab3f-4940-8ed1-82906703b773" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Buscar Categoría" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="458375d0-5a08-4c73-8678-3e83df600864" LastKnownName="0001 -Buscar Categoría" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01a48725-2df5-4016-962b-386016add922" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9d6024a4-64ca-4224-a40a-166f0492fdae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8703d372-f612-4154-a1e8-a67495ef147c" name="Buscar Categoría" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e89d18ad-9936-4099-9ad2-2d513fed7600" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="10ea10bd-f0f7-4ead-96f9-cfd8029ecb19" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="00b5de50-0bae-4120-9930-2965856df39b" name="0002-Añadir Categoría" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="be8ad91b-1182-4b2b-a1d0-79b2be248268" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cbe9b0a3-6250-41ca-8c3f-5f276e57205c" name="0003-Modificar Categoría" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fc6614b2-a254-4aca-bc6a-a016f133a5bd" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f767e227-9ba6-4bf9-a642-cdd239b4dcb9" name="0004-Eliminar Categoría" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="42887be7-b42e-4d33-b5ff-bc729afb943b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ec00b23a-dcee-4a62-9b51-a77d3c2127e5" name="0005-Listar Categoría" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="393a55d2-f27b-475d-8486-be9263a20a75" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="458375d0-5a08-4c73-8678-3e83df600864" name="0001 -Buscar Categoría" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="abdffc00-e5e2-4bf7-b6fa-1300c96b1fb5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="6554861d-2cdf-4837-886b-74e14c745e7d" name="Presentación.TablasMaestras.Categorias" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f9385382-5afb-4b92-aa5f-d2ec65ee43cd" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="07c0f6b8-5fbe-488a-a6cf-5e9e6a3b641b" name="Presentación.Busquedas" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="16c94743-8523-4019-a74f-70db4adb39d7" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="49ce725c-6a2a-4b26-928d-ef8b487e6b1c" name="0001 -Buscar Categoría" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3bcac35-2198-4877-889a-146ab6e4134b" />
+        <subjects>
+          <subsystemMoniker Id="07c0f6b8-5fbe-488a-a6cf-5e9e6a3b641b" LastKnownName="Presentación.Busquedas" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5dfb21e5-af89-4309-9777-7bf4959928b4" name="0002-Añadir Categoría" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6d71a5a6-e4b5-4d9b-a4c6-29fa24b3623e" />
+        <subjects>
+          <subsystemMoniker Id="6554861d-2cdf-4837-886b-74e14c745e7d" LastKnownName="Presentación.TablasMaestras.Categorias" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5c977274-d002-4cad-8558-e816329ce977" name="0003-Modificar Categoría" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d8cbdd10-8d4f-4c18-8bb6-3234a540c07e" />
+        <subjects>
+          <subsystemMoniker Id="6554861d-2cdf-4837-886b-74e14c745e7d" LastKnownName="Presentación.TablasMaestras.Categorias" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="bd0e0afa-0b5e-4476-89a7-89a89f3346d5" name="0004-Eliminar Categoría" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8cc60862-54fd-4c46-a808-3c4b5d32ce47" />
+        <subjects>
+          <subsystemMoniker Id="6554861d-2cdf-4837-886b-74e14c745e7d" LastKnownName="Presentación.TablasMaestras.Categorias" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="421f44f1-cd8e-4742-a081-ff16b76a7e08" name="0005-Listar Categoría" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="76aaa07d-978f-4ba3-b89b-4808077d5226" />
+        <subjects>
+          <subsystemMoniker Id="6554861d-2cdf-4837-886b-74e14c745e7d" LastKnownName="Presentación.TablasMaestras.Categorias" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="d0e3dfc2-b674-4bc6-ab43-5a7c7c23f842" name="Modelado">
+    <elementDefinition Id="c1bdd0b8-49a6-4114-99ec-5412c296caa2" />
+  </package>
+</useCaseModelRoot>

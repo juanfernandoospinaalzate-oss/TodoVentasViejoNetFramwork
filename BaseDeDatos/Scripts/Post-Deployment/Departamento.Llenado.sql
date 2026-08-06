@@ -1,0 +1,38 @@
+﻿-- =============================================
+-- Script Template
+-- =============================================
+
+-- Carga de los Departamentos de Colombia
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Amazonas')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Antioquia')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Arauca')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Archipielago de San Andrés y Providencia')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Atlántico')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Bolívar')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Boyacá')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Caldas')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Caquetá')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Casanare')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Cauca')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Cesar')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Chocó')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Córdoba')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Cundinamarca')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Guainía')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Guaviare')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Huila')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'La Guajira')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Magdalena')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Meta')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Nariño')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Norte  de Santander')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Putumayo')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Quindío')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Risaralda')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Santander')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Sucre')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Tolima')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Valle del Cauca')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Vaupés')
+INSERT INTO Departamento(IdPais, Nombre) VALUES(52, 'Vichada')
+-- Carga de los Departamentos de Venezuela

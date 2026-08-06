@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CasosDeUsoArticulos">
+  <useCaseModelRootMoniker Id="b60c7c2e-fb33-4e7e-8af7-dc4cbfa0aaad" />
+  <nestedChildShapes>
+    <actorShape Id="2164897c-8193-4b17-93f0-3975106fb5e0" absoluteBounds="1.875, 1.375, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="31a14ef3-e20d-4c5c-91dd-d621a3240359" LastKnownName="Actor1" />
+      <relativeChildShapes />
+    </actorShape>
+  </nestedChildShapes>
+</useCaseDiagram>

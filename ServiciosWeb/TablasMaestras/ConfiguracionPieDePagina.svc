@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ServiciosWeb.TablasMaestras.ConfiguracionPieDePagina" CodeBehind="ConfiguracionPieDePagina.svc.cs" %>

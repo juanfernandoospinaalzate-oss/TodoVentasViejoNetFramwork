@@ -1,0 +1,1491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B2FBEFF-651E-46DF-BC72-AAAAAC6D654D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebPublica</RootNamespace>
+    <AssemblyName>WebPublica</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;CODE_ANALYSIS;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\ComponentesExternos\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\ComponentesExternos\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\ComponentesExternos\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="jose-jwt, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jose-jwt.4.1.0\lib\net472\jose-jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MercadoPago, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\mercadopago-sdk.2.2.2\lib\net461\MercadoPago.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Build.Framework.17.4.0\lib\net472\Microsoft.Build.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.Configuration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.7.0.0\lib\net462\Microsoft.Extensions.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.FileExtensions.7.0.0\lib\net462\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Json.7.0.0\lib\net462\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.7.0.0\lib\net462\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Physical.7.0.0\lib\net462\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileSystemGlobbing.7.0.0\lib\net462\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.7.0.0\lib\net462\Microsoft.Extensions.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=7.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.7.0.1\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.7.0.0\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nexmo.Api, Version=5.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nexmo.Csharp.Client.5.2.0\lib\net46\Nexmo.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PayPal, Version=1.9.1.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ComponentesExternos\PayPal.1.9.1\lib\net451\PayPal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Activities" />
+    <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net463\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.7.0.0\lib\net462\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Console, Version=4.0.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.1\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.7.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.3.1\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.2\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.RegularExpressions.4.3.1\lib\net463\System.Text.RegularExpressions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.1\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConfimarCodigoVerificacion.aspx" />
+    <Content Include="ControlesDeUsuario\StyleSheets\jquery-ui.theme.min.css" />
+    <Content Include="ControlesDeUsuario\WucBotonTotal.ascx" />
+    <Content Include="ControlesDeUsuario\WucFooter.ascx" />
+    <Content Include="ControlesDeUsuario\WucImagenesArticulo.ascx" />
+    <Content Include="ControlesDeUsuario\WucInicio.ascx" />
+    <Content Include="ControlesDeUsuario\WucLogoSitioWebascx.ascx" />
+    <Content Include="Graficas\Iconos\WhatsapLogo.png" />
+    <Content Include="Ingresar.aspx" />
+    <Content Include="LogoSitioWeb.JPG" />
+    <Content Include="PaginaNoEncontrada404.aspx" />
+    <Content Include="PaginaNoEncontrada410.aspx" />
+    <Content Include="PasarelasDePago\Graficas\Imagenes\LOGO-GOOGLE.jpg" />
+    <Content Include="PasarelasDePago\Mercadopago.aspx" />
+    <Content Include="PasarelasDePago\Paypal.aspx" />
+    <Content Include="PasarelasDePago\RedirectUrlsPayPal\PaymentCancelled.aspx" />
+    <Content Include="PasarelasDePago\RedirectUrlsPayPal\PaymentSuccessful.aspx" />
+    <Content Include="PasarelasDePago\RedirectUrlsPayPal\ResponsePayPal.aspx" />
+    <Content Include="RecuperarClave.aspx" />
+    <Content Include="Registro.aspx" />
+    <Content Include="ControlesDeUsuario\StyleSheets\StyleSheetTreeview.css" />
+    <Content Include="ControlesDeUsuario\WucBannerPrincipal.ascx" />
+    <Content Include="ControlesDeUsuario\WucBusqueda.ascx" />
+    <Content Include="ControlesDeUsuario\WucResultadoCaja.ascx" />
+    <Content Include="ControlesDeUsuario\WucResultadocajaListadoCategoria.ascx" />
+    <Content Include="ControlesDeUsuario\WucResultadocajaListado.ascx" />
+    <Content Include="FormularioMailChimp.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graficas\Iconos\adobe_reader_logo.jpg" />
+    <Content Include="Graficas\Iconos\cargando_01.gif" />
+    <Content Include="Graficas\Iconos\email_logo.jpg" />
+    <Content Include="Graficas\Iconos\facebook_logo.JPG" />
+    <Content Include="Graficas\Iconos\messenger_logo.JPG" />
+    <Content Include="Graficas\Iconos\skype_logo.JPG" />
+    <Content Include="Graficas\Iconos\telefono_logo.JPG" />
+    <Content Include="Graficas\Iconos\version-horizontal-small.png" />
+    <Content Include="Graficas\productos\buzo01-BIG.png" />
+    <Content Include="index.aspx" />
+    <Content Include="ResultadoCaja.aspx" />
+    <Content Include="ControlesDeUsuario\WucResultadoLista.ascx" />
+    <Content Include="ResultadoCajaCategoria.aspx" />
+    <Content Include="ResultadoLista.aspx" />
+    <Content Include="SitioAnterior\AdminUsuario\AsignacionPassword.aspx" />
+    <Content Include="SitioAnterior\AdminUsuario\CambioPassword.aspx" />
+    <Content Include="Carrito.aspx" />
+    <Content Include="SitioAnterior\AdminUsuario\Checkout.aspx" />
+    <Content Include="SitioAnterior\AdminUsuario\DatosPersonales.aspx" />
+    <Content Include="SitioAnterior\AdminUsuario\Direcciones.aspx" />
+    <Content Include="SitioAnterior\AdminUsuario\HistorialDeCompras.aspx" />
+    <Content Include="Articulo.aspx" />
+    <Content Include="SitioAnterior\Banners\WucBannerCuadrado.ascx" />
+    <Content Include="SitioAnterior\Banners\WucBannerHorizontal.ascx" />
+    <Content Include="SitioAnterior\Banners\WucBannerHorizontalPeq.ascx" />
+    <Content Include="Contenido\CSS\estilos.css" />
+    <Content Include="Contenido\JS\javascript.js" />
+    <Content Include="Contenido\Librerias\fotorama%402x.png" />
+    <Content Include="Contenido\Librerias\fotorama.css" />
+    <Content Include="Contenido\Librerias\fotorama.js" />
+    <Content Include="Contenido\Librerias\fotorama.png" />
+    <Content Include="Contenido\Librerias\jquery.min.js" />
+    <Content Include="Contenido\Librerias\jquery.zoom.min.js" />
+    <Content Include="Contenido\Librerias\lightslider.min.css" />
+    <Content Include="Contenido\Librerias\lightslider.min.js" />
+    <Content Include="Contenido\Librerias\pgwslider.min.css" />
+    <Content Include="Contenido\Librerias\pgwslider.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\accordion.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\accordion.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\accordion.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\accordion.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\ad.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\ad.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\api.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\api.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\breadcrumb.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\breadcrumb.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\button.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\button.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\card.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\card.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\checkbox.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\checkbox.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\checkbox.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\checkbox.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\comment.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\comment.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\container.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\container.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\dimmer.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\dimmer.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\dimmer.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\dimmer.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\divider.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\divider.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\dropdown.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\dropdown.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\dropdown.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\dropdown.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\embed.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\embed.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\embed.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\embed.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\feed.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\feed.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\flag.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\flag.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\form.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\form.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\form.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\form.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\grid.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\grid.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\header.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\header.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\icon.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\icon.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\image.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\image.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\input.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\input.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\item.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\item.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\label.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\label.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\list.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\list.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\loader.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\loader.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\menu.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\menu.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\message.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\message.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\modal.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\modal.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\modal.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\modal.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\nag.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\nag.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\nag.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\nag.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\popup.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\popup.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\popup.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\popup.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\progress.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\progress.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\progress.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\progress.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\rail.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\rail.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\rating.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\rating.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\rating.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\rating.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\reset.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\reset.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\reveal.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\reveal.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\search.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\search.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\search.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\search.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\segment.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\segment.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\shape.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\shape.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\shape.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\shape.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\sidebar.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\sidebar.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\sidebar.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\sidebar.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\site.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\site.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\site.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\site.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\state.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\state.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\statistic.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\statistic.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\step.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\step.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\sticky.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\sticky.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\sticky.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\sticky.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\tab.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\tab.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\tab.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\tab.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\table.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\table.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\transition.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\transition.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\transition.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\transition.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\visibility.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\components\visibility.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\semantic.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\semantic.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\semantic.min.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\semantic.min.js" />
+    <Content Include="Contenido\Librerias\semantic\dist\themes\basic\assets\fonts\icons.svg" />
+    <Content Include="Contenido\Librerias\semantic\dist\themes\default\assets\fonts\icons.svg" />
+    <Content Include="Contenido\Librerias\semantic\dist\themes\default\assets\images\flags.png" />
+    <Content Include="Contenido\Librerias\semantic\gulpfile.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\behaviors\api.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\behaviors\colorize.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\behaviors\form.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\behaviors\state.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\behaviors\visibility.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\behaviors\visit.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\globals\site.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\accordion.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\checkbox.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\dimmer.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\dropdown.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\embed.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\modal.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\nag.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\popup.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\progress.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\rating.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\search.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\shape.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\sidebar.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\sticky.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\tab.js" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\transition.js" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\assets\fonts\icons.svg" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\assets\fonts\icons.svg" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\assets\images\flags.png" />
+    <Content Include="Contenido\Librerias\semantic\tasks\admin\components\create.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\admin\components\init.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\admin\components\update.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\admin\distributions\create.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\admin\distributions\init.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\admin\distributions\update.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\admin\publish.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\admin\register.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\admin\release.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\build.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\build\assets.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\build\css.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\build\javascript.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\check-install.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\clean.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\collections\admin.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\collections\build.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\collections\internal.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\collections\rtl.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\admin\github.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\admin\oauth.example.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\admin\release.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\admin\templates\component-package.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\admin\templates\css-package.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\admin\templates\less-package.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\defaults.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\docs.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\npm\gulpfile.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\project\config.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\project\install.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\project\release.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\tasks.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\user.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\docs\build.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\docs\metadata.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\docs\serve.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\install.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\rtl\build.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\rtl\watch.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\version.js" />
+    <Content Include="Contenido\Librerias\semantic\tasks\watch.js" />
+    <Content Include="ControlesDeUsuario\WucCarruselArtDin.ascx" />
+    <Content Include="ControlesDeUsuario\WucCarruselArtEst.ascx" />
+    <Content Include="ControlesDeUsuario\WucLoginStatus.ascx" />
+    <Content Include="DetalleArticulo.aspx" />
+    <Content Include="SitioAnterior\css\Filtros.css" />
+    <Content Include="Graficas\productos\buzo01.jpg" />
+    <Content Include="Graficas\productos\buzo02.jpg" />
+    <Content Include="Graficas\productos\buzo03.jpg" />
+    <Content Include="Graficas\productos\buzo04.jpg" />
+    <Content Include="Graficas\productos\camisa01.jpg" />
+    <Content Include="Graficas\productos\camisa02.jpg" />
+    <Content Include="Graficas\productos\camisa03.jpg" />
+    <Content Include="Graficas\productos\camisa04.jpg" />
+    <Content Include="Graficas\productos\camiseta01.jpg" />
+    <Content Include="Graficas\productos\camiseta02.jpg" />
+    <Content Include="Graficas\productos\camiseta03.jpg" />
+    <Content Include="Graficas\productos\camiseta04.jpg" />
+    <Content Include="Graficas\productos\chompa01.jpg" />
+    <Content Include="Graficas\productos\chompa02.jpg" />
+    <Content Include="Graficas\productos\chompa03.jpg" />
+    <Content Include="Graficas\productos\chompa04.jpg" />
+    <Content Include="Graficas\productos\pantalon01.jpg" />
+    <Content Include="Graficas\productos\pantalon02.jpg" />
+    <Content Include="Graficas\productos\pantalon03.jpg" />
+    <Content Include="Graficas\productos\pantalon04.jpg" />
+    <Content Include="Graficas\productos\polo01.jpg" />
+    <Content Include="Graficas\productos\polo02.jpg" />
+    <Content Include="Graficas\productos\polo03.jpg" />
+    <Content Include="Graficas\productos\polo04.jpg" />
+    <Content Include="ImagenesArticulo\Articulo_No_Disponible.jpg" />
+    <Content Include="SitioAnterior\PaginaDeConfirmacion.aspx" />
+    <Content Include="SitioAnterior\css\MenuCategorias.css" />
+    <Content Include="ControlesDeUsuario\WucFiltroArticulo.ascx" />
+    <Content Include="ControlesDeUsuario\WucMenuCategorias.ascx" />
+    <Content Include="ControlesDeUsuario\WucListaVistaPreviaArticulo.ascx" />
+    <Content Include="ControlesDeUsuario\WucPaisDepartamentoCiudad.ascx" />
+    <Content Include="ControlesDeUsuario\WucVistaPreviaArticulo.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="SitioAnterior\IngresoUsuario.aspx" />
+    <Content Include="Properties\DataSources\Entidades.Franquicia.datasource" />
+    <Content Include="Properties\DataSources\Entidades.ResultadoTransaccion.datasource" />
+    <Content Include="SitioAnterior\css\Formularios.css" />
+    <Content Include="Contenido\Librerias\semantic\dist\themes\basic\assets\fonts\icons.eot" />
+    <Content Include="Contenido\Librerias\semantic\dist\themes\basic\assets\fonts\icons.ttf" />
+    <Content Include="Contenido\Librerias\semantic\dist\themes\basic\assets\fonts\icons.woff" />
+    <Content Include="Contenido\Librerias\semantic\dist\themes\default\assets\fonts\icons.eot" />
+    <Content Include="Contenido\Librerias\semantic\dist\themes\default\assets\fonts\icons.ttf" />
+    <Content Include="Contenido\Librerias\semantic\dist\themes\default\assets\fonts\icons.woff" />
+    <Content Include="Contenido\Librerias\semantic\dist\themes\default\assets\fonts\icons.woff2" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\collections\breadcrumb.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\collections\form.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\collections\grid.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\collections\menu.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\collections\message.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\collections\table.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\button.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\container.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\divider.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\flag.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\header.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\icon.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\image.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\input.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\label.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\list.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\loader.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\rail.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\reveal.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\segment.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\elements\step.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\globals\reset.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\globals\site.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\accordion.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\checkbox.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\dimmer.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\dropdown.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\embed.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\modal.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\nag.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\popup.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\progress.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\rating.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\search.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\shape.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\sidebar.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\sticky.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\tab.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\modules\transition.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\views\ad.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\views\card.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\views\comment.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\views\feed.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\views\item.less" />
+    <Content Include="Contenido\Librerias\semantic\src\definitions\views\statistic.less" />
+    <Content Include="Contenido\Librerias\semantic\src\semantic.less" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\breadcrumb.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\breadcrumb.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\form.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\form.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\grid.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\grid.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\menu.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\menu.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\message.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\message.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\table.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\collections\table.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\container.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\container.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\divider.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\divider.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\flag.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\flag.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\header.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\header.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\icon.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\icon.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\image.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\image.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\input.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\input.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\label.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\label.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\list.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\list.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\loader.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\loader.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\rail.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\rail.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\reveal.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\reveal.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\segment.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\segment.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\step.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\elements\step.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\globals\reset.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\globals\reset.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\globals\site - copia.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\globals\site.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\globals\site.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\accordion.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\accordion.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\chatroom.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\chatroom.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\checkbox.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\checkbox.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\dimmer.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\dimmer.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\dropdown.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\dropdown.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\embed.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\embed.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\modal.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\modal.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\nag.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\nag.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\popup.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\popup.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\progress.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\progress.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\rating.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\rating.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\search.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\search.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\shape.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\shape.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\sidebar.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\sidebar.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\sticky.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\sticky.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\tab.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\tab.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\transition.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\modules\transition.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\ad.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\ad.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\card.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\card.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\comment.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\comment.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\feed.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\feed.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\item.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\item.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\statistic.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\site\views\statistic.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\theme.config" />
+    <Content Include="Contenido\Librerias\semantic\src\theme.less" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\amazon\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\amazon\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\assets\fonts\icons.eot" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\assets\fonts\icons.ttf" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\assets\fonts\icons.woff" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\collections\table.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\collections\table.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\elements\icon.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\elements\icon.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\elements\step.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\elements\step.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\globals\reset.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\globals\reset.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\modules\progress.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\modules\progress.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\views\card.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\basic\views\card.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\bookish\elements\header.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\bookish\elements\header.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\bootstrap3\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\bootstrap3\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\collections\form.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\collections\form.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\collections\menu.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\collections\menu.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\elements\header.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\elements\header.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\modules\accordion.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\modules\accordion.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\views\comment.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\chubby\views\comment.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\classic\collections\table.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\classic\collections\table.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\classic\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\classic\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\classic\elements\header.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\classic\elements\header.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\classic\modules\progress.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\classic\modules\progress.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\classic\views\card.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\classic\views\card.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\colored\modules\checkbox.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\colored\modules\checkbox.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\assets\fonts\icons.eot" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\assets\fonts\icons.ttf" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\assets\fonts\icons.woff" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\assets\fonts\icons.woff2" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\breadcrumb.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\breadcrumb.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\form.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\form.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\grid.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\grid.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\menu.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\menu.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\message.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\message.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\table.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\collections\table.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\container.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\container.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\divider.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\divider.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\flag.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\flag.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\header.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\header.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\icon.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\icon.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\image.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\image.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\input.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\input.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\label.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\label.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\list.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\list.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\loader.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\loader.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\rail.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\rail.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\reveal.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\reveal.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\segment.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\segment.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\step.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\elements\step.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\globals\reset.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\globals\reset.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\globals\site.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\globals\site.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\accordion.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\accordion.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\chatroom.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\chatroom.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\checkbox.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\checkbox.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\dimmer.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\dimmer.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\dropdown.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\dropdown.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\embed.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\embed.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\modal.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\modal.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\nag.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\nag.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\popup.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\popup.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\progress.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\progress.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\rating.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\rating.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\search.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\search.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\shape.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\shape.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\sidebar.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\sidebar.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\sticky.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\sticky.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\tab.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\tab.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\transition.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\modules\transition.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\ad.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\ad.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\card.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\card.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\comment.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\comment.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\feed.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\feed.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\item.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\item.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\statistic.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\default\views\statistic.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\duo\elements\loader.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\duo\elements\loader.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\fixed-width\collections\grid.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\fixed-width\collections\grid.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\fixed-width\modules\modal.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\fixed-width\modules\modal.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\flat\collections\form.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\flat\collections\form.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\flat\globals\site.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\flat\globals\site.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\collections\form.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\collections\form.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\collections\menu.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\collections\menu.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\collections\message.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\collections\message.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\elements\segment.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\elements\segment.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\elements\step.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\github\elements\step.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\gmail\collections\message.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\gmail\collections\message.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\instagram\views\card.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\instagram\views\card.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\collections\menu.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\collections\menu.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\elements\header.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\elements\header.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\globals\site.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\globals\site.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\modules\dropdown.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\modules\dropdown.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\modules\modal.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\material\modules\modal.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\pulsar\elements\loader.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\pulsar\elements\loader.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\raised\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\raised\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\resetcss\globals\reset.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\resetcss\globals\reset.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\round\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\round\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\rtl\globals\site.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\rtl\globals\site.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\striped\modules\progress.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\striped\modules\progress.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\timeline\views\feed.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\timeline\views\feed.variables" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\twitter\elements\button.overrides" />
+    <Content Include="Contenido\Librerias\semantic\src\themes\twitter\elements\button.variables" />
+    <Content Include="Contenido\Librerias\semantic\tasks\collections\README.md" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\admin\templates\bower.json" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\admin\templates\composer.json" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\admin\templates\package.json" />
+    <Content Include="Contenido\Librerias\semantic\tasks\config\admin\templates\README.md" />
+    <Content Include="Contenido\Librerias\semantic\tasks\README.md" />
+    <Content Include="PlantillaPublicaDetalleArticulo.Master" />
+    <Content Include="packages.config" />
+    <Content Include="PasarelasDePago\Notificaciones\NotificacionesMercadoPago.ashx" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
+    <None Include="Properties\PublishProfiles\.pubxml" />
+    <None Include="SitioAnterior\Scripts\jquery-2.1.3.intellisense.js" />
+    <Content Include="SitioAnterior\Scripts\jquery-2.1.3.js" />
+    <Content Include="SitioAnterior\Scripts\jquery-2.1.3.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebformPruebas.aspx" />
+    <Content Include="WebPublica.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfimarCodigoVerificacion.aspx.cs">
+      <DependentUpon>ConfimarCodigoVerificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfimarCodigoVerificacion.aspx.designer.cs">
+      <DependentUpon>ConfimarCodigoVerificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucBotonTotal.ascx.cs">
+      <DependentUpon>WucBotonTotal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucBotonTotal.ascx.designer.cs">
+      <DependentUpon>WucBotonTotal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucFooter.ascx.cs">
+      <DependentUpon>WucFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucFooter.ascx.designer.cs">
+      <DependentUpon>WucFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucImagenesArticulo.ascx.cs">
+      <DependentUpon>WucImagenesArticulo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucImagenesArticulo.ascx.designer.cs">
+      <DependentUpon>WucImagenesArticulo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucInicio.ascx.cs">
+      <DependentUpon>WucInicio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucInicio.ascx.designer.cs">
+      <DependentUpon>WucInicio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucLogoSitioWebascx.ascx.cs">
+      <DependentUpon>WucLogoSitioWebascx.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucLogoSitioWebascx.ascx.designer.cs">
+      <DependentUpon>WucLogoSitioWebascx.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaNoEncontrada404.aspx.cs">
+      <DependentUpon>PaginaNoEncontrada404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaNoEncontrada404.aspx.designer.cs">
+      <DependentUpon>PaginaNoEncontrada404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaNoEncontrada410.aspx.cs">
+      <DependentUpon>PaginaNoEncontrada410.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaNoEncontrada410.aspx.designer.cs">
+      <DependentUpon>PaginaNoEncontrada410.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasarelasDePago\Mercadopago.aspx.cs">
+      <DependentUpon>Mercadopago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasarelasDePago\Mercadopago.aspx.designer.cs">
+      <DependentUpon>Mercadopago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasarelasDePago\Notificaciones\NotificacionesMercadoPago.ashx.cs">
+      <DependentUpon>NotificacionesMercadoPago.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PasarelasDePago\Paypal.aspx.cs">
+      <DependentUpon>Paypal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasarelasDePago\Paypal.aspx.designer.cs">
+      <DependentUpon>Paypal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasarelasDePago\RedirectUrlsPayPal\PaymentCancelled.aspx.cs">
+      <DependentUpon>PaymentCancelled.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasarelasDePago\RedirectUrlsPayPal\PaymentCancelled.aspx.designer.cs">
+      <DependentUpon>PaymentCancelled.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasarelasDePago\RedirectUrlsPayPal\PaymentSuccessful.aspx.cs">
+      <DependentUpon>PaymentSuccessful.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasarelasDePago\RedirectUrlsPayPal\PaymentSuccessful.aspx.designer.cs">
+      <DependentUpon>PaymentSuccessful.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasarelasDePago\RedirectUrlsPayPal\ResponsePayPal.aspx.cs">
+      <DependentUpon>ResponsePayPal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasarelasDePago\RedirectUrlsPayPal\ResponsePayPal.aspx.designer.cs">
+      <DependentUpon>ResponsePayPal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperarClave.aspx.cs">
+      <DependentUpon>RecuperarClave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecuperarClave.aspx.designer.cs">
+      <DependentUpon>RecuperarClave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucBannerPrincipal.ascx.cs">
+      <DependentUpon>WucBannerPrincipal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucBannerPrincipal.ascx.designer.cs">
+      <DependentUpon>WucBannerPrincipal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucBusqueda.ascx.cs">
+      <DependentUpon>WucBusqueda.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucBusqueda.ascx.designer.cs">
+      <DependentUpon>WucBusqueda.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucResultadoCaja.ascx.cs">
+      <DependentUpon>WucResultadoCaja.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucResultadoCaja.ascx.designer.cs">
+      <DependentUpon>WucResultadoCaja.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucResultadocajaListadoCategoria.ascx.cs">
+      <DependentUpon>WucResultadocajaListadoCategoria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucResultadocajaListadoCategoria.ascx.designer.cs">
+      <DependentUpon>WucResultadocajaListadoCategoria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucResultadocajaListado.ascx.cs">
+      <DependentUpon>WucResultadocajaListado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucResultadocajaListado.ascx.designer.cs">
+      <DependentUpon>WucResultadocajaListado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlantillaPublicaDetalleArticulo.Master.cs">
+      <DependentUpon>PlantillaPublicaDetalleArticulo.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlantillaPublicaDetalleArticulo.Master.designer.cs">
+      <DependentUpon>PlantillaPublicaDetalleArticulo.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ResultadoCaja.aspx.cs">
+      <DependentUpon>ResultadoCaja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResultadoCaja.aspx.designer.cs">
+      <DependentUpon>ResultadoCaja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar.aspx.cs">
+      <DependentUpon>Ingresar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ingresar.aspx.designer.cs">
+      <DependentUpon>Ingresar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucResultadoLista.ascx.cs">
+      <DependentUpon>WucResultadoLista.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucResultadoLista.ascx.designer.cs">
+      <DependentUpon>WucResultadoLista.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ResultadoCajaCategoria.aspx.cs">
+      <DependentUpon>ResultadoCajaCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResultadoCajaCategoria.aspx.designer.cs">
+      <DependentUpon>ResultadoCajaCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResultadoLista.aspx.cs">
+      <DependentUpon>ResultadoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResultadoLista.aspx.designer.cs">
+      <DependentUpon>ResultadoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\AsignacionPassword.aspx.cs">
+      <DependentUpon>AsignacionPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\AsignacionPassword.aspx.designer.cs">
+      <DependentUpon>AsignacionPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\CambioPassword.aspx.cs">
+      <DependentUpon>CambioPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\CambioPassword.aspx.designer.cs">
+      <DependentUpon>CambioPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\DatosPersonales.aspx.cs">
+      <DependentUpon>DatosPersonales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\DatosPersonales.aspx.designer.cs">
+      <DependentUpon>DatosPersonales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\Direcciones.aspx.cs">
+      <DependentUpon>Direcciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\Direcciones.aspx.designer.cs">
+      <DependentUpon>Direcciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\HistorialDeCompras.aspx.cs">
+      <DependentUpon>HistorialDeCompras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\HistorialDeCompras.aspx.designer.cs">
+      <DependentUpon>HistorialDeCompras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\PlantillaCuentaUsuario.Master.cs">
+      <DependentUpon>PlantillaCuentaUsuario.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\AdminUsuario\PlantillaCuentaUsuario.Master.designer.cs">
+      <DependentUpon>PlantillaCuentaUsuario.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Articulo.aspx.cs">
+      <DependentUpon>Articulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articulo.aspx.designer.cs">
+      <DependentUpon>Articulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\Banners\WucBannerCuadrado.ascx.cs">
+      <DependentUpon>WucBannerCuadrado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\Banners\WucBannerCuadrado.ascx.designer.cs">
+      <DependentUpon>WucBannerCuadrado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\Banners\WucBannerHorizontal.ascx.cs">
+      <DependentUpon>WucBannerHorizontal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\Banners\WucBannerHorizontal.ascx.designer.cs">
+      <DependentUpon>WucBannerHorizontal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\Banners\WucBannerHorizontalPeq.ascx.cs">
+      <DependentUpon>WucBannerHorizontalPeq.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\Banners\WucBannerHorizontalPeq.ascx.designer.cs">
+      <DependentUpon>WucBannerHorizontalPeq.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucCarruselArtDin.ascx.cs">
+      <DependentUpon>WucCarruselArtDin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucCarruselArtDin.ascx.designer.cs">
+      <DependentUpon>WucCarruselArtDin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucCarruselArtEst.ascx.cs">
+      <DependentUpon>WucCarruselArtEst.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucCarruselArtEst.ascx.designer.cs">
+      <DependentUpon>WucCarruselArtEst.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucLoginStatus.ascx.cs">
+      <DependentUpon>WucLoginStatus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucLoginStatus.ascx.designer.cs">
+      <DependentUpon>WucLoginStatus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleArticulo.aspx.cs">
+      <DependentUpon>DetalleArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleArticulo.aspx.designer.cs">
+      <DependentUpon>DetalleArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\PaginaDeConfirmacion.aspx.cs">
+      <DependentUpon>PaginaDeConfirmacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\PaginaDeConfirmacion.aspx.designer.cs">
+      <DependentUpon>PaginaDeConfirmacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucFiltroArticulo.ascx.cs">
+      <DependentUpon>WucFiltroArticulo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucFiltroArticulo.ascx.designer.cs">
+      <DependentUpon>WucFiltroArticulo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucMenuCategorias.ascx.cs">
+      <DependentUpon>WucMenuCategorias.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucMenuCategorias.ascx.designer.cs">
+      <DependentUpon>WucMenuCategorias.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucListaVistaPreviaArticulo.ascx.cs">
+      <DependentUpon>WucListaVistaPreviaArticulo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucListaVistaPreviaArticulo.ascx.designer.cs">
+      <DependentUpon>WucListaVistaPreviaArticulo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucPaisDepartamentoCiudad.ascx.cs">
+      <DependentUpon>WucPaisDepartamentoCiudad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucPaisDepartamentoCiudad.ascx.designer.cs">
+      <DependentUpon>WucPaisDepartamentoCiudad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucVistaPreviaArticulo.ascx.cs">
+      <DependentUpon>WucVistaPreviaArticulo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesDeUsuario\WucVistaPreviaArticulo.ascx.designer.cs">
+      <DependentUpon>WucVistaPreviaArticulo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="SitioAnterior\IngresoUsuario.aspx.cs">
+      <DependentUpon>IngresoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioAnterior\IngresoUsuario.aspx.designer.cs">
+      <DependentUpon>IngresoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlantillaPublica.Master.cs">
+      <DependentUpon>PlantillaPublica.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlantillaPublica.Master.designer.cs">
+      <DependentUpon>PlantillaPublica.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilidadesCaptcha\Captcha.ashx.cs">
+      <DependentUpon>Captcha.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebformPruebas.aspx.cs">
+      <DependentUpon>WebformPruebas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebformPruebas.aspx.designer.cs">
+      <DependentUpon>WebformPruebas.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PlantillaPublica.Master" />
+    <Content Include="SitioAnterior\AdminUsuario\PlantillaCuentaUsuario.Master" />
+    <Content Include="SitioAnterior\packages.config" />
+    <Content Include="SitioAnterior\Scripts\jquery-2.1.3.min.map" />
+    <Content Include="UtilidadesCaptcha\Captcha.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusquedasBinariasSecuenciales\BusquedasBinariasSecuenciales.csproj">
+      <Project>{c1cc1f36-4ace-4969-ae98-c2a253c154a0}</Project>
+      <Name>BusquedasBinariasSecuenciales</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContratosWeb\ContratosWeb.csproj">
+      <Project>{4e853789-4f1c-47c0-832d-745439714b3c}</Project>
+      <Name>ContratosWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntidadesWeb\EntidadesWeb.csproj">
+      <Project>{f4362bf5-3d0f-4b66-bf9e-7af4dc55fcc4}</Project>
+      <Name>EntidadesWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{e084d248-7ab7-4329-8845-bee2594f86e9}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fachada\Fachada.WebPublica\Fachada.WebPublica.csproj">
+      <Project>{4ee56908-53cb-4a50-bae0-7b1da48b41b5}</Project>
+      <Name>Fachada.WebPublica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{025d37af-05ed-4aee-b4eb-64f8633f8912}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MensajesWeb\MensajesWeb.csproj">
+      <Project>{925fec3d-f81f-4ca4-b98e-0443eb1f42e7}</Project>
+      <Name>MensajesWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PasarelasDePago\PasarelasPago.csproj">
+      <Project>{c0a92164-78e0-4961-a6e3-96835d5b37f7}</Project>
+      <Name>PasarelasPago</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidacionesComunes\ValidacionesComunes.csproj">
+      <Project>{18081597-ee41-41a9-8586-6d5a38f6a5c3}</Project>
+      <Name>ValidacionesComunes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Graficas\banners\home\principal\" />
+    <Folder Include="Graficas\banners\home\secundario\" />
+    <Folder Include="PasarelasDePago\Graficas\Iconos\" />
+    <Folder Include="SitioAnterior\AdminUsuario\ImagenesPlantillaCuentaUsuario\" />
+    <Folder Include="SitioAnterior\ImagenesPlantillaPublica\" />
+    <Folder Include="SitioAnterior\Scripts\Busqueda\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>WebPublica.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Pruebas|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+          <servers defaultServer="">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:7235/" workingDir="" />
+          </servers>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>copy /v D:\todo_ventas_colombia\Mensajes.xml  D:\todo_ventas_colombia\Presentacion.MDI\Mensajes.xml /y
+attrib -r "D:\todo_ventas_colombia\Presentacion.MDI\Mensajes.xml"
+
+copy /v "D:\todo_ventas_colombia\Etiquetas.xml" "D:\todo_ventas_colombia\Presentacion.MDI\Etiquetas.xml" /y
+attrib -r "D:\todo_ventas_colombia\Presentacion.MDI\Etiquetas.xml"
+D
+copy /v "D:\todo_ventas_colombia\Mensajes.xml" "D:\todo_ventas_colombia\ServiciosWeb\Mensajes.xml" /y
+attrib -r "D:\todo_ventas_colombia\ServiciosWeb\Mensajes.xml"
+
+copy /v "D:\todo_ventas_colombia\Mensajes.xml" "D:\todo_ventas_colombia\ServiciosWebPublica\Mensajes.xml" /y
+attrib -r "D:\todo_ventas_colombia\ServiciosWebPublica\Mensajes.xml"
+
+copy /v "D:\todo_ventas_colombia\Etiquetas.xml" "D:\todo_ventas_colombia\ServiciosWebPublica\Etiquetas.xml" /y
+attrib -r "D:\todo_ventas_colombia\ServiciosWebPublica\Etiquetas.xml"
+
+copy /v "D:\todo_ventas_colombia\Etiquetas.xml" "D:\todo_ventas_colombia\WebPublica\Etiquetas.xml" /y
+attrib -r "D:\todo_ventas_colombia\WebPublica\Etiquetas.xml"</PreBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+  <Import Project="..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets" Condition="Exists('..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets')" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

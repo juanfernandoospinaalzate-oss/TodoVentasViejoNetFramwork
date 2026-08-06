@@ -1,0 +1,236 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PlantillaPublica.master.cs" Inherits="WebPublica.PlantillaPublica" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Src="ControlesDeUsuario/WucLoginStatus.ascx" TagName="WucLoginStatus" TagPrefix="uc2" %>
+<%@ Register Src="~/ControlesDeUsuario/WucBusqueda.ascx" TagPrefix="uc1" TagName="WucBusqueda" %>
+<%@ Register Src="~/ControlesDeUsuario/WucMenuCategorias.ascx" TagPrefix="uc2" TagName="WucMenuCategorias" %>
+<%@ Register Src="~/ControlesDeUsuario/WucLoginStatus.ascx" TagPrefix="uc1" TagName="WucLoginStatus" %>
+<%@ Register Src="~/ControlesDeUsuario/WucBotonTotal.ascx" TagPrefix="uc1" TagName="WucBotonTotal" %>
+<%@ Register Src="~/ControlesDeUsuario/WucInicio.ascx" TagPrefix="uc1" TagName="WucInicio" %>
+<%@ Register Src="~/ControlesDeUsuario/WucLogoSitioWebascx.ascx" TagPrefix="uc1" TagName="WucLogoSitioWebascx" %>
+<%@ Register Src="~/ControlesDeUsuario/WucFooter.ascx" TagPrefix="uc1" TagName="WucFooter" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <title id="TituloPagina" runat="server"></title>
+    <meta name="description" content="">
+    <%--<meta name="viewport" content="width=device-width, initial-scale=1">--%>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" runat="server" id="linkSemanticMinCss" href="/contenido/librerias/semantic/dist/semantic.min.css" />
+    <link rel="stylesheet" runat="server" id="linklightsliderMinCss" href="/contenido/librerias/lightslider.min.css" />
+    <link rel="stylesheet" runat="server" id="linkFotoramaCss" href="/contenido/librerias/fotorama.css" />
+    <link rel="stylesheet" runat="server" id="pgwsliderMinCss" href="/contenido/librerias/pgwslider.min.css" />
+    <link rel="stylesheet" runat="server" id="estilosCss" href="/contenido/css/estilos.css" />
+    <link rel="stylesheet" runat="server" id="StyleSheetTreeview" href="/ControlesDeUsuario/StyleSheets/StyleSheetTreeview.css" />
+
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="shortcut icon" runat="server" id="Favicon" href="/Icono_Favicon.ico" />
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-6901628-5']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '740630403062337');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=740630403062337&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Facebook Pixel Code -->
+
+        <!-- Global site tag (gtag.js) - Google Ads: 952453642 --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-952453642"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-952453642');
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BZN59LT10"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4BZN59LT10');
+</script>
+
+<body>
+    <form id="form1" runat="server">
+        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></asp:ToolkitScriptManager>
+        <div id="a-header">
+            <div id="a-topmenu">
+                <div id="d-topmenu" class="ui fluid container">
+                    <div id="d-contopmenu" class="ui grey inverted borderless menu">
+                        <div id="d-topmenuboton1" class="ui pointing inline dropdown item">
+                            <i class="ui inverted circular red world icon"></i>
+                            <div>Español</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="español"><b>Español</b></div>
+                                <div class="item" data-value="english">English</div>
+                                <div class="item" data-value="russian">Russian</div>
+                            </div>
+                        </div>
+                        <div id="d-topmenuboton2" class="ui pointing inline dropdown item">
+                            <i class="ui inverted circular red dollar icon"></i>
+                            <div>$ COP</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="cop"><b>$ COP</b></div>
+                                <div class="item" data-value="usd">$ USD</div>
+                            </div>
+                        </div>
+                        <div class="ui right grey inverted menu">
+                            <uc1:WucLoginStatus runat="server" ID="WucLoginStatus" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="a-subheader">
+                <div class="ui left aligned four column doubling grid">
+                    <div class="left aligned column">
+                        <img runat="server" id="ImgAdobeReader" style="width: 25px; height: 25px;" src="/Graficas/Iconos/adobe_reader_logo.jpg" />
+                        <a runat="server" id="LinkCatalogo" target="_blank" href="/CATALOGO_DE_PRODUCTOS_WWW.TODOVENTASCOLOMBIA.COM.pdf">
+                            C&aacute;talogo Descargable
+                            <br />
+                            Actualizado Diariamente
+                        </a>
+                    </div>
+                    <div class="left aligned column">
+                        <img runat="server" id="ImgEmail" style="width: 25px; height: 25px;" src="Graficas/Iconos/email_logo.jpg" />
+                        <a href="mailto:contacto@todoventascolombia.com">contacto@todoventascolombia.com</a>
+                    </div>
+                    <div class="left aligned column">
+                        <img runat="server" id="ImgSkype" style="width: 25px; height: 25px;" src="/Graficas/Iconos/skype_logo.jpg" />
+                        <script type="text/javascript" src="https://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+                        <a onclick="return skypeCheck();" href="skype:anamilena81?call">Skype:anamilena81</a>
+                    </div>
+                    <div class="left aligned column">
+                        <img runat="server" id="ImgFacebook" style="width: 25px; height: 25px;" src="/Graficas/Iconos/facebook_logo.jpg" />
+                        <a runat="server" target="_blank" href="https://es-la.facebook.com/TodoVentasColombia/">Siguenos en Facebook</a>
+                    </div>
+                    <div class="left aligned column">
+                        <span>
+                            <img runat="server" id="ImgWhatsapp" style="width: 25px; height: 25px;" src="/Graficas/Iconos/WhatsapLogo.png" />
+                             <a id="LinkLineaCelularWhatsapp" href="#" runat="server" target="_blank">
+                                <asp:Label ID="LblLineaCelular" runat="server"></asp:Label>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="left aligned column">
+                        <img runat="server" id="ImgTelefono" style="width: 25px; height: 25px;" src="/Graficas/Iconos/telefono_logo.jpg" />
+                        <span>
+                            <a href="">Teléfono Fijo Medellín (4) 204 03 17</a>
+                        </span>
+                    </div>
+                </div>
+                <div id="d-subheader" class="ui vertically one column grid">
+                    <uc1:WucLogoSitioWebascx runat="server" id="WucLogoSitioWebascx" />
+                    <div class="ui three column center aligned grid">
+                        <div class="ui action input">
+                            <uc1:WucBusqueda runat="server" ID="WucBusqueda2" />
+                        </div>
+                        <div class="ui divider"></div>
+                        <div class="middle aligned right aligned column">
+                            <uc1:WucBotonTotal runat="server" ID="WucBotonTotal" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="t-menu">
+                <div id="d-menu" class="ui basic segment">
+                    <div id="d-menupointing" class="ui inverted borderless menu">
+                        <uc1:WucInicio runat="server" ID="WucInicio" />
+                        <div id="d-boton2" class="ui pointing dropdown item">
+                            <uc2:WucMenuCategorias runat="server" ID="WucCategoria" />
+                        </div>
+                        <div id="d-menuderecha" class="right menu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderBanner" runat="server"></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <uc1:WucFooter runat="server" id="WucFooter" />
+
+        <script src="contenido/js/javascript.js"></script>
+        <!--Start of Zendesk Chat Script-->
+        <script type="text/javascript">
+            window.$zopim || (function (d, s) {
+                var z = $zopim = function (c) { z._.push(c) }, $ = z.s =
+                d.createElement(s), e = d.getElementsByTagName(s)[0]; z.set = function (o) {
+                    z.set.
+                    _.push(o)
+                }; z._ = []; z.set._ = []; $.async = !0; $.setAttribute("charset", "utf-8");
+                $.src = "https://v2.zopim.com/?3Sah7DySbUY3gIkVV7dBYVA4XdGKKTd1"; z.t = +new Date; $.
+                type = "text/javascript"; e.parentNode.insertBefore($, e)
+            })(document, "script");
+        </script>
+        <!--End of Zendesk Chat Script-->
+
+        <style type="text/css">
+            .EstiloIframeMailchimpScrollTamanio {
+                border: none;
+                width: 250px; /*or any other size*/
+                height: 600px; /*or any other size*/
+                overflow: hidden; /*Remover las barras de scroll, también se usa en al etiqueta el atributo scrolling="no" por compatibilidad*/
+            }
+
+            .EstiloModalPopupExtender {
+                background-color: black;
+                filter: alpha(opacity=90);
+                opacity: 0.8;
+                position: absolute;
+                top: 300px;
+            }
+
+            .EstiloDivBotonCerrarIframe {
+                background-color: white;
+                width: 250px;
+                text-align: right;
+            }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block. We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <asp:Button ID="Button1" runat="server" Text="Button" Style="display: none;" />
+        <asp:ModalPopupExtender ID="ModalPopupExtender1" runat="server" TargetControlID="Button1" PopupControlID="Panel1" BackgroundCssClass="EstiloModalPopupExtender" OkControlID="BtnCerrarPopUp" Y="100"></asp:ModalPopupExtender>
+        <asp:Panel ID="Panel1" runat="server" Style="width: 250px">
+            <div class="EstiloDivBotonCerrarIframe">
+                <asp:Button ID="BtnCerrarPopUp" runat="server" Text="Cerrar X" />
+            </div>
+            <iframe src="FormularioMailChimp.html" class="EstiloIframeMailchimpScrollTamanio" scrolling="no" runat="server" id="IframeFormularioMailChimp"></iframe>
+        </asp:Panel>
+    </form>
+</body>
+</html>
+
+

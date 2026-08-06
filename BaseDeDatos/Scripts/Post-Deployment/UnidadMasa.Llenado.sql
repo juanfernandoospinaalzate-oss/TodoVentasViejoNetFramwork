@@ -1,0 +1,6 @@
+﻿INSERT INTO [dbo].[UnidadMasa] ([Nombre]) VALUES ('Sin Unidad de Masa')
+INSERT INTO [dbo].[UnidadMasa] ([Nombre]) VALUES ('Gramo')
+INSERT INTO [dbo].[UnidadMasa] ([Nombre]) VALUES ('Kilogramo')
+INSERT INTO [dbo].[UnidadMasa] ([Nombre]) VALUES ('Libra')
+INSERT INTO [dbo].[UnidadMasa] ([Nombre]) VALUES ('Microgramo')
+INSERT INTO [dbo].[UnidadMasa] ([Nombre]) VALUES ('Miligramo')

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b373e04d-fa04-4931-b327-04b642bcedb1" name="CasosDeUsoMarca" linkedPackageId="8c2bca78-ff9b-4204-ad99-82168272e302" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="00c6a7e6-00b5-43ef-9eb1-139a87bbcbb1">
+      <profileInstance Id="4d167b0f-c14e-428d-b541-c1d6b0753d9d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="12b35418-ee0e-4e51-a62d-666324aae643">
+      <profileInstance Id="207c0af4-79e9-4779-8b05-3e990c690d25" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="f62ced56-69b7-4ce8-b7f0-a210ccc09e6c" name="Administrador " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dc93d710-f0e0-4dff-8369-c564de908978" />
+        <targetEnds>
+          <association Id="94d34818-7cd3-44c8-ab1f-1cf7b36e7f29" isDerived="false" sourceEndRoleName="Administrador " targetEndRoleName="0001 Buscar Marca" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5491bdcf-9a2e-41a1-ac55-ff7227f966c0" LastKnownName="0001 Buscar Marca" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b768dc29-74f2-45fc-9332-675fff3a4d20" name="Administrador " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6957983d-ecad-44c2-af30-f69998d60dca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3db22818-a6df-46e1-9834-d5b333e72b57" name="0001 Buscar Marca" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d59d89fc-f02a-466b-b098-a57d805f1cb2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="36ff9ca4-c15b-41a0-a861-3b0eab070fd5" />
+          </association>
+          <association Id="3c65138c-cde1-416d-ab9b-6129998e1e0e" isDerived="false" sourceEndRoleName="Administrador " targetEndRoleName="0002 Añadir Marca" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="32221e8c-4d86-46f8-9b6e-cc3a1576d51b" LastKnownName="0002 Añadir Marca" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cad246b3-c02d-4f59-a0a3-c1bcdea28800" name="Administrador " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ccaa1f9b-aa70-447f-a659-a8b02ac0d927" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ee065d8-46fe-465b-8dc7-e4cc9249382f" name="0002 Añadir Marca" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="251c0701-d5d7-435c-ad9a-c5440c8f9656" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="26f87e3a-2ea0-4ba3-9ac5-fc4097ea4337" />
+          </association>
+          <association Id="0ef6e115-d433-4c49-b0f1-501a09cce32a" isDerived="false" sourceEndRoleName="Administrador " targetEndRoleName="0003 Modificar Marca" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a52fc6f0-89ff-414a-b3d2-0fe78595d7b2" LastKnownName="0003 Modificar Marca" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c98ea57c-f670-4402-9bdd-b23e70cb0216" name="Administrador " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b0b8b627-a573-4232-9c78-92edb784a1b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d61cd54-e08b-469c-86e9-52723279fab7" name="0003 Modificar Marca" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bb1542dc-7b18-43e0-8b25-9488f8367a24" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3aa5debc-a103-45c3-8228-7e99d5f7860b" />
+          </association>
+          <association Id="6ccdf21a-5285-46e2-8d3e-de1a7294ba0c" isDerived="false" sourceEndRoleName="Administrador " targetEndRoleName="0004 Eliminar Marca" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6002053b-331d-42e0-9ef1-390914486f10" LastKnownName="0004 Eliminar Marca" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5de95a91-d68b-436e-8b18-41d4d82763cf" name="Administrador " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7b70a080-bef9-4f32-94d4-f6bbade7fd2e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f655ea74-c4e9-4308-8b2c-340391cf0c31" name="0004 Eliminar Marca" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="63655092-7498-45e5-b4a2-b894d092fa5f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8a1fb8ba-048b-4f50-b235-d6f2d41d360e" />
+          </association>
+          <association Id="f7eeac73-98ce-4cfa-bae5-fbc8d98a9485" isDerived="false" sourceEndRoleName="Administrador " targetEndRoleName="0005  Listar Marca" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8a0df9db-6720-4f75-81d0-9233fac86dce" LastKnownName="0005  Listar Marca" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf81e59c-93dc-48d2-9e27-46352c26fe49" name="Administrador " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ae7b6f1b-0160-49e2-9ede-f0104d453df1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d151734-2bbc-440d-bff4-d575da434579" name="0005  Listar Marca" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="af45c668-3a12-462d-9e71-3aa40c5ca178" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="27840767-07b6-43b6-bd09-f28ff68bb195" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="32221e8c-4d86-46f8-9b6e-cc3a1576d51b" name="0002 Añadir Marca" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f5a41518-e567-4a45-a7f3-4cb04ba29bf1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a52fc6f0-89ff-414a-b3d2-0fe78595d7b2" name="0003 Modificar Marca" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e30b9e6f-3a97-4a00-9c6d-622ea3746c81" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6002053b-331d-42e0-9ef1-390914486f10" name="0004 Eliminar Marca" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fda96019-079a-4671-b750-0463229e0f5f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8a0df9db-6720-4f75-81d0-9233fac86dce" name="0005  Listar Marca" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a57adbbd-0892-4517-8637-7aca2d04624b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5491bdcf-9a2e-41a1-ac55-ff7227f966c0" name="0001 Buscar Marca" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ea422ac5-0551-45c4-8e3d-50a17a5209c9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="b3591c12-b58a-4b07-a729-c9368f29b13c" name="Subsystem1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="04821c8f-680e-4cc8-b1bd-556deda7ced9" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="641383b5-7a45-4cb5-a5c9-15ca834f1ad0" name="0002 Añadir Marca" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d20e4b0-21dc-4933-854d-906cc9a5972f" />
+        <subjects>
+          <subsystemMoniker Id="b3591c12-b58a-4b07-a729-c9368f29b13c" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="897e7546-c794-4ecc-aef6-98f592432404" name="0003 Modificar Marca" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e2646f17-eabd-4ac4-913b-09152aa807a3" />
+        <subjects>
+          <subsystemMoniker Id="b3591c12-b58a-4b07-a729-c9368f29b13c" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5f81612c-9904-4f96-b330-0f9dd826e145" name="0004 Eliminar Marca" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="601c9578-3022-43eb-a3f7-188b16d0db95" />
+        <subjects>
+          <subsystemMoniker Id="b3591c12-b58a-4b07-a729-c9368f29b13c" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a36907c7-ec76-439e-8e3f-54d553b88b91" name="0005  Listar Marca" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e1f97b8d-c14a-4eb4-a568-6bab43185018" />
+        <subjects>
+          <subsystemMoniker Id="b3591c12-b58a-4b07-a729-c9368f29b13c" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="cb7e709b-6783-491a-82a2-334dd243c813" name="Subsystem2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="341716be-f5d8-446f-8b24-c4103078e620" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="642b0795-41c0-4d1e-83e4-b7bf04e854f8" name="0001 Buscar Marca" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9422c81-c99c-4798-ab24-9e8d007a47c9" />
+        <subjects>
+          <subsystemMoniker Id="cb7e709b-6783-491a-82a2-334dd243c813" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="8c2bca78-ff9b-4204-ad99-82168272e302" name="Modelado">
+    <elementDefinition Id="c1bdd0b8-49a6-4114-99ec-5412c296caa2" />
+  </package>
+</useCaseModelRoot>

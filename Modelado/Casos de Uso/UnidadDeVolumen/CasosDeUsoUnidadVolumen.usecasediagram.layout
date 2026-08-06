@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.5, 8.5" name="CasosDeUsoUnidadVolumen">
+  <useCaseModelRootMoniker Id="05c993ee-6d5d-47e5-8290-741ce2045764" />
+  <nestedChildShapes>
+    <actorShape Id="c0e969ca-9c59-4679-a79d-a85771d4751d" absoluteBounds="3.5, 4.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="1d4fe1d7-abea-4cd1-ae82-89ba437c1691" LastKnownName="Usuario General" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="14922735-313e-4075-9fe6-d3e4e31656ac" absoluteBounds="5, 4.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e21cd5ca-e4de-482c-9e20-cc845691bb8f" LastKnownName="0002 Añadir Volúmen" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 5.01785714285714); (5.12037169881735 : 4.53769784336399)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="406bfd09-d1b8-42d2-9672-5113c77c2a28" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c0e969ca-9c59-4679-a79d-a85771d4751d" />
+        <useCaseShapeMoniker Id="14922735-313e-4075-9fe6-d3e4e31656ac" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="b0f22aa7-2346-4a4a-9ea5-b51b5a2a039a" absoluteBounds="5, 4.75, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="b5227b9a-d219-44e3-b025-ef3817995ba1" LastKnownName="0003 Modificar Volúmen" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 5.125); (5 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="ca22078d-496e-40e7-b0e7-8a40eb165d79" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c0e969ca-9c59-4679-a79d-a85771d4751d" />
+        <useCaseShapeMoniker Id="b0f22aa7-2346-4a4a-9ea5-b51b5a2a039a" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="bb9872bb-47fc-4542-9557-628f52b7e8db" absoluteBounds="5, 5.625, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="cabb396f-1534-4e04-a27a-8d5812da9255" LastKnownName="0004 Eliminar Volúmen" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 5.25); (5.08397485283108 : 5.79198742641554)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="0e9c999b-0fcc-4392-bee2-d8765d8e7e6c" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c0e969ca-9c59-4679-a79d-a85771d4751d" />
+        <useCaseShapeMoniker Id="bb9872bb-47fc-4542-9557-628f52b7e8db" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="8c1a748f-734e-4b56-ae1a-1985ceeb9e08" absoluteBounds="5, 6.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="750024f5-d82d-4bd8-9e32-daba609bf38d" LastKnownName="0005  Listar Volúmen" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 5.375); (5.27639320225002 : 6.65139320225002)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="0a1331c0-38d3-4b16-9908-3a9789df6b42" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c0e969ca-9c59-4679-a79d-a85771d4751d" />
+        <useCaseShapeMoniker Id="8c1a748f-734e-4b56-ae1a-1985ceeb9e08" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="cc15ec3f-2a2a-4eb1-a824-2ba5d1945c66" absoluteBounds="5, 3.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="07ae2caa-75d1-454a-b640-3a7f114d1042" LastKnownName="0001 Buscar Volúmen" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 4.91071428571429); (5.24806448723796 : 3.84094472522461)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="3cf53413-4935-4b12-afe5-63657c8b884e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c0e969ca-9c59-4679-a79d-a85771d4751d" />
+        <useCaseShapeMoniker Id="cc15ec3f-2a2a-4eb1-a824-2ba5d1945c66" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <SubsystemShape Id="0d464471-e588-4e00-a46e-d3dbea66d307" absoluteBounds="6.625, 3.25, 4.625, 1.5" customColor="White">
+      <subsystemMoniker Id="80946fde-07b3-4b1d-85ae-b9beaacd8bd5" LastKnownName="Subsystem1" />
+      <nestedChildShapes>
+        <useCaseShape Id="8f3f27e5-6ec1-4729-8b26-97d7a6c6e160" absoluteBounds="6.75, 3.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="480b0d2a-62f1-47f3-824f-14dd2e488920" LastKnownName="0002 Añadir Volúmen" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="900b765c-9b12-4e27-b026-8be44482c824" absoluteBounds="7.875, 3.75, 1, 0.625" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="53d0d91b-cf13-418a-9ae1-81ff73a5da0e" LastKnownName="0003 Modificar Volúmen" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="8e75b334-9495-4b3a-a8e0-f56b976c5702" absoluteBounds="9, 3.75, 1, 0.625" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="50041bfb-7cdd-4b05-b965-98cddf705472" LastKnownName="0004 Eliminar Volúmen" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="2c99d6a2-ebcb-4680-9c7f-5f596dd6b462" absoluteBounds="10.125, 3.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="5717d160-4555-41f3-ae9d-0ac89cfc0d36" LastKnownName="0005  Listar Volúmen" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <SubsystemShape Id="ad76c7cd-c3ea-4ad6-b94d-581abb41a195" absoluteBounds="6.625, 5, 2.25, 1.25" customColor="White">
+      <subsystemMoniker Id="cf43aeaf-8ce9-4f49-8332-c3f10313b246" LastKnownName="Subsystem2" />
+      <nestedChildShapes>
+        <useCaseShape Id="c3a50073-dd6a-443f-99cd-f235a087d5b1" absoluteBounds="6.75, 5.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="0e57ead5-3e7b-4e7f-8eac-7736e664c466" LastKnownName="0001 Buscar Volúmen" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+  </nestedChildShapes>
+</useCaseDiagram>

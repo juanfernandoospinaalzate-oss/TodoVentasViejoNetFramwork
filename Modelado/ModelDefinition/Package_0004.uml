@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="02dcf4dc-113c-47ce-8b8f-6d4c9f5a4324"
+  name="Casos de uso Colores" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="cd028c33-2af9-403a-8a5e-00dbd418abd6"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="fb863799-a51c-44a9-8f43-aebec541333f">
+          <propertyInstance
+            Id="1a4fed2d-d3c2-4cbe-97fc-36cd5b85e99f"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="62ebd355-256d-4758-b722-4875a8fdc5df">
+          <propertyInstance
+            Id="7a9d1592-0354-414a-81ae-179cce1df0f3"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="5732b285-4616-4854-8683-95d2c855ccf3">
+          <propertyInstance
+            Id="ac181cfa-d4b0-49d8-966d-9c30b32eb243"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="60057457-7710-4b2e-a787-f34ab71a790f"
+      name="framework"
+      profile="StandardProfileL2" />
+    <stereotypeInstance
+      Id="fa14202a-69eb-4359-b8f3-530eca5071ea"
+      name="modelLibrary"
+      profile="StandardProfileL2" />
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="097c45b0-bc09-4e35-a00e-1e2b0c288ee0">
+      <profileInstance
+        Id="4519b39b-a59f-4922-a2ef-dd5c37b1c6d0"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <subsystem
+        Id="c05fd21b-81cc-4614-a010-c7790ffb5272"
+        name="Presentacion.TablasMaestras.Colores"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="7a073ab0-c29a-4ac2-a2e7-76cbe82c5b7f"
+        name="Usuario General"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="29483de9-3287-4f92-9672-8ee0c7b0f833"
+            isDerived="false"
+            sourceEndRoleName="Usuario General"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="10966696-afe9-48ad-8c1d-030ff2e6063c"
+              LastKnownName="0003 Modificar Color"
+              LastKnownLocation="Package_0004.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6785a101-32fe-4475-8d2f-4a9380d9201e"
+                  name="Usuario General"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6730e589-fca6-4c32-b72d-18d38a0b796d"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="46f90dc4-4904-4d41-acbe-452baf0658b5"
+            isDerived="false"
+            sourceEndRoleName="Usuario General"
+            targetEndRoleName="Añadir Color"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3428184f-1ee8-4c58-9da5-727e4643e31c"
+              LastKnownName="0002 Añadir Color"
+              LastKnownLocation="Package_0004.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98fa2fed-e221-47cd-b9e6-7336db19b6d1"
+                  name="Usuario General"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3c9675c4-f2da-4346-b893-54e92c3c18d2"
+                  name="Añadir Color"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8f08a221-9420-44e7-9bc6-f840bb1a8316"
+            isDerived="false"
+            sourceEndRoleName="Usuario General"
+            targetEndRoleName="Eliminar Color"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0ce07813-18d0-42ff-a31c-cdc40ac539f4"
+              LastKnownName="0004 Eliminar Color"
+              LastKnownLocation="Package_0004.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="356916d9-ce96-4a84-b32a-31f12babd14e"
+                  name="Usuario General"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1043303f-b550-47cd-a919-31b13a60b17d"
+                  name="Eliminar Color"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="520fdad7-710c-4469-ab15-f8892e2c7821"
+            isDerived="false"
+            sourceEndRoleName="Usuario General"
+            targetEndRoleName="0001 Listar Colores"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="24f3fd3a-4805-4d94-a32d-74f7de36d3f2"
+              LastKnownName="0001 Buscar Colores"
+              LastKnownLocation="Package_0004.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5e7db2cf-37c9-4c46-8d94-1b8997795862"
+                  name="Usuario General"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4916238-0e18-41f2-ac65-2c9612658a49"
+                  name="0001 Listar Colores"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="dcc5c649-fac7-43da-bb8a-9215128236b4"
+            isDerived="false"
+            sourceEndRoleName="Usuario General"
+            targetEndRoleName="0005  Listar Colores"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="cafabdcd-de43-4115-a21d-46faf38cb9b5"
+              LastKnownName="0005  Listar Colores"
+              LastKnownLocation="Package_0004.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d8a03850-b74c-49fa-a45b-29309874d548"
+                  name="Usuario General"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8afcbbb2-6091-4512-8d7d-6b62bb243674"
+                  name="0005  Listar Colores"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="24f3fd3a-4805-4d94-a32d-74f7de36d3f2"
+        name="0001 Buscar Colores"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="72a25791-f43b-4e27-8934-e339b0e3017c"
+            LastKnownName="Presentacion.Busquedas"
+            LastKnownLocation="Package_0004.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3428184f-1ee8-4c58-9da5-727e4643e31c"
+        name="0002 Añadir Color"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c05fd21b-81cc-4614-a010-c7790ffb5272"
+            LastKnownName="Presentacion.TablasMaestras.Colores"
+            LastKnownLocation="Package_0004.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="10966696-afe9-48ad-8c1d-030ff2e6063c"
+        name="0003 Modificar Color"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c05fd21b-81cc-4614-a010-c7790ffb5272"
+            LastKnownName="Presentacion.TablasMaestras.Colores"
+            LastKnownLocation="Package_0004.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0ce07813-18d0-42ff-a31c-cdc40ac539f4"
+        name="0004 Eliminar Color"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c05fd21b-81cc-4614-a010-c7790ffb5272"
+            LastKnownName="Presentacion.TablasMaestras.Colores"
+            LastKnownLocation="Package_0004.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="72a25791-f43b-4e27-8934-e339b0e3017c"
+        name="Presentacion.Busquedas"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cafabdcd-de43-4115-a21d-46faf38cb9b5"
+        name="0005  Listar Colores"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c05fd21b-81cc-4614-a010-c7790ffb5272"
+            LastKnownName="Presentacion.TablasMaestras.Colores"
+            LastKnownLocation="Package_0004.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

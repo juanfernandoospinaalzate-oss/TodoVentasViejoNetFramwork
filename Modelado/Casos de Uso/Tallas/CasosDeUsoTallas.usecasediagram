@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="164f46c3-8924-46a1-aa85-ac85fd25e6af" name="CasosDeUsoTallas" linkedPackageId="2d989ee6-572a-4fff-ab8f-5b8d56c792e7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="50dd4d4b-60f3-4ffc-9357-da093b1437a8">
+      <profileInstance Id="af0fdcd7-6115-44f4-a1d9-a2b2bc178578" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="552d3566-171d-40e2-8d0a-4b807d06b510">
+      <profileInstance Id="ab26116e-2031-4c73-9ae6-c8fd4aef382d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="2e7fbc95-dc8c-456e-98a4-0698c494b138" name="Usuario General" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7fae399d-f2ee-481f-a28e-7ac13be7f487" />
+        <targetEnds>
+          <association Id="802d86bd-10f6-4837-b976-645b93826e8a" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0001 Buscar Tallas" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5b3c206e-82fb-420f-ba78-b54981d3e878" LastKnownName="0001 Buscar Tallas" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="53ae2ac9-3556-4e2b-aee1-278ea838cb8c" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7380e367-8940-4324-ba5c-d04f606daf3d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ee5d8d58-7b3b-49af-93eb-ea2a355cf62f" name="0001 Buscar Tallas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="09d3847f-9330-493b-93ad-3a2efc5930ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8c8c47d5-32c9-431e-ae7c-af5c507407da" />
+          </association>
+          <association Id="25f7a652-3300-49a0-904e-eecd1e5091c0" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0002 Añadir Talla" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dd417980-78fa-4bde-bc6d-2298bd80b467" LastKnownName="0002 Añadir Talla" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60627d60-2c94-456e-9962-8feac4682f22" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bb574f79-4acd-4772-8ae7-27eafa3d1f8c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="609c31fe-fd52-46d1-94a3-355d13db3fb5" name="0002 Añadir Talla" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="887130ee-578f-4eb2-96a9-3eb90c5b92b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b98f075b-30f8-4ae9-956d-fbbcae180d1e" />
+          </association>
+          <association Id="0b847cf7-8114-4928-8f58-f59c6c657ace" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0003 Modificar Talla" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e3a71ea7-cfaf-403b-99b1-85988273ab23" LastKnownName="0003 Modificar Talla" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d325ee9-55a3-4621-9cf9-0177b6da994e" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="929b07ef-6096-4263-8016-bfc84b4ddef7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="32e4a802-d170-4729-8ea6-87049d42d100" name="0003 Modificar Talla" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d39b5f47-f50f-436e-8869-9f5ccbcd13bb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="caf34d3c-e340-4660-aa24-a13d8c16891b" />
+          </association>
+          <association Id="c7f0ba22-0a39-4a42-bec9-d44aab37896d" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0004 Eliminar Talla" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f452bd81-e482-4baa-a164-594367b2987e" LastKnownName="0004 Eliminar Talla" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a77523f5-bbf1-41e5-b473-4f3a877a18c3" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3bdab5e9-4050-4c31-8d1f-4c8623746a0f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f24aa558-5b56-4d9f-82f3-5735879244b9" name="0004 Eliminar Talla" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5b4e8983-975c-45e9-b2b2-f4d7197002f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1b8cbb64-42d3-4415-b3ce-d83dce9c13ab" />
+          </association>
+          <association Id="52ab02db-7eb9-46ef-8ea2-a253c44bf388" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="0005  Listar Tallas" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4263319d-3e23-442c-9791-07865b3c0a52" LastKnownName="0005  Listar Tallas" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8b638aef-9540-4f42-8563-ec14dc18b9e0" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3b9d4f05-7590-4fcc-a06b-f8922bcd94cd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d589adb5-66f2-49df-8d99-a1377cdff07f" name="0005  Listar Tallas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="173bcaa3-8fc6-413c-adff-192e750da727" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="341efb13-1b5c-467a-a41c-c504e497c008" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dd417980-78fa-4bde-bc6d-2298bd80b467" name="0002 Añadir Talla" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="797fd00d-0a55-4dc1-aee4-53a23eb4a23d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e3a71ea7-cfaf-403b-99b1-85988273ab23" name="0003 Modificar Talla" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="565cd328-3d4f-4ede-a0b1-3ea3cea2b370" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f452bd81-e482-4baa-a164-594367b2987e" name="0004 Eliminar Talla" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a7df673d-69d5-40b9-b6f0-6cff61d69115" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4263319d-3e23-442c-9791-07865b3c0a52" name="0005  Listar Tallas" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a9077e5f-6588-4f16-b225-f67a1b1f0205" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5b3c206e-82fb-420f-ba78-b54981d3e878" name="0001 Buscar Tallas" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7169fd0c-32d7-4a64-8cb6-8340af019343" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="1c7d793f-06ff-42cf-a17a-e01c6f6af142" name="Subsystem1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8b51b8eb-b7d7-4c21-8123-109f3588c055" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="c4d5725b-4002-4805-9a64-d5aa483a109b" name="Subsystem2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6f53de36-a1f6-454e-89c6-bc0af32bce37" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="fb7e566e-c3cc-40d0-80ef-509d6a366a57" name="0001 Buscar Tallas1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dc961e7d-756a-46af-bcc7-155ff2f335db" />
+        <subjects>
+          <subsystemMoniker Id="c4d5725b-4002-4805-9a64-d5aa483a109b" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="290e349b-7f18-432e-a933-ff922922add7" name="0002 Añadir Talla1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b2651601-47ce-45c1-90bd-8dcc3142c386" />
+        <subjects>
+          <subsystemMoniker Id="1c7d793f-06ff-42cf-a17a-e01c6f6af142" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="63925ad7-b55c-4b5c-bbd5-aec5eeb2688e" name="0003 Modificar Talla1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d7237f97-722a-47cd-a872-571a569c6d39" />
+        <subjects>
+          <subsystemMoniker Id="1c7d793f-06ff-42cf-a17a-e01c6f6af142" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9bb1808a-8c35-4c58-91cd-201021411778" name="0004 Eliminar Talla1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="06834b6a-6ea8-4c80-8e6f-f805b56bda53" />
+        <subjects>
+          <subsystemMoniker Id="1c7d793f-06ff-42cf-a17a-e01c6f6af142" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="54f40072-3a8f-48ce-82f8-fd49857b884d" name="0005  Listar Tallas1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="761b1a1e-1e8c-49b9-8ac5-4e454d332cf2" />
+        <subjects>
+          <subsystemMoniker Id="1c7d793f-06ff-42cf-a17a-e01c6f6af142" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="2d989ee6-572a-4fff-ab8f-5b8d56c792e7" name="Modelado">
+    <elementDefinition Id="c1bdd0b8-49a6-4114-99ec-5412c296caa2" />
+  </package>
+</useCaseModelRoot>

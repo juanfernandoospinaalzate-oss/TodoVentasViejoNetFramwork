@@ -1,0 +1,17 @@
+﻿
+.CajaFiltroArticulo
+{
+    border-style:solid;
+    border-color:black;
+    border-width:medium;
+}
+
+.CajaFiltroArticuloSeleccionado
+{
+    border-style:solid;
+    border-color:black;
+    border-width:medium;
+    background-color:pink;
+    color:red;
+}
+

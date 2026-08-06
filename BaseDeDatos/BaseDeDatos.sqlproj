@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+    <PostConversionRemoveFromScc>
+    </PostConversionRemoveFromScc>
+    <PostConversionAddToScc>
+    </PostConversionAddToScc>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>BaseDeDatos</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <LoadSqlClrTypes>True</LoadSqlClrTypes>
+    <RootNamespace>BaseDeDatos</RootNamespace>
+    <DefaultSchema>dbo</DefaultSchema>
+    <PreviousProjectVersion>4.1</PreviousProjectVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccProvider>
+    </SccProvider>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <ValidateCasingOnIdentifiers>False</ValidateCasingOnIdentifiers>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77c3ae6e-b10f-4545-a810-607b148fedb1}</ProjectGuid>
+    <GenerateDatabaseFile>False</GenerateDatabaseFile>
+    <GenerateCreateScript>False</GenerateCreateScript>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseState>ONLINE</DatabaseState>
+    <UpdateOptions>READ_WRITE</UpdateOptions>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>LOCAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <DefaultFileStreamFilegroup />
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>TodoVentas</TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+    <DeployScriptFileName>BaseDeDatosTodoVentas.sql</DeployScriptFileName>
+    <RunSqlCodeAnalysis>True</RunSqlCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Pruebas|AnyCPU' ">
+    <OutputPath>bin\Pruebas\</OutputPath>
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <ItemGroup>
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Pre-Deployment" />
+    <Folder Include="Scripts\Post-Deployment" />
+    <Folder Include="Data Generation Plans" />
+    <Folder Include="Schema Comparisons" />
+    <Folder Include="Properties\" />
+    <Folder Include="Schema Objects\" />
+    <Folder Include="Schema Objects\Schemas\" />
+    <Folder Include="Schema Objects\Schemas\dbo\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker\Queues\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Statistics\" />
+    <Folder Include="Schema Objects\Database Level Objects\" />
+    <Folder Include="Schema Objects\Database Level Objects\Assemblies\" />
+    <Folder Include="Schema Objects\Database Level Objects\Database Triggers\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Schemas\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Users\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Certificates\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Asymmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Master Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Signatures\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Symmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Encryption Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Audit Specification\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Application Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Database Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Broker Priorities\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Contracts\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Event Notifications\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Message Types\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Remote Service Binding\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Routes\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Services\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Stoplists\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Filegroups\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Files\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Catalogs\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Functions\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Schemes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Types\User Defined Data Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Types\User Defined Table Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Types\User Defined Types CLR" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Types\XML Schema Collections" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Rules" />
+  </ItemGroup>
+  <ItemGroup>
+    <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Permissions_1.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Almacen.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Almacen.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Contacto.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Contacto.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ContactosPorAlmacen.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\ContactosPorAlmacen.ForeignKey.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\ContactosPorAlmacen.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Pais.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Pais.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Departamento.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Departamento.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Departamento.ForeignKey.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\Departamento.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Ciudad.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\Ciudad.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Ciudad.ForeignKey.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Ciudad.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Contacto.ForeignKey.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Almacen.ForeignKey.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Idioma.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Idioma.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Categoria.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Categoria.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\SubCategoria.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\SubCategoria.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\SubCategoria.ForeignKey.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\SubCategoria.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Articulo.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Articulo.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\Articulo.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Articulo.ForeignKey.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ArticulosPorAlmacen.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\ArticulosPorAlmacen.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\ArticulosPorAlmacen.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\ArticulosPorAlmacen.ForeignKey.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Color.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Color.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Talla.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Talla.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Proveedor.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Proveedor.PrimaryKeyConstraint1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\Proveedor.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ProveedoresPorArticulo.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\ProveedoresPorArticulo.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\ProveedoresPorArticulo.ForeignKey.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ContactosPorProveedor.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\ContactosPorProveedor.PrimaryKeyContactosPorProveedor.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\ContactosPorProveedor.ForeignKeyContactosPorProveedor.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\MetodoDePago.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\MetodoDePago.PrimaryKeyMetodoDePago.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\MetodosDePagoPorProveedor.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\MetodosDePagoPorProveedor.PrimaryKey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\MetodosDePagoPorProveedor.ForeignKey.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Almacen.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Articulo.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\ArticulosPorAlmacen.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Color.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\BannerPrincipal.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Busquedas.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Carrito.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Cliente.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ConfiguracionCatalogoPDF.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ConfiguracionCatalogoPDFPorCategorias.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ConfiguracionFactura.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ConfiguracionMediosDePagoPayU.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Contadores.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\DetalleVenta.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Direccion.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\EstadoDeLaVenta.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Marca.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\MedioPagoEfectivoPayU.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\PresentacionArticulo.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Sabor.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\TarjetaCreditoPayU.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\UnidadLongitud.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\UnidadMasa.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\UnidadPresentacion.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\UnidadVolumen.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\VariablesDeConfirmacion.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Venta.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Busquedas.PrimaryKey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Carrito.ForeignKey.fkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Carrito.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Clientes.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\ConfiguracionMediosDePagoPayU.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Contadores.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\DetalleVenta.ForeignKey.fkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\DetalleVenta.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Direccion.ForeignKey.fkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Direccion.PrimaryKey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\EstadoDeLaVenta.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Marca.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\MedioPagoEfectivoPayU.PrimaryKey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PresentacionArticulo.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PresentacionArticuloForeignKey.fkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Sabor.PrimaryKey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\TarjetaCreditoPayU.PrimaryKey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\UnidadLongitud.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\UnidadMasa.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\UnidadPresentacion.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\UnidadVolumen.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Venta.ForeignKey.fkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Venta.PrimaryKey.pkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\BannerPrincipal.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Busquedas.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Carrito.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Categoria.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Ciudad.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Cliente.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\ConfiguracionCatalogoPDF.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\ConfiguracionCatalogoPDFporCategoria.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\ConfiguracionFactura.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Contadores.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Departamento.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Direccion.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\EstadoDeLaVenta.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Login.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Marca.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\MedioPagoEfectivoPayU.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Pais.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\PresentacionArticulo.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sabor.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Talla.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\TarjetaCreditoPayU.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\UnidadLongitud,proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\UnidadMasa.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\UnidadPresentacion.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\UnidadVolumen.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Venta.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\MetodoDePago.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\TarifasDomicilio.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Albaran.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\DetalleAlbaran.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Types\User Defined Table Types\Ids.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\PresentacionArticulo.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Abonos.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\AbonosPorAlbaranInsert.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\AbonosPorCriterioSelect.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\OrdenCompraEncabezadoPorIdentificadorSelect.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\OrdenesCompraDetallePorIdentificadorSelect.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\OrdenesCompraDetalleSelect.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\OrdenesCompraEncabezadoSelect.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Albaran.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\VentaWeb.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\VentaWeb.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\DetalleVentaWeb.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\DetalleVentaWeb.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Kardex.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\Kardex.index.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\KardexForeignKey.fkey.sql.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\Kardex.PrimaryKey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Kardex.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ConfiguracionPieDePagina.table.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\ConfiguracionPieDePagina.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Post-Deployment\Almacen.Llenado.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Scripts\Post-Deployment\Contacto.Llenado.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Scripts\Post-Deployment\Pais.Llenado.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Scripts\Post-Deployment\ContactosPorAlmacen.Llenado.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Scripts\Post-Deployment\Departamento.Llenado.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Scripts\Post-Deployment\Ciudad.Llenado.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Scripts\Post-Deployment\Idioma.Llenado.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Scripts\Post-Deployment\Color.Llenado.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\TarifasDomicilio.proc.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\VentaWeb.ForeignKey.fkey.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\VentaWeb.PrimaryKey.pkey.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug_1.publish.xml" />
+    <None Include="Release_1.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\Pre-Deployment\Script.PreDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Post-Deployment\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="BaseDeDatos.refactorlog" />
+  </ItemGroup>
+</Project>

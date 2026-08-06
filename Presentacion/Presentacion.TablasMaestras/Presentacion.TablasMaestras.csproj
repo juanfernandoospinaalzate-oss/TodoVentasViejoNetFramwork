@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A59C841-0997-41A1-AB9D-0CAE3C35061C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentacion.TablasMaestras</RootNamespace>
+    <AssemblyName>Presentacion.TablasMaestras</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisLogFile>bin\Debug\Presentacion.TablasMaestras.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>$(DevEnvDir)\..\..\Team Tools\Static Analysis Tools\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>$(DevEnvDir)\..\..\Team Tools\Static Analysis Tools\FxCop\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Presentacion.TablasMaestras.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>$(DevEnvDir)\..\..\Team Tools\Static Analysis Tools\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>$(DevEnvDir)\..\..\Team Tools\Static Analysis Tools\FxCop\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Presentacion.TablasMaestras.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Pruebas|x86'">
+    <OutputPath>bin\x86\Pruebas\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Pruebas|AnyCPU'">
+    <OutputPath>bin\Pruebas\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Pruebas</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Build.Framework.17.4.0\lib\net472\Microsoft.Build.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ComponentesExternos\BarcodeRenderingFramework\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abonos.Designer.cs">
+      <DependentUpon>Abonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen.Designer.cs">
+      <DependentUpon>Almacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Articulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulo.Designer.cs">
+      <DependentUpon>Articulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BannerPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BannerPrincipal.Designer.cs">
+      <DependentUpon>BannerPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo.Designer.cs">
+      <DependentUpon>Catalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorias.Designer.cs">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciudad.Designer.cs">
+      <DependentUpon>Ciudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colores.Designer.cs">
+      <DependentUpon>Colores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracionPieDePagina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfiguracionPieDePagina.Designer.cs">
+      <DependentUpon>ConfiguracionPieDePagina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamento.Designer.cs">
+      <DependentUpon>Departamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoDeLaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadoDeLaVenta.Designer.cs">
+      <DependentUpon>EstadoDeLaVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Favicon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Favicon.Designer.cs">
+      <DependentUpon>Favicon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marca.Designer.cs">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedioDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedioDePago.Designer.cs">
+      <DependentUpon>MedioDePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pais.Designer.cs">
+      <DependentUpon>Pais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionArticulo.Designer.cs">
+      <DependentUpon>PresentacionArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionArticuloPorAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionArticuloPorAlmacen.Designer.cs">
+      <DependentUpon>PresentacionArticuloPorAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sabor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sabor.Designer.cs">
+      <DependentUpon>Sabor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Talla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Talla.Designer.cs">
+      <DependentUpon>Talla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TarifasDomicilio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TarifasDomicilio.Designer.cs">
+      <DependentUpon>TarifasDomicilio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadLongitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnidadLongitud.Designer.cs">
+      <DependentUpon>UnidadLongitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadMasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnidadMasa.Designer.cs">
+      <DependentUpon>UnidadMasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadPresentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnidadPresentacion.Designer.cs">
+      <DependentUpon>UnidadPresentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadVolumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnidadVolumen.Designer.cs">
+      <DependentUpon>UnidadVolumen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Abonos.resx">
+      <DependentUpon>Abonos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen.resx">
+      <DependentUpon>Almacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulo.resx">
+      <DependentUpon>Articulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BannerPrincipal.resx">
+      <DependentUpon>BannerPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo.resx">
+      <DependentUpon>Catalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categorias.resx">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciudad.resx">
+      <DependentUpon>Ciudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Colores.resx">
+      <DependentUpon>Colores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfiguracionPieDePagina.resx">
+      <DependentUpon>ConfiguracionPieDePagina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamento.resx">
+      <DependentUpon>Departamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstadoDeLaVenta.resx">
+      <DependentUpon>EstadoDeLaVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Favicon.resx">
+      <DependentUpon>Favicon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marca.resx">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedioDePago.resx">
+      <DependentUpon>MedioDePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pais.resx">
+      <DependentUpon>Pais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionArticulo.resx">
+      <DependentUpon>PresentacionArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionArticuloPorAlmacen.resx">
+      <DependentUpon>PresentacionArticuloPorAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sabor.resx">
+      <DependentUpon>Sabor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Talla.resx">
+      <DependentUpon>Talla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TarifasDomicilio.resx">
+      <DependentUpon>TarifasDomicilio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnidadLongitud.resx">
+      <DependentUpon>UnidadLongitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnidadMasa.resx">
+      <DependentUpon>UnidadMasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnidadPresentacion.resx">
+      <DependentUpon>UnidadPresentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnidadVolumen.resx">
+      <DependentUpon>UnidadVolumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DiagramaDeClases.cd" />
+    <None Include="packages.config" />
+    <None Include="Presentacion.TablasMaestras.snk" />
+    <None Include="Properties\DataSources\Entidades.Ciudad.datasource" />
+    <None Include="Properties\DataSources\Entidades.Departamento.datasource" />
+    <None Include="Properties\DataSources\Entidades.Pais.datasource" />
+    <None Include="Properties\DataSources\Entidades.ResultadoTransaccion.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Contratos\Contratos.csproj">
+      <Project>{D2FE776F-3778-43AC-B17B-8214D600883C}</Project>
+      <Name>Contratos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ControlesDeUsuario\ControlesWinForms\Controles.WinForms.csproj">
+      <Project>{4fd75ac0-6df5-4a57-8d4a-24d323bcd91a}</Project>
+      <Name>Controles.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Entidades\Entidades.csproj">
+      <Project>{E084D248-7AB7-4329-8845-BEE2594F86E9}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fachada\Fachada.Busquedas\Fachada.Busquedas.csproj">
+      <Project>{41623147-fca7-4591-9170-00c81442777b}</Project>
+      <Name>Fachada.Busquedas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fachada\Fachada.Facturacion\Fachada.Facturacion.csproj">
+      <Project>{d7bcf119-040c-4c76-8392-913838e9cf21}</Project>
+      <Name>Fachada.Facturacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fachada\Fachada.Inventario\Fachada.Inventario.csproj">
+      <Project>{fa1b2503-9758-449a-83c8-9a741786a2a3}</Project>
+      <Name>Fachada.Inventario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fachada\Fachada.TablasMaestras\Fachada.TablasMaestras.csproj">
+      <Project>{60B4D595-3689-4E29-BDA1-21912BA32231}</Project>
+      <Name>Fachada.TablasMaestras</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logging\Logging.csproj">
+      <Project>{025d37af-05ed-4aee-b4eb-64f8633f8912}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mensajes\Mensajes.csproj">
+      <Project>{42cceadb-dc5e-465b-8ece-e50efcf30175}</Project>
+      <Name>Mensajes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ValidacionesComunes\ValidacionesComunes.csproj">
+      <Project>{18081597-ee41-41a9-8586-6d5a38f6a5c3}</Project>
+      <Name>ValidacionesComunes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Presentacion.Busquedas\Presentacion.Busquedas.csproj">
+      <Project>{1711ed94-83db-44cd-a837-62d3384bc9a7}</Project>
+      <Name>Presentacion.Busquedas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Presentacion.Facturacion\Presentacion.Facturacion.csproj">
+      <Project>{7d09816b-36a7-42ea-92a1-cace3caaa380}</Project>
+      <Name>Presentacion.Facturacion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets" Condition="Exists('..\..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\StyleCop.MSBuild.6.2.0\build\StyleCop.MSBuild.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
